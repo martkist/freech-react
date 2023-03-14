@@ -50,7 +50,7 @@ module.exports = ProfileMixin = {
       url: ""
     };
     
-    var profile = Twister.getUser(username).getProfile();
+    var profile = Freech.getUser(username).getProfile();
     
     if (profile.inCache()) {
     
@@ -61,7 +61,7 @@ module.exports = ProfileMixin = {
     
     }
     
-    var avatar = Twister.getUser(username).getAvatar();
+    var avatar = Freech.getUser(username).getAvatar();
     
     if (avatar.inCache()) {
     
@@ -77,13 +77,13 @@ module.exports = ProfileMixin = {
     
     var thisComponent = this;
 
-    Twister.getUser(this.state.username).doAvatar(function(avatar){
+    Freech.getUser(this.state.username).doAvatar(function(avatar){
       if (avatar.getUrl()) {
         thisComponent.setStateSafe({avatar: avatar.getUrl()});  
       }
     });
     
-    Twister.getUser(this.state.username).doProfile(function(profile){
+    Freech.getUser(this.state.username).doProfile(function(profile){
       thisComponent.setStateSafe({
         fullname: profile.getField("fullname"),
         bio: profile.getField("bio"),

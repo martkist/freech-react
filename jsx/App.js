@@ -61,9 +61,9 @@ App = React.createClass({
     
     var state={};
     
-    state.activeAccount = localStorage.getItem("twister-react-activeAccount")
+    state.activeAccount = localStorage.getItem("freech-react-activeAccount")
     
-    state.accounts = Twister.getAccounts().map(function(acc){
+    state.accounts = Freech.getAccounts().map(function(acc){
       return {
         name: acc.getUsername(),
         status: acc.getKeyStatus()
@@ -87,13 +87,13 @@ App = React.createClass({
   },
   
   clearCache: function () {
-    localStorage.setItem("twister-cache", null);
+    localStorage.setItem("freech-cache", null);
   },
   
   saveCache: function () { 
     var timestamp = Date.now()/1000 - 60*60*24*14;
-    Twister.trimCache(timestamp);
-    localStorage.setItem("twister-cache", JSON.stringify(Twister.serializeCache()))
+    Freech.trimCache(timestamp);
+    localStorage.setItem("freech-cache", JSON.stringify(Freech.serializeCache()))
   },
   
   checkAccounts: function() {
@@ -102,7 +102,7 @@ App = React.createClass({
     
     thisComponent.state.accounts.map(function(acc){
       
-      Twister.getAccount(acc.name).verifyKey(function(key){
+      Freech.getAccount(acc.name).verifyKey(function(key){
         thisComponent.setState(function(oldstate,props){
           
           oldstate.accounts.find(function(a){
@@ -126,12 +126,12 @@ App = React.createClass({
     
     var afterwards = function(){
       thisComponent.setStateSafe({activeAccount: newaccoutname},function(){
-        localStorage.setItem("twister-react-activeAccount", newaccoutname);
+        localStorage.setItem("freech-react-activeAccount", newaccoutname);
       });
     }
     
     if(newaccoutname){
-      Twister.getAccount(newaccoutname).activateTorrents(afterwards);
+      Freech.getAccount(newaccoutname).activateTorrents(afterwards);
     }else{
       afterwards();
     }
@@ -299,15 +299,15 @@ initializeApp = function () {
    
 }
 
-Twister.deserializeCache(JSON.parse(localStorage.getItem("twister-cache")));
+Freech.deserializeCache(JSON.parse(localStorage.getItem("freech-cache")));
 
-//Twister.setup({logfunc: function(log){console.log(log)}})
+//Freech.setup({logfunc: function(log){console.log(log)}})
 
-var accounts = Twister.getAccounts();
+var accounts = Freech.getAccounts();
 
 if (accounts.length==0) {
 
-  if (!localStorage.getItem("twister-react-settings")) {
+  if (!localStorage.getItem("freech-react-settings")) {
 
     var appSettings = {
 
@@ -320,15 +320,15 @@ if (accounts.length==0) {
     
     console.log(appSettings)
     
-    localStorage.setItem("twister-react-settings",JSON.stringify(appSettings));
+    localStorage.setItem("freech-react-settings",JSON.stringify(appSettings));
 
   } else {
 
-    var appSettings = JSON.parse(localStorage.getItem("twister-react-settings"));
+    var appSettings = JSON.parse(localStorage.getItem("freech-react-settings"));
 
   }
   
-  Twister.setup({
+  Freech.setup({
     host: appSettings.host,
     logfunc: function(log){console.log(log)},
     outdatedLimit: appSettings.pollInterval,
@@ -351,21 +351,21 @@ if (accounts.length==0) {
   
 } else {
 
-  var activeAccount =  localStorage.getItem("twister-react-activeAccount");
+  var activeAccount =  localStorage.getItem("freech-react-activeAccount");
     
-  var accounts = Twister.getAccounts();
+  var accounts = Freech.getAccounts();
 
   if (!activeAccount) {
 
     activeAccount = accounts[0];
-    localStorage.setItem("twister-react-activeAccount",activeAccount);
+    localStorage.setItem("freech-react-activeAccount",activeAccount);
 
   }
 
   console.log("active account defaulted to "+activeAccount)
-    console.log(Twister.getAccount(activeAccount))
+    console.log(Freech.getAccount(activeAccount))
 
-  Twister.getAccount(activeAccount).activateTorrents(function(){
+  Freech.getAccount(activeAccount).activateTorrents(function(){
 
     initializeApp();
 

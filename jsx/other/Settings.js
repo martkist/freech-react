@@ -36,7 +36,7 @@ module.exports = Settings = React.createClass({
     
     console.log(newsettings)
     
-    localStorage.setItem("twister-react-settings",JSON.stringify(newsettings));
+    localStorage.setItem("freech-react-settings",JSON.stringify(newsettings));
     
     var event = new CustomEvent('appsettingschanged',{detail: newsettings});
     window.dispatchEvent(event);

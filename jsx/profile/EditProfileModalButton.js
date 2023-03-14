@@ -50,7 +50,7 @@ module.exports = EditProfileModalButton = React.createClass({
     };
     
     
-    Twister.getAccount(this.props.activeAccount).updateProfileFields(newProfileFields,function(profile){
+    Freech.getAccount(this.props.activeAccount).updateProfileFields(newProfileFields,function(profile){
     
       console.log(profile._data);
       

@@ -1,9 +1,9 @@
-# twister-react
-A drop-in-replacement for [twister-html](https://github.com/miguelfreitas/twister-html) written in [React](https://facebook.github.io/react/) using [Bootstrap](http://getbootstrap.com/) with the [paper theme](https://bootswatch.com/paper/).
+# freech-react
+A drop-in-replacement for [freech-html](https://github.com/martkist/freech-html) written in [React](https://facebook.github.io/react/) using [Bootstrap](http://getbootstrap.com/) with the [paper theme](https://bootswatch.com/paper/).
 
-It builds upon [twister-lib-js](https://github.com/tschaul/twister-lib-js) which enables browser-side-cryptography meaning that the private twister key is generated in the browser and does not leave the browser. It is meant to be used together with a remote twister-proxy that is accessible from anywhere enabling a normal web-like usage. Because of browser-side-cryptography communication is secured end-to-end and the twister-proxy is highly exchangeable. 
+It builds upon [freech-lib-js](https://github.com/martkist/freech-lib-js) which enables browser-side-cryptography meaning that the private freech key is generated in the browser and does not leave the browser. It is meant to be used together with a remote freech-proxy that is accessible from anywhere enabling a normal web-like usage. Because of browser-side-cryptography communication is secured end-to-end and the freech-proxy is highly exchangeable. 
 
-twister-react is currently in alpha phase. Use at your own risk.
+freech-react is currently in alpha phase. Use at your own risk.
 
 ## Missing Features			
 
@@ -17,11 +17,10 @@ twister-react is currently in alpha phase. Use at your own risk.
 
 Url | Admin | Location | Note 
 ----- | ----- | ----- | ------
-https://twister-proxy.tschaul.com/index.html | @tschaul | Germany | No guaranteed uptime, often used for testing purposes
 
 *Your proxy is missing? Drop me a line or make a pull request!*
 
-## Setup as hosted by a public twister proxy (ubuntu 15.10)
+## Setup as hosted by a public freech proxy (ubuntu 15.10)
 
 First we install the basic dependecies.
 
@@ -31,38 +30,38 @@ apt-get install -y git curl nodejs nodejs-legacy npm
 curl -sSL https://get.docker.com/ | sh
 ```
 
-Now we pull twister-core.
+Now we pull freech-core.
 
 ```
-git clone https://github.com/miguelfreitas/twister-core.git
+git clone https://github.com/martkist/freech-core.git
 
-mkdir ~/.twister
-echo -e "rpcuser=user\nrpcpassword=pwd\nhtmldir=~/twister-react" > ~/.twister/twister.conf
-chmod 600 ~/.twister/twister.conf
+mkdir ~/.freech
+echo -e "rpcuser=user\nrpcpassword=pwd\nhtmldir=~/freech-react" > ~/.freech/freech.conf
+chmod 600 ~/.freech/freech.conf
 ```
 
-Next pull this repo and twister-proxy.
+Next pull this repo and freech-proxy.
 
 ```
-git clone https://github.com/Tschaul/twister-react.git
-git clone https://github.com/digital-dreamer/twister-proxy.git
+git clone https://github.com/martkist/freech-react.git
+git clone https://github.com/martkist/freech-proxy.git
 
 npm install -g forever
 ```
 
-We setup twister-proxy and pull the settings from this repo.
+We setup freech-proxy and pull the settings from this repo.
 
 ```
-cd twister-proxy
+cd freech-proxy
 npm install
-curl https://raw.githubusercontent.com/Tschaul/twister-react/master/docker/settings.json > settings.json
+curl https://raw.githubusercontent.com/martkist/freech-react/master/docker/settings.json > settings.json
 cd ..
 ```
 
 Next we need the start script from this repo and set the correct rights.
 
 ```
-curl https://raw.githubusercontent.com/Tschaul/twister-react/master/docker/run.sh > run.sh
+curl https://raw.githubusercontent.com/martkist/freech-react/master/docker/run.sh > run.sh
 chmod 777 run.sh 
 ```
 
@@ -76,30 +75,30 @@ git clone https://github.com/letsencrypt/letsencrypt
 
 letsencrypt will ask you to provide an email address and your domain. It will then save your certificates in /etc/letsencrypt/live/example.com/ where example.com is your domain.
 
-For last step we have to tell twister-proxy where the certificates are.
+For last step we have to tell freech-proxy where the certificates are.
 
 ```
-nano twister-proxy/settings.json 
+nano freech-proxy/settings.json 
 ```
 
 Inside "Server" replace example.com by your domain in a the "ssl_*" properties. Press Crtl+O to save and then Crtl+X to exit.
 
-Now we can start it up. When starting for the first time it will pull the twister docker-image.
+Now we can start it up. When starting for the first time it will pull the freech docker-image.
 
 ```
 ./run.sh
 ```
 
-twisterd now needs a while (10min to 1h depending on your connection) to download the blockchain. You can check `top` to see if twisterd is still busy. If it's not busy anymore (cpu at around 10%) it's ready to use. Go to https://example.com/index.html where example.com is your domain and start twisting :-).
+freechd now needs a while (10min to 1h depending on your connection) to download the blockchain. You can check `top` to see if freechd is still busy. If it's not busy anymore (cpu at around 10%) it's ready to use. Go to https://example.com/index.html where example.com is your domain and start twisting :-).
 
-To stop twisterd and the proxy, run:
+To stop freechd and the proxy, run:
 
 ```
-killall twisterd
+killall freechd
 killall nodejs
 ```
 
-If twister-proxy is hanging itself regularly try updating nodejs to a newer version:
+If freech-proxy is hanging itself regularly try updating nodejs to a newer version:
 
 http://askubuntu.com/questions/426750/how-can-i-update-my-nodejs-to-the-latest-version
 

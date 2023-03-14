@@ -29,7 +29,7 @@ module.exports = ReplyModalButton = React.createClass({
       return;
     }
         
-    Twister.getAccount(this.props.activeAccount).reply(
+    Freech.getAccount(this.props.activeAccount).reply(
       this.props.replyUsername,
       this.props.replyPostId,
       msg,

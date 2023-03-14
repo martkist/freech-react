@@ -33,7 +33,7 @@ module.exports = LogoutModalButton = React.createClass({
     
     var username = this.props.username;
     
-    Twister.removeAccount(this.props.username);
+    Freech.removeAccount(this.props.username);
     
     var event = new CustomEvent('accountremovedbyuser',{detail: {username:this.props.username}});
     //alert("scrolled to bottom")

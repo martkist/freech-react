@@ -32,13 +32,13 @@ module.exports = FollowButton = React.createClass({
       var newValForState = !thisComponent.state.isCurrentlyFollowing;
       var eventName = thisComponent.state.isCurrentlyFollowing ? "unfollowbyuser" : "followbyuser";
 
-      Twister.getAccount(thisComponent.props.activeAccount)[methodName](
+      Freech.getAccount(thisComponent.props.activeAccount)[methodName](
         thisComponent.props.username,
         function(following){
 
           thisComponent.setStateSafe({isCurrentlyFollowing:newValForState});
 
-          Twister.getAccount(thisComponent.props.activeAccount).activateTorrent(thisComponent.props.username)
+          Freech.getAccount(thisComponent.props.activeAccount).activateTorrent(thisComponent.props.username)
           
       });
     
@@ -51,7 +51,7 @@ module.exports = FollowButton = React.createClass({
     thisComponent = this;
     
     if(thisComponent.props.activeAccount){
-      Twister.getUser(thisComponent.props.activeAccount).doFollowings(function(followings){
+      Freech.getUser(thisComponent.props.activeAccount).doFollowings(function(followings){
         if(followings.map(function(fol){
           return fol.getUsername();
         }).indexOf(thisComponent.props.username)<0){

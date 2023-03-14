@@ -89,7 +89,7 @@ module.exports = EditAvatarModalButton = React.createClass({
     var thisComponent = this;
     
     
-    Twister.getAccount(this.props.activeAccount).updateAvatar(newavatar,function(avatar){
+    Freech.getAccount(this.props.activeAccount).updateAvatar(newavatar,function(avatar){
     
       console.log(avatar._data);
       

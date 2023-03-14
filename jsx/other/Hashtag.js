@@ -43,7 +43,7 @@ module.exports = Hashtag = React.createClass({
 
     var thisComponent = this;
     
-    Twister.doHashtagPosts(this.state.hashtag,function(posts){
+    Freech.doHashtagPosts(this.state.hashtag,function(posts){
     
       thisComponent.setStateSafe({loading: false});
       

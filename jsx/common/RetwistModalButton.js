@@ -26,7 +26,7 @@ module.exports = RetwistModalButton = React.createClass({
   handleRetwist: function (e) {
     e.preventDefault();
         
-    Twister.getAccount(this.props.activeAccount).retwist(
+    Freech.getAccount(this.props.activeAccount).retwist(
       this.props.retwistUsername,
       this.props.retwistPostId,
       function(post){

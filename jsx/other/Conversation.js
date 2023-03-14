@@ -81,7 +81,7 @@ module.exports = Conversation = React.createClass({
 
     };
 
-    Twister.getUser(this.state.username).doPost(this.state.postid,goUpConversation,{outdatedLimit: outdatedLimit, logfunc: function(log){console.log(log)}});
+    Freech.getUser(this.state.username).doPost(this.state.postid,goUpConversation,{outdatedLimit: outdatedLimit, logfunc: function(log){console.log(log)}});
 
   },
   componentDidMount: function() {

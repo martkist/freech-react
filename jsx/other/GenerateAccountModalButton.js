@@ -25,7 +25,7 @@ module.exports = GenerateAccountModalButton = React.createClass({
     this.setState({username: e.target.value});
     var thisComponent = this;
     if(e.target.value.length){
-      Twister.checkUsernameAvailable(e.target.value,function(result){
+      Freech.checkUsernameAvailable(e.target.value,function(result){
         thisComponent.setStateSafe({
           checkedUsername: e.target.value,
           available: result
@@ -44,7 +44,7 @@ module.exports = GenerateAccountModalButton = React.createClass({
     
     var newusername = this.state.username;
     
-    Twister.generateClientSideAccount(newusername,function(newaccount){
+    Freech.generateClientSideAccount(newusername,function(newaccount){
 
       console.log(newaccount._name);
       

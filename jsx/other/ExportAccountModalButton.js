@@ -33,7 +33,7 @@ module.exports = ExportAccountModalButton = React.createClass({
       encryptionInProgess: false,
       encryptionComplete: false,
       encryptedKey: "",
-      publishedOnTwister: false,
+      publishedOnFreech: false,
     });
   },
   handlePassphrase1Change: function(e) {
@@ -42,7 +42,7 @@ module.exports = ExportAccountModalButton = React.createClass({
       encryptionInProgess: false,
       encryptionComplete: false,
       encryptedKey: "",
-      publishedOnTwister: false,
+      publishedOnFreech: false,
     });
   },
   handlePassphrase2Change: function(e) {
@@ -51,7 +51,7 @@ module.exports = ExportAccountModalButton = React.createClass({
       encryptionInProgess: false,
       encryptionComplete: false,
       encryptedKey: "",
-      publishedOnTwister: false,
+      publishedOnFreech: false,
     });
   },
   handleToggle: function () {
@@ -71,7 +71,7 @@ module.exports = ExportAccountModalButton = React.createClass({
 
       thisComponent.setStateSafe({encryptionInProgess: true});
 
-      Twister.getAccount(this.props.username).encryptPrivateKey(passphrase,
+      Freech.getAccount(this.props.username).encryptPrivateKey(passphrase,
       function(encryptedKey){
 
         thisComponent.setStateSafe({encryptedKey: encryptedKey, encryptionComplete: true, encryptionInProgess: false});
@@ -80,7 +80,7 @@ module.exports = ExportAccountModalButton = React.createClass({
       
     }else{
       
-      var wif = Twister.getAccount(this.props.username).getPrivateKey();
+      var wif = Freech.getAccount(this.props.username).getPrivateKey();
       
       thisComponent.setStateSafe({encryptedKey: wif, encryptionComplete: true, encryptionInProgess: false});
       
@@ -89,15 +89,15 @@ module.exports = ExportAccountModalButton = React.createClass({
                 
     return;
   },
-  publishOnTwister: function() {
+  publishOnFreech: function() {
     
     var thisComponent = this;
     
     if(this.state.useEncryption && this.state.encryptedKey.length && this.state.encryptedKey.startsWith("6P")){
       
-      Twister.getAccount(this.props.username).updateProfileFields({bip38:this.state.encryptedKey},function(profile){
+      Freech.getAccount(this.props.username).updateProfileFields({bip38:this.state.encryptedKey},function(profile){
         
-        thisComponent.setStateSafe({publishedOnTwister: true});
+        thisComponent.setStateSafe({publishedOnFreech: true});
         
       })
       
@@ -119,28 +119,28 @@ module.exports = ExportAccountModalButton = React.createClass({
     if(this.state.encryptionComplete){
       if(this.state.useEncryption){
         
-        var formattedBody = "Your encrypted key for Twister: "
+        var formattedBody = "Your encrypted key for Freech: "
           +this.state.encryptedKey
           +"\n\nAdvice: Print this email and note down your username and passphrase on the same piece of paper.";
         
-        var subject = "Encrypted Twister Private Key";
+        var subject = "Encrypted Freech Private Key";
         
         var mailToLink = "mailto:?body=" + encodeURIComponent(formattedBody) + "&subject=" + encodeURIComponent(subject);
         
         var dataUrl = "data:text/plain;charset=utf-8;base64,"+btoa(this.state.encryptedKey);
         
-        var publishOnTwisterDisabled = this.props.accountStatus != "confirmed";
+        var publishOnFreechDisabled = this.props.accountStatus != "confirmed";
         
-        var publishedOnTwisterButtonStr = "Publish on Twister" + (this.state.publishedOnTwister?" ✓":"");
+        var publishedOnFreechButtonStr = "Publish on Freech" + (this.state.publishedOnFreech?" ✓":"");
         
         
         belowForm = (
           <p>
             {"Your encrypted key: "+this.state.encryptedKey}
             <br/>
-            <Button download="twisterkey.txt" href={dataUrl}>Download</Button>         
+            <Button download="freechkey.txt" href={dataUrl}>Download</Button>         
             <Button href={mailToLink}>Send via Email</Button>
-            <Button onClick={this.publishOnTwister} disabled={publishOnTwisterDisabled}>{publishedOnTwisterButtonStr}</Button>   
+            <Button onClick={this.publishOnFreech} disabled={publishOnFreechDisabled}>{publishedOnFreechButtonStr}</Button>   
           </p>
         )
       }else{        
@@ -150,9 +150,9 @@ module.exports = ExportAccountModalButton = React.createClass({
         belowForm = (
           <p>
             {"Your private key: "+this.state.encryptedKey}      
-            <Button download="twisterkey.txt" href={dataUrl}>Download</Button>
+            <Button download="freechkey.txt" href={dataUrl}>Download</Button>
             <Button disabled>Send via Email</Button>
-            <Button disabled>Publish on Twister</Button>      
+            <Button disabled>Publish on Freech</Button>      
           </p>
         )
       }

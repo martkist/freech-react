@@ -1,4 +1,4 @@
-(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.Twister = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.Freech = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 module.exports = {
   encode: require( './lib/encode' ),
   decode: require( './lib/decode' )
@@ -5962,8 +5962,8 @@ module.exports = function (a, b) {
 	return true;
 };
 
-}).call(this,{"isBuffer":require("../../../../../twister-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
-},{"../../../../../twister-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":424}],59:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../freech-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
+},{"../../../../../freech-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":424}],59:[function(require,module,exports){
 (function (Buffer){
 module.exports = function reverse (a) {
   var length = a.length
@@ -6357,8 +6357,8 @@ module.exports.compile = compile
 module.exports.TfTypeError = TfTypeError
 module.exports.TfPropertyTypeError = TfPropertyTypeError
 
-}).call(this,{"isBuffer":require("../../../../../twister-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
-},{"../../../../../twister-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":424,"inherits":98}],81:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../freech-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
+},{"../../../../../freech-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":424,"inherits":98}],81:[function(require,module,exports){
 (function (Buffer){
 var bs58check = require('bs58check')
 
@@ -12209,8 +12209,8 @@ exports.isBuffer = isBuffer;
 function objectToString(o) {
   return Object.prototype.toString.call(o);
 }
-}).call(this,{"isBuffer":require("../../../../../../../../../../twister-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
-},{"../../../../../../../../../../twister-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":424}],116:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../freech-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../freech-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":424}],116:[function(require,module,exports){
 arguments[4][98][0].apply(exports,arguments)
 },{"dup":98}],117:[function(require,module,exports){
 module.exports = Array.isArray || function (arr) {
@@ -12698,8 +12698,8 @@ CombinedStream.prototype._emitError = function(err) {
   this.emit('error', err);
 };
 
-}).call(this,{"isBuffer":require("../../../../../../twister-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
-},{"../../../../../../twister-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":424,"delayed-stream":121,"stream":445,"util":456}],121:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../freech-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
+},{"../../../../../../freech-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":424,"delayed-stream":121,"stream":445,"util":456}],121:[function(require,module,exports){
 var Stream = require('stream').Stream;
 var util = require('util');
 
@@ -17590,8 +17590,8 @@ Reader.prototype._readTag = function(tag) {
 
 module.exports = Reader;
 
-}).call(this,{"isBuffer":require("../../../../../../../../../twister-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
-},{"../../../../../../../../../twister-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":424,"./errors":156,"./types":159,"assert":208}],159:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../freech-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../freech-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":424,"./errors":156,"./types":159,"assert":208}],159:[function(require,module,exports){
 // Copyright 2011 Mark Cavage <mcavage@gmail.com> All rights reserved.
 
 
@@ -18220,8 +18220,8 @@ Object.keys(assert).forEach(function (k) {
         };
 });
 
-}).call(this,{"isBuffer":require("../../../../../../../twister-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")},require('_process'))
-},{"../../../../../../../twister-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":424,"_process":427,"assert":208,"stream":445,"util":456}],163:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../freech-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")},require('_process'))
+},{"../../../../../../../freech-react/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":424,"_process":427,"assert":208,"stream":445,"util":456}],163:[function(require,module,exports){
 /*
  * ctf.js
  *
@@ -31427,20 +31427,20 @@ module.exports = Request
 (function (Buffer){
 var inherits = require('inherits');
 
-var TwisterResource = require('../TwisterResource.js');
-var TwisterPrivKey = require('./TwisterPrivKey.js');
-var TwisterContentParser = require('./TwisterContentParser.js');
+var FreechResource = require('../FreechResource.js');
+var FreechPrivKey = require('./FreechPrivKey.js');
+var FreechContentParser = require('./FreechContentParser.js');
 
 var bencode = require('bencode');
 
 
 /**
- * Describes a user account in Twister. Allows for the private information about that user as well as for posting new messages.
- * @class ServerWallet_TwisterAccount
+ * Describes a user account in Freech. Allows for the private information about that user as well as for posting new messages.
+ * @class ServerWallet_FreechAccount
  */
-function TwisterAccount(name,scope) {
+function FreechAccount(name,scope) {
     
-	TwisterResource.call(this,name,scope);
+	FreechResource.call(this,name,scope);
 	
     this._name = name;
     this._scope = scope;
@@ -31454,17 +31454,17 @@ function TwisterAccount(name,scope) {
   
     this._torrents = {};
   
-    this._privkey = new TwisterPrivKey(name,scope);
+    this._privkey = new FreechPrivKey(name,scope);
 
 }
 
-module.exports = TwisterAccount;
+module.exports = FreechAccount;
 
-inherits(TwisterAccount,TwisterResource);
+inherits(FreechAccount,FreechResource);
 
-TwisterAccount.prototype.flatten = function () {
+FreechAccount.prototype.flatten = function () {
     
-    var flatData = TwisterResource.prototype.flatten.call(this);
+    var flatData = FreechResource.prototype.flatten.call(this);
 
     flatData.wallettype = this._wallettype;
     
@@ -31487,19 +31487,19 @@ TwisterAccount.prototype.flatten = function () {
 
 }
 
-TwisterAccount.prototype.inflate = function (flatData) {
+FreechAccount.prototype.inflate = function (flatData) {
     
-    TwisterResource.prototype.inflate.call(this,flatData);
+    FreechResource.prototype.inflate.call(this,flatData);
     
     this._wallettype = flatData.wallettype;
     this._privateFollowings = flatData.privateFollowings;
 
-    var TwisterDirectMessages = require('./TwisterDirectMessages.js');
-    var TwisterTorrent = require('./TwisterTorrent.js');
+    var FreechDirectMessages = require('./FreechDirectMessages.js');
+    var FreechTorrent = require('./FreechTorrent.js');
 
     for(var i in flatData.directmessages){
 
-        var newuser = new TwisterDirectMessages(this._name,flatData.directmessages[i].name,Twister);
+        var newuser = new FreechDirectMessages(this._name,flatData.directmessages[i].name,Freech);
         newuser.inflate(flatData.directmessages[i]);
         this._directmessages[flatData.directmessages[i].name]=newuser;
 
@@ -31507,7 +31507,7 @@ TwisterAccount.prototype.inflate = function (flatData) {
 
     for(var i in flatData.torrents){
 
-        var newuser = new TwisterTorrent(this._name,flatData.torrents[i].name,Twister);
+        var newuser = new FreechTorrent(this._name,flatData.torrents[i].name,Freech);
         newuser.inflate(flatData.torrents[i]);
         this._torrents[flatData.torrents[i].name]=newuser;
 
@@ -31517,7 +31517,7 @@ TwisterAccount.prototype.inflate = function (flatData) {
 
 }
 
-TwisterAccount.prototype.trim = function (timestamp) {
+FreechAccount.prototype.trim = function (timestamp) {
 
   for (var username in this._directmessages){
     this._directmessages[username].trim(timestamp);
@@ -31529,41 +31529,41 @@ TwisterAccount.prototype.trim = function (timestamp) {
   
 }
 
-TwisterAccount.prototype.getUsername = function () {return this._name}
+FreechAccount.prototype.getUsername = function () {return this._name}
 
-TwisterAccount.prototype.verifyKey = function (cbfunc,querySettings) {
+FreechAccount.prototype.verifyKey = function (cbfunc,querySettings) {
 
   this._privkey.verifyKey(cbfunc,querySettings);
 
 }
 
-TwisterAccount.prototype.getKeyStatus = function () {
+FreechAccount.prototype.getKeyStatus = function () {
 
   return this._privkey.getStatus();
 
 }
 
-TwisterAccount.prototype.encryptPrivateKey = function (passphrase,cbfunc,progressfunc) {
+FreechAccount.prototype.encryptPrivateKey = function (passphrase,cbfunc,progressfunc) {
 
   return this._privkey.encryptPrivateKey(passphrase,cbfunc,progressfunc);
 
 }
 
-TwisterAccount.prototype.getPrivateKey = function (passphrase,cbfunc,progressfunc) {
+FreechAccount.prototype.getPrivateKey = function (passphrase,cbfunc,progressfunc) {
 
   return this._privkey.getKey();
 
 }
 
-TwisterAccount.prototype.activateTorrents = function (cbfunc,querySettings) {
+FreechAccount.prototype.activateTorrents = function (cbfunc,querySettings) {
 
-	var Twister = this._scope;
+	var Freech = this._scope;
     
     var thisAccount = this;
 
     //thisAccount.RPC("getlasthave", [ this._name ], function(res) {
         
-    Twister.getUser(this._name).doFollowings(function(followings){
+    Freech.getUser(this._name).doFollowings(function(followings){
   
         var usernames = followings.map(function(fol){
           return fol.getUsername();
@@ -31597,9 +31597,9 @@ TwisterAccount.prototype.activateTorrents = function (cbfunc,querySettings) {
 
 }
 
-TwisterAccount.prototype.activateTorrent = function (username,cbfunc,querySettings) {
+FreechAccount.prototype.activateTorrent = function (username,cbfunc,querySettings) {
 
-	var Twister = this._scope;
+	var Freech = this._scope;
     
     var thisAccount = this;
 
@@ -31622,13 +31622,13 @@ TwisterAccount.prototype.activateTorrent = function (username,cbfunc,querySettin
 
 }
 
-TwisterAccount.prototype.unfollow = function (username,cbfunc) {
+FreechAccount.prototype.unfollow = function (username,cbfunc) {
   
   var thisAccount = this;
     
-  var Twister = this._scope;
+  var Freech = this._scope;
 
-  Twister.getUser(this._name).doFollowings(function(fols){
+  Freech.getUser(this._name).doFollowings(function(fols){
     
     var newfollowings = fols.map(function(fol){
       return fol.getUsername();
@@ -31636,7 +31636,7 @@ TwisterAccount.prototype.unfollow = function (username,cbfunc) {
       return name!=username;
     })
     
-    var oldRevisionNumers = Twister.getUser(thisAccount._name)._followings._revisionNumber;
+    var oldRevisionNumers = Freech.getUser(thisAccount._name)._followings._revisionNumber;
     
     thisAccount.updateFollowing(newfollowings,oldRevisionNumers,cbfunc)
     
@@ -31644,13 +31644,13 @@ TwisterAccount.prototype.unfollow = function (username,cbfunc) {
 
 }
 
-TwisterAccount.prototype.follow = function (username,cbfunc) {
+FreechAccount.prototype.follow = function (username,cbfunc) {
   
   var thisAccount = this;
     
-  var Twister = this._scope;
+  var Freech = this._scope;
 
-  Twister.getUser(this._name).doFollowings(function(fols){
+  Freech.getUser(this._name).doFollowings(function(fols){
     
     var newfollowings = fols.map(function(fol){
       return fol.getUsername();
@@ -31662,7 +31662,7 @@ TwisterAccount.prototype.follow = function (username,cbfunc) {
     
     //console.log(newfollowings);
     
-    var oldRevisionNumers = Twister.getUser(thisAccount._name)._followings._revisionNumber;
+    var oldRevisionNumers = Freech.getUser(thisAccount._name)._followings._revisionNumber;
     
     console.log("oldrev:",oldRevisionNumers)
     
@@ -31672,7 +31672,7 @@ TwisterAccount.prototype.follow = function (username,cbfunc) {
 
 }
 
-TwisterAccount.prototype.updateFollowing = function (newfollowings,oldRevsionNumbers,cbfunc) {
+FreechAccount.prototype.updateFollowing = function (newfollowings,oldRevsionNumbers,cbfunc) {
   
   var newfollowings = JSON.parse(JSON.stringify(newfollowings));
   var newfollowings_ori = JSON.parse(JSON.stringify(newfollowings));
@@ -31680,7 +31680,7 @@ TwisterAccount.prototype.updateFollowing = function (newfollowings,oldRevsionNum
   
   var thisAccount = this;
   
-  var Twister = this._scope;
+  var Freech = this._scope;
   
   var currentCounter = 1;
 
@@ -31728,9 +31728,9 @@ TwisterAccount.prototype.updateFollowing = function (newfollowings,oldRevsionNum
                   
               } else {
 
-                  Twister.getUser(thisAccount._name)._followings._data = newfollowings_ori;
-                  Twister.getUser(thisAccount._name)._followings._revisionNumber = newRevNumbers;
-                  Twister.getUser(thisAccount._name)._followings._do(cbfunc);
+                  Freech.getUser(thisAccount._name)._followings._data = newfollowings_ori;
+                  Freech.getUser(thisAccount._name)._followings._revisionNumber = newRevNumbers;
+                  Freech.getUser(thisAccount._name)._followings._do(cbfunc);
 
               }
 
@@ -31745,12 +31745,12 @@ TwisterAccount.prototype.updateFollowing = function (newfollowings,oldRevsionNum
   
 }
 
-TwisterAccount.prototype.updateProfile = function (newdata,cbfunc) {
+FreechAccount.prototype.updateProfile = function (newdata,cbfunc) {
 
 	var thisAccount = this;
     
-    var Twister = this._scope;
-    var thisUser = Twister.getUser(this._name);
+    var Freech = this._scope;
+    var thisUser = Freech.getUser(this._name);
     
     thisUser.doProfile(function(profile){
 	
@@ -31762,7 +31762,7 @@ TwisterAccount.prototype.updateProfile = function (newdata,cbfunc) {
         profile._revisionNumber+1,
         function(result){
 
-          var newprofile = Twister.getUser(thisAccount._name)._profile;
+          var newprofile = Freech.getUser(thisAccount._name)._profile;
           newprofile._data = newdata;
           if(cbfunc) cbfunc(newprofile);
 
@@ -31775,9 +31775,9 @@ TwisterAccount.prototype.updateProfile = function (newdata,cbfunc) {
     
       if (error.code==32052) {
        
-        Twister.getUser(this._name)._profile._lastUpdate = Date.now()/1000;
-        Twister.getUser(this._name)._profile._revisionNumber = 0;
-        Twister.getUser(this._name)._profile._updateInProgress = false;
+        Freech.getUser(this._name)._profile._lastUpdate = Date.now()/1000;
+        Freech.getUser(this._name)._profile._revisionNumber = 0;
+        Freech.getUser(this._name)._profile._updateInProgress = false;
         
         thisAccount.updateProfileFields(newdata,cbfunc);
         
@@ -31789,12 +31789,12 @@ TwisterAccount.prototype.updateProfile = function (newdata,cbfunc) {
 
 }
 
-TwisterAccount.prototype.updateProfileFields = function (newdata,cbfunc) {
+FreechAccount.prototype.updateProfileFields = function (newdata,cbfunc) {
 
 	var thisAccount = this;
     
-    var Twister = this._scope;
-    var thisUser = Twister.getUser(this._name);
+    var Freech = this._scope;
+    var thisUser = Freech.getUser(this._name);
   
     thisUser.doProfile(function(profile){
       
@@ -31814,7 +31814,7 @@ TwisterAccount.prototype.updateProfileFields = function (newdata,cbfunc) {
         profile._revisionNumber+1,
         function(result){
 
-          var newprofile = Twister.getUser(thisAccount._name)._profile;
+          var newprofile = Freech.getUser(thisAccount._name)._profile;
           newprofile._data = olddata;
           if(cbfunc) cbfunc(newprofile);
 
@@ -31827,9 +31827,9 @@ TwisterAccount.prototype.updateProfileFields = function (newdata,cbfunc) {
     
       if (error.code==32052) {
        
-        Twister.getUser(this._name)._profile._lastUpdate = Date.now()/1000;
-        Twister.getUser(this._name)._profile._revisionNumber = 0;
-        Twister.getUser(this._name)._profile._updateInProgress = false;
+        Freech.getUser(this._name)._profile._lastUpdate = Date.now()/1000;
+        Freech.getUser(this._name)._profile._revisionNumber = 0;
+        Freech.getUser(this._name)._profile._updateInProgress = false;
         
         thisAccount.updateProfileFields(newdata,cbfunc);
         
@@ -31841,13 +31841,13 @@ TwisterAccount.prototype.updateProfileFields = function (newdata,cbfunc) {
 
 }
 
-TwisterAccount.prototype.updateAvatar = function (newdata,cbfunc) {
+FreechAccount.prototype.updateAvatar = function (newdata,cbfunc) {
 
 	var thisAccount = this;
     
-    var Twister = this._scope;
+    var Freech = this._scope;
     
-    Twister.getUser(this._name).doAvatar(function(avatar){
+    Freech.getUser(this._name).doAvatar(function(avatar){
 	
 		thisAccount._dhtput(
           thisAccount._name,
@@ -31857,7 +31857,7 @@ TwisterAccount.prototype.updateAvatar = function (newdata,cbfunc) {
           avatar._revisionNumber+1,
           function(result){
           
-          var newavatar = Twister.getUser(thisAccount._name)._avatar;
+          var newavatar = Freech.getUser(thisAccount._name)._avatar;
           newavatar._data = newdata;
           if(cbfunc) cbfunc(newavatar);
             
@@ -31869,9 +31869,9 @@ TwisterAccount.prototype.updateAvatar = function (newdata,cbfunc) {
     
       if (error.code==32052) {
        
-        Twister.getUser(this._name)._avatar._lastUpdate = Date.now()/1000;
-        Twister.getUser(this._name)._avatar._revisionNumber = 0;
-        Twister.getUser(this._name)._avatar._updateInProgress = false;
+        Freech.getUser(this._name)._avatar._lastUpdate = Date.now()/1000;
+        Freech.getUser(this._name)._avatar._revisionNumber = 0;
+        Freech.getUser(this._name)._avatar._updateInProgress = false;
         
         thisAccount.updateAvatar(newdata,cbfunc);
         
@@ -31881,7 +31881,7 @@ TwisterAccount.prototype.updateAvatar = function (newdata,cbfunc) {
 
 }
 
-TwisterAccount.prototype.post = function (msg,cbfunc) {
+FreechAccount.prototype.post = function (msg,cbfunc) {
   
   var post = {msg:msg};
     
@@ -31889,7 +31889,7 @@ TwisterAccount.prototype.post = function (msg,cbfunc) {
 
 }
 
-TwisterAccount.prototype.reply = function (replyusername,replyid,msg,cbfunc) {
+FreechAccount.prototype.reply = function (replyusername,replyid,msg,cbfunc) {
   
   var thisAccount = this;
   
@@ -31915,7 +31915,7 @@ TwisterAccount.prototype.reply = function (replyusername,replyid,msg,cbfunc) {
       v,
       0,
       function(result){
-        Twister.getUser(replyusername)._stream._posts[replyid]._replies._data[newpost.getUsername()+":post"+newpost.getId()]=true; 
+        Freech.getUser(replyusername)._stream._posts[replyid]._replies._data[newpost.getUsername()+":post"+newpost.getId()]=true; 
         if(cbfunc) cbfunc(newpost);
       },
       function(error){
@@ -31927,13 +31927,13 @@ TwisterAccount.prototype.reply = function (replyusername,replyid,msg,cbfunc) {
 
 }
 
-TwisterAccount.prototype.retwist = function (rtusername,rtid,cbfunc) {
+FreechAccount.prototype.retwist = function (rtusername,rtid,cbfunc) {
   
   var thisAccount = this;
     
-  var Twister = this._scope;
+  var Freech = this._scope;
 
-  Twister.getUser(rtusername).doPost(rtid,function(post){
+  Freech.getUser(rtusername).doPost(rtid,function(post){
     
     var post = {
       rt: post._data,
@@ -31955,7 +31955,7 @@ TwisterAccount.prototype.retwist = function (rtusername,rtid,cbfunc) {
         v,
         0,
         function(result){
-          Twister.getUser(rtusername)._stream._posts[rtid]._retwists._data[newpost.getUsername()+":post"+newpost.getId()]=true;  
+          Freech.getUser(rtusername)._stream._posts[rtid]._retwists._data[newpost.getUsername()+":post"+newpost.getId()]=true;  
           if(cbfunc) cbfunc(newpost);
         },
         function(error){
@@ -31970,26 +31970,26 @@ TwisterAccount.prototype.retwist = function (rtusername,rtid,cbfunc) {
 
 }
 
-TwisterAccount.prototype.getTorrent = function (username) {
+FreechAccount.prototype.getTorrent = function (username) {
   
   if( username in this._torrents ) {
     return this._torrents[username];
   } else {
-    var TwisterTorrent = require('./TwisterTorrent.js');
-    var newtorrent = new TwisterTorrent(this._name,username,this._scope);
+    var FreechTorrent = require('./FreechTorrent.js');
+    var newtorrent = new FreechTorrent(this._name,username,this._scope);
     this._torrents[username]=newtorrent;
     return this._torrents[username];
   }
 
 }
 
-TwisterAccount.prototype.getDirectMessages = function (username, cbfunc, querySettings) {
+FreechAccount.prototype.getDirectMessages = function (username, cbfunc, querySettings) {
 
 	if ( !(username in this._directmessages) ){
 	
-		var TwisterDirectMessages = require("./TwisterDirectMessages.js");
+		var FreechDirectMessages = require("./FreechDirectMessages.js");
 		
-		var newdmsgs = new TwisterDirectMessages(this._name,username,this._scope);
+		var newdmsgs = new FreechDirectMessages(this._name,username,this._scope);
 		
 		this._directmessages[username] = newdmsgs;
 	
@@ -31999,19 +31999,19 @@ TwisterAccount.prototype.getDirectMessages = function (username, cbfunc, querySe
 
 }
 
-TwisterAccount.prototype.doLatestDirectMessage = function (username, cbfunc, querySettings) {
+FreechAccount.prototype.doLatestDirectMessage = function (username, cbfunc, querySettings) {
 
 	this.getDirectMessages(username)._checkQueryAndDo(cbfunc, querySettings);
 
 }
 
-TwisterAccount.prototype.doLatestDirectMessagesUntil = function (username, cbfunc, querySettings) {
+FreechAccount.prototype.doLatestDirectMessagesUntil = function (username, cbfunc, querySettings) {
 
 	this.getDirectMessages(username)._doUntil(cbfunc, querySettings);
 
 }
 
-TwisterAccount.prototype._signAndPublish = function(post_ori,cbfunc){
+FreechAccount.prototype._signAndPublish = function(post_ori,cbfunc){
   
   var post = JSON.parse(JSON.stringify(post_ori));
   
@@ -32021,7 +32021,7 @@ TwisterAccount.prototype._signAndPublish = function(post_ori,cbfunc){
   
   var thisAccount = this;
   
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   this.getTorrent(this._name)._checkQueryAndDo(function(thisTorrent){
 
@@ -32029,7 +32029,7 @@ TwisterAccount.prototype._signAndPublish = function(post_ori,cbfunc){
   
     thisAccount.RPC("getinfo",[],function(info){
 
-      Twister.getUser(thisAccount._name).doStatus(function(status){  
+      Freech.getUser(thisAccount._name).doStatus(function(status){  
         
         //console.log("new post msg after",status)
 
@@ -32069,7 +32069,7 @@ TwisterAccount.prototype._signAndPublish = function(post_ori,cbfunc){
               
               thisTorrent._latestId = newid;
               
-              Twister.getUser(thisAccount._name)._stream._verifyAndCachePost(v,cbfunc);
+              Freech.getUser(thisAccount._name)._stream._verifyAndCachePost(v,cbfunc);
               
             });
                         
@@ -32089,11 +32089,11 @@ TwisterAccount.prototype._signAndPublish = function(post_ori,cbfunc){
   
 }
 
-TwisterAccount.prototype._dhtput = function(username,resource,sorm,value,seq,cbfunc){
+FreechAccount.prototype._dhtput = function(username,resource,sorm,value,seq,cbfunc){
   
   var thisAccount = this;
   
-  var Twister = this._scope;
+  var Freech = this._scope;
   
   thisAccount.RPC("getinfo",[],function(info){
     
@@ -32140,19 +32140,19 @@ TwisterAccount.prototype._dhtput = function(username,resource,sorm,value,seq,cbf
   
 }
 
-TwisterAccount.prototype._publishPostOnDht = function(v,cbfunc){
+FreechAccount.prototype._publishPostOnDht = function(v,cbfunc){
   
-  var Twister = this._scope;
+  var Freech = this._scope;
   
   var thisAccount = this;
   
   var querId = v.sig_userpost.toString("hex");
   
-  Twister.onQueryComplete(querId,function(){
+  Freech.onQueryComplete(querId,function(){
     if(cbfunc) cbfunc(v);
   });
 
-  Twister.raiseQueryId(querId);
+  Freech.raiseQueryId(querId);
         
   thisAccount._dhtput(
     thisAccount._name,
@@ -32161,14 +32161,14 @@ TwisterAccount.prototype._publishPostOnDht = function(v,cbfunc){
     v,
     v.userpost.k,
     function(result){
-      Twister.bumpQueryId(querId);
+      Freech.bumpQueryId(querId);
     },
     function(error){
       thisAccount._handleError(error);
     }
   );
   
-  Twister.raiseQueryId(querId);
+  Freech.raiseQueryId(querId);
         
   thisAccount._dhtput(
     thisAccount._name,
@@ -32177,7 +32177,7 @@ TwisterAccount.prototype._publishPostOnDht = function(v,cbfunc){
     v,
     1,
     function(result){
-      Twister.bumpQueryId(querId);
+      Freech.bumpQueryId(querId);
     },
     function(error){
       thisAccount._handleError(error);
@@ -32188,7 +32188,7 @@ TwisterAccount.prototype._publishPostOnDht = function(v,cbfunc){
   
   if(v.userpost && v.userpost.msg){
     
-    var parsedContent = TwisterContentParser.parseContent(v.userpost.msg);
+    var parsedContent = FreechContentParser.parseContent(v.userpost.msg);
            
     console.log("parsed content",parsedContent)
     
@@ -32196,7 +32196,7 @@ TwisterAccount.prototype._publishPostOnDht = function(v,cbfunc){
       
       if(item.type=="hashtag"){
                 
-        Twister.raiseQueryId(querId);
+        Freech.raiseQueryId(querId);
         
         thisAccount._dhtput(
           item.raw,
@@ -32205,9 +32205,9 @@ TwisterAccount.prototype._publishPostOnDht = function(v,cbfunc){
           v,
           0,
           function(result){
-            //console.log(Twister.getHashtag(item.raw))
-            Twister.getHashtag(item.raw)._data[v.userpost.n+":post"+v.userpost.k]=true;
-            Twister.bumpQueryId(querId);
+            //console.log(Freech.getHashtag(item.raw))
+            Freech.getHashtag(item.raw)._data[v.userpost.n+":post"+v.userpost.k]=true;
+            Freech.bumpQueryId(querId);
           },
           function(error){
             thisAccount._handleError(error);
@@ -32219,7 +32219,7 @@ TwisterAccount.prototype._publishPostOnDht = function(v,cbfunc){
       
       if(item.type=="mention"){
         
-        Twister.raiseQueryId(querId);
+        Freech.raiseQueryId(querId);
                 
         thisAccount._dhtput(
           item.raw,
@@ -32228,8 +32228,8 @@ TwisterAccount.prototype._publishPostOnDht = function(v,cbfunc){
           v,
           0,
           function(result){
-            Twister.getUser(item.raw)._mentions._data[v.userpost.n+":post"+v.userpost.k]=true;
-            Twister.bumpQueryId(querId);
+            Freech.getUser(item.raw)._mentions._data[v.userpost.n+":post"+v.userpost.k]=true;
+            Freech.bumpQueryId(querId);
           },
           function(error){
             thisAccount._handleError(error);
@@ -32255,7 +32255,7 @@ TwisterAccount.prototype._publishPostOnDht = function(v,cbfunc){
                   
                   
 }).call(this,require("buffer").Buffer)
-},{"../TwisterResource.js":203,"./TwisterContentParser.js":186,"./TwisterDirectMessages.js":187,"./TwisterPrivKey.js":188,"./TwisterTorrent.js":189,"bencode":1,"buffer":223,"inherits":98}],186:[function(require,module,exports){
+},{"../FreechResource.js":203,"./FreechContentParser.js":186,"./FreechDirectMessages.js":187,"./FreechPrivKey.js":188,"./FreechTorrent.js":189,"bencode":1,"buffer":223,"inherits":98}],186:[function(require,module,exports){
 module.exports = {
   extractUsername: function(s) {
       var username = "";
@@ -32358,19 +32358,19 @@ module.exports = {
 },{}],187:[function(require,module,exports){
 var inherits = require('inherits');
 
-var TwisterResource = require('../TwisterResource.js');
+var FreechResource = require('../FreechResource.js');
 
 /**
- * Describes the direct messages between an {@link TwisterAccount} and an {@link TwisterUser}
+ * Describes the direct messages between an {@link FreechAccount} and an {@link FreechUser}
  * @class
  */
-TwisterDirectMessages = function (walletusername,name,scope) {
+FreechDirectMessages = function (walletusername,name,scope) {
     
 	this._hasParentUser = true;
 	
 	this._walletusername = walletusername;
 	
-    TwisterResource.call(this,name,scope);
+    FreechResource.call(this,name,scope);
     
     this._latestId = -1;
     this._messages = {};
@@ -32379,11 +32379,11 @@ TwisterDirectMessages = function (walletusername,name,scope) {
 
 }
 
-inherits(TwisterDirectMessages,TwisterResource);
+inherits(FreechDirectMessages,FreechResource);
 
-TwisterDirectMessages.prototype.flatten = function () {
+FreechDirectMessages.prototype.flatten = function () {
 
-    var flatData = TwisterResource.prototype.flatten.call(this);
+    var flatData = FreechResource.prototype.flatten.call(this);
     
     var flatMessages = [];
     
@@ -32401,11 +32401,11 @@ TwisterDirectMessages.prototype.flatten = function () {
 
 }
 
-TwisterDirectMessages.prototype.inflate = function (flatData) {
+FreechDirectMessages.prototype.inflate = function (flatData) {
     
-    var TwisterPost = require('../TwisterPost.js');
+    var FreechPost = require('../FreechPost.js');
     
-    TwisterResource.prototype.inflate.call(this,flatData);
+    FreechResource.prototype.inflate.call(this,flatData);
     
     this._latestId = flatData.latestId;
     this._walletusername = flatData.walletusername;
@@ -32418,7 +32418,7 @@ TwisterDirectMessages.prototype.inflate = function (flatData) {
 
 }
 
-TwisterDirectMessages.prototype.flattenMessage = function (msg) {
+FreechDirectMessages.prototype.flattenMessage = function (msg) {
 
 	var flatMsg = {};
 	
@@ -32431,7 +32431,7 @@ TwisterDirectMessages.prototype.flattenMessage = function (msg) {
 
 }
 
-TwisterDirectMessages.prototype.inflateMessage = function (msg) {
+FreechDirectMessages.prototype.inflateMessage = function (msg) {
 
   if (msg.fromMe) {
       msg.sender = this._walletusername;
@@ -32454,7 +32454,7 @@ TwisterDirectMessages.prototype.inflateMessage = function (msg) {
 
 }
 
-TwisterDirectMessages.prototype.trim = function (timestamp) {
+FreechDirectMessages.prototype.trim = function (timestamp) {
 
   for (var id in this._posts) {
       
@@ -32492,13 +32492,13 @@ TwisterDirectMessages.prototype.trim = function (timestamp) {
 
 }
 
-TwisterDirectMessages.prototype._do =  function (cbfunc) {
+FreechDirectMessages.prototype._do =  function (cbfunc) {
     
   this._doMessage(this._latestId,cbfunc);
     
 }
 
-TwisterDirectMessages.prototype._queryAndDo = function (cbfunc) {
+FreechDirectMessages.prototype._queryAndDo = function (cbfunc) {
     	
     var thisResource = this;
         
@@ -32538,9 +32538,9 @@ TwisterDirectMessages.prototype._queryAndDo = function (cbfunc) {
         
 }
 
-TwisterDirectMessages.prototype._cacheMessage =  function (msg,cbfunc) {
+FreechDirectMessages.prototype._cacheMessage =  function (msg,cbfunc) {
 	
-    var Twister = this._scope;
+    var Freech = this._scope;
         
     var thisResource = this;
     
@@ -32548,7 +32548,7 @@ TwisterDirectMessages.prototype._cacheMessage =  function (msg,cbfunc) {
     
     if( !( newid in thisResource._messages) ) {
 
-        var TwisterDirectMsg = require('../TwisterPost.js');
+        var FreechDirectMsg = require('../FreechPost.js');
 
         var newmsg = thisResource.inflateMessage(msg);
 
@@ -32570,9 +32570,9 @@ TwisterDirectMessages.prototype._cacheMessage =  function (msg,cbfunc) {
 
 }
 
-TwisterDirectMessages.prototype._doMessage = function (id,cbfunc, querySettings) {
+FreechDirectMessages.prototype._doMessage = function (id,cbfunc, querySettings) {
 
-    var Twister = this._scope;
+    var Freech = this._scope;
     
     if (id && id>0) {
 
@@ -32611,7 +32611,7 @@ TwisterDirectMessages.prototype._doMessage = function (id,cbfunc, querySettings)
     
 };
 
-TwisterDirectMessages.prototype._doUntil = function (cbfunc, querySettings) {
+FreechDirectMessages.prototype._doUntil = function (cbfunc, querySettings) {
 
 	this._checkQueryAndDo(function doUntil(message){
 	
@@ -32627,14 +32627,14 @@ TwisterDirectMessages.prototype._doUntil = function (cbfunc, querySettings) {
 	
 }
 
-module.exports = TwisterDirectMessages;
+module.exports = FreechDirectMessages;
 
 
-},{"../TwisterPost.js":198,"../TwisterResource.js":203,"inherits":98}],188:[function(require,module,exports){
+},{"../FreechPost.js":198,"../FreechResource.js":203,"inherits":98}],188:[function(require,module,exports){
 (function (Buffer){
 var inherits = require('inherits');
 
-var TwisterResource = require('../TwisterResource.js');
+var FreechResource = require('../FreechResource.js');
 
 var Bitcoin = require('bitcoinjs-lib');
 var Crypto = require('crypto');
@@ -32651,19 +32651,19 @@ var wif = require('wif');
 var BigInteger = require('bigi');
 var bs58check = require('bs58check');*/
 
-var twister_network = Bitcoin.networks.bitcoin;
+var freech_network = Bitcoin.networks.bitcoin;
 
-twister_network.messagePrefix= '\x18twister Signed Message:\n';
+freech_network.messagePrefix= '\x18freech Signed Message:\n';
 
 /**
  * Describes the public key of a user.
  * @class
  */
-var TwisterPrivKey = function (name,scope) {
+var FreechPrivKey = function (name,scope) {
     
     this._name = name;
 
-    TwisterResource.call(this,name,scope);   
+    FreechResource.call(this,name,scope);   
     
     this._type = "privkey";
   
@@ -32675,13 +32675,13 @@ var TwisterPrivKey = function (name,scope) {
   
 }
 
-inherits(TwisterPrivKey,TwisterResource);
+inherits(FreechPrivKey,FreechResource);
 
-module.exports = TwisterPrivKey;
+module.exports = FreechPrivKey;
 
-TwisterPrivKey.prototype.flatten = function () {
+FreechPrivKey.prototype.flatten = function () {
 
-  var flatData = TwisterResource.prototype.flatten.call(this);
+  var flatData = FreechResource.prototype.flatten.call(this);
 
   flatData.status = this._status;
   flatData.createdAt = this._createdAt;
@@ -32690,66 +32690,66 @@ TwisterPrivKey.prototype.flatten = function () {
     
 }
 
-TwisterPrivKey.prototype.inflate = function (flatData) {
+FreechPrivKey.prototype.inflate = function (flatData) {
 
-    TwisterResource.prototype.inflate.call(this,flatData);
+    FreechResource.prototype.inflate.call(this,flatData);
 
     this._status = flatData.status;
     this._createdAt = flatData.createdAt;
   
     if (this._data) {
     
-        this._btcKey = Bitcoin.ECPair.fromWIF(this._data,twister_network);
+        this._btcKey = Bitcoin.ECPair.fromWIF(this._data,freech_network);
     
     }
 
 }
 
-TwisterPrivKey.prototype.trim = function (timestamp) {
+FreechPrivKey.prototype.trim = function (timestamp) {
 
 }
 
-TwisterPrivKey.prototype.getStatus = function () {
+FreechPrivKey.prototype.getStatus = function () {
   
   return this._status || "unchecked";
   
 }
 
-TwisterPrivKey.prototype.getCreatedAt = function () {
+FreechPrivKey.prototype.getCreatedAt = function () {
   
   return this._createdAt;
   
 }
 
-TwisterPrivKey.prototype.getKey = function () {
+FreechPrivKey.prototype.getKey = function () {
 
     return this._data;
     
 }
 
-TwisterPrivKey.prototype.setKey = function (key) {
+FreechPrivKey.prototype.setKey = function (key) {
 
   this._data = key;
 
   if (this._data) {
-    this._btcKey = Bitcoin.ECPair.fromWIF(this._data,twister_network);
+    this._btcKey = Bitcoin.ECPair.fromWIF(this._data,freech_network);
   }else{
     this._btcKey = null;
   }
   
 }
 
-TwisterPrivKey.prototype.makeRandomKey = function (key) {
+FreechPrivKey.prototype.makeRandomKey = function (key) {
 
-  this._btcKey = Bitcoin.ECPair.makeRandom(twister_network);
+  this._btcKey = Bitcoin.ECPair.makeRandom(freech_network);
   
   this._data = this._btcKey.toWIF();
   
 }
 
-TwisterPrivKey.prototype.verifyKey = function (cbfunc) {
+FreechPrivKey.prototype.verifyKey = function (cbfunc) {
   
-  var Twister = this._scope;
+  var Freech = this._scope;
   
   var thisResource = this;
   
@@ -32782,13 +32782,13 @@ TwisterPrivKey.prototype.verifyKey = function (cbfunc) {
   
 }
 
-TwisterPrivKey.prototype.getPubKey = function() {
+FreechPrivKey.prototype.getPubKey = function() {
   
   return this._btcKey.getPublicKeyBuffer().toString("hex");
   
 }
 
-TwisterPrivKey.prototype._queryAndDo = function (cbfunc) {
+FreechPrivKey.prototype._queryAndDo = function (cbfunc) {
 	          
   var thisResource = this;
 
@@ -32796,7 +32796,7 @@ TwisterPrivKey.prototype._queryAndDo = function (cbfunc) {
     
     if(thisResource._data!=null && thisResource._btcKey==null){
       
-      thisResource._btcKey = Bitcoin.ECPair.fromWIF(thisResource._data,twister_network);
+      thisResource._btcKey = Bitcoin.ECPair.fromWIF(thisResource._data,freech_network);
       
     }
 
@@ -32812,7 +32812,7 @@ TwisterPrivKey.prototype._queryAndDo = function (cbfunc) {
    
 }
 
-TwisterPrivKey.prototype.sign = function (message_ori, cbfunc) {
+FreechPrivKey.prototype.sign = function (message_ori, cbfunc) {
 
   var thisResource = this;
 
@@ -32850,7 +32850,7 @@ TwisterPrivKey.prototype.sign = function (message_ori, cbfunc) {
     message.sig_userpost = new Buffer(message.sig_userpost, 'hex');
   }
 
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   var keyPair=this._btcKey;
 
@@ -32863,7 +32863,7 @@ TwisterPrivKey.prototype.sign = function (message_ori, cbfunc) {
     bmessage = bencode.encode(message);
 
     try {
-      var retVal = Bitcoin.message.sign(keyPair,bmessage ,twister_network);
+      var retVal = Bitcoin.message.sign(keyPair,bmessage ,freech_network);
       cbfunc(retVal,message)
     } catch(e) {
       //console.log(e)
@@ -32877,7 +32877,7 @@ TwisterPrivKey.prototype.sign = function (message_ori, cbfunc) {
 
 }
 
-TwisterPrivKey.prototype.encryptPrivateKey = function(passphrase,cbfunc,progressfunc){
+FreechPrivKey.prototype.encryptPrivateKey = function(passphrase,cbfunc,progressfunc){
  
   var thisResource = this;
   
@@ -32893,7 +32893,7 @@ TwisterPrivKey.prototype.encryptPrivateKey = function(passphrase,cbfunc,progress
    
 }
 
-TwisterPrivKey.prototype.decryptAndImportPrivateKey = function(encryptedKey,passphrase,cbfunc,progressfunc){
+FreechPrivKey.prototype.decryptAndImportPrivateKey = function(encryptedKey,passphrase,cbfunc,progressfunc){
  
   var thisResource = this;
   
@@ -32908,7 +32908,7 @@ TwisterPrivKey.prototype.decryptAndImportPrivateKey = function(encryptedKey,pass
    
 }
 
-TwisterPrivKey.prototype.decrypt = function(message_ori,cbfunc){
+FreechPrivKey.prototype.decrypt = function(message_ori,cbfunc){
   
   var thisResource = this;
   
@@ -32980,23 +32980,23 @@ TwisterPrivKey.prototype.decrypt = function(message_ori,cbfunc){
 
 }
 }).call(this,require("buffer").Buffer)
-},{"../TwisterResource.js":203,"bencode":1,"bip38":5,"bitcoinjs-lib":90,"buffer":223,"crypto":229,"inherits":98}],189:[function(require,module,exports){
+},{"../FreechResource.js":203,"bencode":1,"bip38":5,"bitcoinjs-lib":90,"buffer":223,"crypto":229,"inherits":98}],189:[function(require,module,exports){
 //'use strict';
 
 var inherits = require('inherits');
-var TwisterResource = require('../TwisterResource.js');
+var FreechResource = require('../FreechResource.js');
 
 /**
- * Describes the torrent of the {@link TwisterPosts} of a {@link TwisterUser} when available on the host. The torrent significantly speeds up post querying time. It is implemented as a look-ahead that is queryied when accessing a post that is not already in cache.
+ * Describes the torrent of the {@link FreechPosts} of a {@link FreechUser} when available on the host. The torrent significantly speeds up post querying time. It is implemented as a look-ahead that is queryied when accessing a post that is not already in cache.
  * @class
  */
-TwisterTorrent = function (walletusername,name,scope) {
+FreechTorrent = function (walletusername,name,scope) {
     
   this._hasParentUser = true;
 
   this._walletusername = walletusername;
 
-  TwisterResource.call(this,name,scope);
+  FreechResource.call(this,name,scope);
 
   this._latestId = -1;
   this._messages = {};
@@ -33007,13 +33007,13 @@ TwisterTorrent = function (walletusername,name,scope) {
 
 }
 
-inherits(TwisterTorrent,TwisterResource);
+inherits(FreechTorrent,FreechResource);
 
-module.exports = TwisterTorrent;
+module.exports = FreechTorrent;
 
-TwisterTorrent.prototype.flatten = function () {
+FreechTorrent.prototype.flatten = function () {
 
-  var flatData = TwisterResource.prototype.flatten.call(this);
+  var flatData = FreechResource.prototype.flatten.call(this);
 
   flatData.active = this._active;
 
@@ -33021,15 +33021,15 @@ TwisterTorrent.prototype.flatten = function () {
     
 }
 
-TwisterTorrent.prototype.inflate = function (flatData) {
+FreechTorrent.prototype.inflate = function (flatData) {
 
-  TwisterResource.prototype.inflate.call(this,flatData);
+  FreechResource.prototype.inflate.call(this,flatData);
 
   this._active = flatData.active;
 
 }
 
-TwisterTorrent.prototype.trim = function (timestamp) {
+FreechTorrent.prototype.trim = function (timestamp) {
 
   if ( !this._active && (!timestamp || timestamp > this._lastUpdate) ){
 
@@ -33041,42 +33041,42 @@ TwisterTorrent.prototype.trim = function (timestamp) {
 
 }
 
-TwisterTorrent.prototype.activate = function () {
+FreechTorrent.prototype.activate = function () {
   
   this._active = true;
-  var thisStream = Twister.getUser(this._name)._stream;
+  var thisStream = Freech.getUser(this._name)._stream;
   thisStream._activeTorrentUser = this._walletusername;
 
 }
 
-TwisterTorrent.prototype.deactivate = function () {
+FreechTorrent.prototype.deactivate = function () {
   
   this._active = false;
   
   var foundReplacement = false;
   
-  for (var username in Twister._wallet){
+  for (var username in Freech._wallet){
 
-    if (this._name in Twister._wallet[username]._torrents) {
-      if (Twister._wallet[username]._torrents[this._name]._active) {
-        Twister.getUser(this._name)._stream._activeTorrentUser=username;
+    if (this._name in Freech._wallet[username]._torrents) {
+      if (Freech._wallet[username]._torrents[this._name]._active) {
+        Freech.getUser(this._name)._stream._activeTorrentUser=username;
         foundReplacement = true;
       }
     }
   }
   
   if (!foundReplacement) {
-    var thisStream = Twister.getUser(this._name)._stream;
+    var thisStream = Freech.getUser(this._name)._stream;
     thisStream._activeTorrentUser = null;
   }
 
 }
 
-TwisterTorrent.prototype.getQuerySetting = function (setting) {
+FreechTorrent.prototype.getQuerySetting = function (setting) {
 
   //console.log(this._name);
 
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   if (setting in this._activeQuerySettings) {
     return this._activeQuerySettings[setting];
@@ -33086,29 +33086,29 @@ TwisterTorrent.prototype.getQuerySetting = function (setting) {
     return this._querySettings[setting];
   }
 
-  if (setting in Twister.getAccount(this._walletusername)._querySettings) {
-    return Twister.getAccount(this._walletusername)._querySettings[setting];
+  if (setting in Freech.getAccount(this._walletusername)._querySettings) {
+    return Freech.getAccount(this._walletusername)._querySettings[setting];
   }
 
-  if (setting in Twister.getUser(this._name)._stream._activeQuerySettings) {
-    return Twister.getUser(this._name)._stream._activeQuerySettings[setting];
+  if (setting in Freech.getUser(this._name)._stream._activeQuerySettings) {
+    return Freech.getUser(this._name)._stream._activeQuerySettings[setting];
   }
 
-  if (setting in Twister.getUser(this._name)._stream._querySettings) {
-    return Twister.getUser(this._name)._stream._querySettings[setting];
+  if (setting in Freech.getUser(this._name)._stream._querySettings) {
+    return Freech.getUser(this._name)._stream._querySettings[setting];
   }
 
-  return TwisterResource.prototype.getQuerySetting.call(this,setting);
+  return FreechResource.prototype.getQuerySetting.call(this,setting);
 
 }
 
-TwisterTorrent.prototype._queryAndDo = function (cbfunc) {
+FreechTorrent.prototype._queryAndDo = function (cbfunc) {
 
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   var thisTorrent = this;
   
-  var thisAccount = Twister.getAccount(this._walletusername);
+  var thisAccount = Freech.getAccount(this._walletusername);
   
   if (thisTorrent._active) {
     
@@ -33191,19 +33191,19 @@ TwisterTorrent.prototype._queryAndDo = function (cbfunc) {
 
 }
 
-TwisterTorrent.prototype._fillCacheUsingGetposts = function (count,requests,cbfunc) {
+FreechTorrent.prototype._fillCacheUsingGetposts = function (count,requests,cbfunc) {
 
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   var thisTorrent = this;
-  var thisStream = Twister.getUser(this._name)._stream;
+  var thisStream = Freech.getUser(this._name)._stream;
 
   if (thisTorrent._active) {
 
     thisStream._log("querying getposts for "+requests.length+" users")
 
     for (var i in requests){
-      Twister.getUser(requests[i].username)._stream._updateInProgress = true;    
+      Freech.getUser(requests[i].username)._stream._updateInProgress = true;    
     }
 
     thisTorrent.RPC("getposts", [ count , requests ], function(res) {
@@ -33223,7 +33223,7 @@ TwisterTorrent.prototype._fillCacheUsingGetposts = function (count,requests,cbfu
             minIds[resUsername]=resId;
           }
 
-          var resStream = Twister.getUser(res[i].userpost.n)._stream;
+          var resStream = Freech.getUser(res[i].userpost.n)._stream;
 
           resStream._verifyAndCachePost(res[i]);
 
@@ -33235,8 +33235,8 @@ TwisterTorrent.prototype._fillCacheUsingGetposts = function (count,requests,cbfu
 
           for (var i in requests){
             if ( !requests.max_id || requests.max_id==-1 ) {
-              Twister.getUser(requests[i].username)._stream._lastUpdate = Date.now()/1000;
-              Twister.getUser(requests[i].username)._stream._updateInProgress = false;
+              Freech.getUser(requests[i].username)._stream._lastUpdate = Date.now()/1000;
+              Freech.getUser(requests[i].username)._stream._updateInProgress = false;
             }
           }
 
@@ -33251,14 +33251,14 @@ TwisterTorrent.prototype._fillCacheUsingGetposts = function (count,requests,cbfu
             if (!(requests[i].username in minIds)) {
               newrequests.push(requests[i]);
             } else {
-              Twister.getUser(requests[i].username)._stream._lastUpdate = Date.now()/1000;
-              Twister.getUser(requests[i].username)._stream._updateInProgress = false;
+              Freech.getUser(requests[i].username)._stream._lastUpdate = Date.now()/1000;
+              Freech.getUser(requests[i].username)._stream._updateInProgress = false;
             }
 
 
             if ( !requests.max_id || requests.max_id==-1 ) {
-              Twister.getUser(requests[i].username)._stream._lastUpdate = Date.now()/1000;
-              Twister.getUser(requests[i].username)._stream._updateInProgress = false;
+              Freech.getUser(requests[i].username)._stream._lastUpdate = Date.now()/1000;
+              Freech.getUser(requests[i].username)._stream._updateInProgress = false;
             }
 
 
@@ -33302,19 +33302,19 @@ TwisterTorrent.prototype._fillCacheUsingGetposts = function (count,requests,cbfu
     
 }
 
-TwisterTorrent.prototype._checkForUpdatesUsingGetLastHave = function (cbfunc) {
+FreechTorrent.prototype._checkForUpdatesUsingGetLastHave = function (cbfunc) {
 
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   var thisTorrent = this;
-  var thisStream = Twister.getUser(this._name)._stream;
-  var thisAccount = Twister.getAccount(this._walletusername);
+  var thisStream = Freech.getUser(this._name)._stream;
+  var thisAccount = Freech.getAccount(this._walletusername);
     
   
   for (var username in thisAccount._torrents){
 
     if (thisAccount._torrents[username]._active) {              
-        Twister.getUser(username)._stream._updateInProgress = true;
+        Freech.getUser(username)._stream._updateInProgress = true;
     }
   }
   
@@ -33336,12 +33336,12 @@ TwisterTorrent.prototype._checkForUpdatesUsingGetLastHave = function (cbfunc) {
 
         }
 
-        thisTorrent._log("comparing latest id for ",username,resTorrent._latestId,Twister.getUser(username)._stream._latestId);
+        thisTorrent._log("comparing latest id for ",username,resTorrent._latestId,Freech.getUser(username)._stream._latestId);
         
-        if (resTorrent._latestId==Twister.getUser(username)._stream._latestId) {
+        if (resTorrent._latestId==Freech.getUser(username)._stream._latestId) {
 
-          Twister.getUser(username)._stream._lastUpdate=Date.now()/1000;
-          Twister.getUser(username)._stream._updateInProgress=false;
+          Freech.getUser(username)._stream._lastUpdate=Date.now()/1000;
+          Freech.getUser(username)._stream._updateInProgress=false;
 
         } else {
 
@@ -33361,7 +33361,7 @@ TwisterTorrent.prototype._checkForUpdatesUsingGetLastHave = function (cbfunc) {
           for (var username in thisAccount._torrents){
 
             if (thisAccount._torrents[username]._active) {              
-                Twister.getUser(username)._stream._updateInProgress = false;
+                Freech.getUser(username)._stream._updateInProgress = false;
             }
           }
 
@@ -33376,7 +33376,7 @@ TwisterTorrent.prototype._checkForUpdatesUsingGetLastHave = function (cbfunc) {
     for (var username in thisAccount._torrents){
 
       if (thisAccount._torrents[username]._active) {              
-          Twister.getUser(username)._stream._updateInProgress = false;
+          Freech.getUser(username)._stream._updateInProgress = false;
       }
     }
 
@@ -33384,12 +33384,12 @@ TwisterTorrent.prototype._checkForUpdatesUsingGetLastHave = function (cbfunc) {
     
 }
 
-TwisterTorrent.prototype.updatePostsCache = function (cbfunc) {
+FreechTorrent.prototype.updatePostsCache = function (cbfunc) {
     
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   var thisTorrent = this;
-  var thisStream = Twister.getUser(this._name)._stream;
+  var thisStream = Freech.getUser(this._name)._stream;
 
   thisStream._log("update posts cache "+thisStream._name)  
 
@@ -33411,31 +33411,31 @@ TwisterTorrent.prototype.updatePostsCache = function (cbfunc) {
     
 }
 
-TwisterTorrent.prototype.fillPostsCache = function (id,cbfunc) {
+FreechTorrent.prototype.fillPostsCache = function (id,cbfunc) {
 
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   var thisTorrent = this;
-  var thisUser = Twister.getUser(this._name);
-  var thisStream = Twister.getUser(this._name)._stream;
+  var thisUser = Freech.getUser(this._name);
+  var thisStream = Freech.getUser(this._name)._stream;
 
   thisStream._log("fill cache "+thisTorrent._name+" id "+id)  
 
   thisTorrent._fillCacheUsingGetposts(30,[{username:thisTorrent._name,max_id:id}],cbfunc);
 
 }
-},{"../TwisterResource.js":203,"inherits":98}],190:[function(require,module,exports){
+},{"../FreechResource.js":203,"inherits":98}],190:[function(require,module,exports){
 var inherits = require('inherits');
 
-var TwisterResource = require('../TwisterResource.js');
+var FreechResource = require('../FreechResource.js');
 
 /**
- * Describes a user account in Twister. Allows for the private information about that user as well as for posting new messages.
- * @class ServerWallet_TwisterAccount
+ * Describes a user account in Freech. Allows for the private information about that user as well as for posting new messages.
+ * @class ServerWallet_FreechAccount
  */
-function TwisterAccount(name,scope) {
+function FreechAccount(name,scope) {
     
-	TwisterResource.call(this,name,scope);
+	FreechResource.call(this,name,scope);
 	
     this._name = name;
     this._scope = scope;
@@ -33451,13 +33451,13 @@ function TwisterAccount(name,scope) {
 
 }
 
-module.exports = TwisterAccount;
+module.exports = FreechAccount;
 
-inherits(TwisterAccount,TwisterResource);
+inherits(FreechAccount,FreechResource);
 
-TwisterAccount.prototype.flatten = function () {
+FreechAccount.prototype.flatten = function () {
     
-    var flatData = TwisterResource.prototype.flatten.call(this);
+    var flatData = FreechResource.prototype.flatten.call(this);
 
     flatData.wallettype = this._wallettype;
     
@@ -33478,19 +33478,19 @@ TwisterAccount.prototype.flatten = function () {
 
 }
 
-TwisterAccount.prototype.inflate = function (flatData) {
+FreechAccount.prototype.inflate = function (flatData) {
     
-    TwisterResource.prototype.inflate.call(this,flatData);
+    FreechResource.prototype.inflate.call(this,flatData);
     
     this._wallettype = flatData.wallettype;
     this._privateFollowings = flatData.privateFollowings;
 
-    var TwisterDirectMessages = require('./TwisterDirectMessages.js');
-    var TwisterTorrent = require('./TwisterTorrent.js');
+    var FreechDirectMessages = require('./FreechDirectMessages.js');
+    var FreechTorrent = require('./FreechTorrent.js');
 
     for(var i in flatData.directmessages){
 
-        var newuser = new TwisterDirectMessages(this._name,flatData.directmessages[i].name,Twister);
+        var newuser = new FreechDirectMessages(this._name,flatData.directmessages[i].name,Freech);
         newuser.inflate(flatData.directmessages[i]);
         this._directmessages[flatData.directmessages[i].name]=newuser;
 
@@ -33498,7 +33498,7 @@ TwisterAccount.prototype.inflate = function (flatData) {
 
     for(var i in flatData.torrents){
 
-        var newuser = new TwisterTorrent(this._name,flatData.torrents[i].name,Twister);
+        var newuser = new FreechTorrent(this._name,flatData.torrents[i].name,Freech);
         newuser.inflate(flatData.torrents[i]);
         this._torrents[flatData.torrents[i].name]=newuser;
 
@@ -33506,7 +33506,7 @@ TwisterAccount.prototype.inflate = function (flatData) {
 
 }
 
-TwisterAccount.prototype.trim = function (timestamp) {
+FreechAccount.prototype.trim = function (timestamp) {
 
   for (var username in this._directmessages){
     this._directmessages[username].trim(timestamp);
@@ -33519,11 +33519,11 @@ TwisterAccount.prototype.trim = function (timestamp) {
 }
 
 
-TwisterAccount.prototype.getUsername = function () {return this._name}
+FreechAccount.prototype.getUsername = function () {return this._name}
 
-TwisterAccount.prototype.activateTorrents = function (cbfunc,querySettings) {
+FreechAccount.prototype.activateTorrents = function (cbfunc,querySettings) {
 
-	var Twister = this._scope;
+	var Freech = this._scope;
     
     var thisAccount = this;
 
@@ -33553,11 +33553,11 @@ TwisterAccount.prototype.activateTorrents = function (cbfunc,querySettings) {
 
 }
 
-TwisterAccount.prototype.unfollow = function (username,cbfunc) {
+FreechAccount.prototype.unfollow = function (username,cbfunc) {
   
   var thisAccount = this;
     
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   thisAccount.RPC("unfollow",[
     
@@ -33566,19 +33566,19 @@ TwisterAccount.prototype.unfollow = function (username,cbfunc) {
     
   ],function(result){
 
-    Twister.getUser(thisAccount._name).doFollowings(cbfunc,{outdatedLimit: 0});
+    Freech.getUser(thisAccount._name).doFollowings(cbfunc,{outdatedLimit: 0});
     
   },function(error){
-      TwisterAccount._handleError(error);
+      FreechAccount._handleError(error);
   });
 
 }
 
-TwisterAccount.prototype.follow = function (username,cbfunc) {
+FreechAccount.prototype.follow = function (username,cbfunc) {
   
   var thisAccount = this;
     
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   thisAccount.RPC("follow",[
     
@@ -33587,7 +33587,7 @@ TwisterAccount.prototype.follow = function (username,cbfunc) {
     
   ],function(result){
     
-    Twister.getUser(thisAccount._name).doFollowings(cbfunc,{outdatedLimit: 0});
+    Freech.getUser(thisAccount._name).doFollowings(cbfunc,{outdatedLimit: 0});
     
   },function(error){
     thisAccount._handleError(error);
@@ -33595,12 +33595,12 @@ TwisterAccount.prototype.follow = function (username,cbfunc) {
 
 }
 
-TwisterAccount.prototype.updateProfile = function (newdata,cbfunc) {
+FreechAccount.prototype.updateProfile = function (newdata,cbfunc) {
 
 	var thisAccount = this;
     
-    var Twister = this._scope;
-    var thisUser = Twister.getUser(this._name);
+    var Freech = this._scope;
+    var thisUser = Freech.getUser(this._name);
     
     thisUser.doProfile(function(profile){
 	
@@ -33613,9 +33613,9 @@ TwisterAccount.prototype.updateProfile = function (newdata,cbfunc) {
           profile._revisionNumber+1
       ],function(result){
 
-        var TwisterProfile = require("../TwisterProfile.js");
+        var FreechProfile = require("../FreechProfile.js");
 
-        var newprofile = new TwisterProfile(thisAccount._name,Twister);
+        var newprofile = new FreechProfile(thisAccount._name,Freech);
         newprofile._data = newdata;
         cbfunc(newprofile);
 
@@ -33627,9 +33627,9 @@ TwisterAccount.prototype.updateProfile = function (newdata,cbfunc) {
     
       if (error.code==32052) {
        
-        Twister.getUser(this._name)._profile._lastUpdate = Date.now()/1000;
-        Twister.getUser(this._name)._profile._revisionNumber = 0;
-        Twister.getUser(this._name)._profile._updateInProgress = false;
+        Freech.getUser(this._name)._profile._lastUpdate = Date.now()/1000;
+        Freech.getUser(this._name)._profile._revisionNumber = 0;
+        Freech.getUser(this._name)._profile._updateInProgress = false;
         
         thisAccount.updateProfileFields(newdata,cbfunc);
         
@@ -33639,12 +33639,12 @@ TwisterAccount.prototype.updateProfile = function (newdata,cbfunc) {
 
 }
 
-TwisterAccount.prototype.updateProfileFields = function (newdata,cbfunc) {
+FreechAccount.prototype.updateProfileFields = function (newdata,cbfunc) {
 
 	var thisAccount = this;
     
-    var Twister = this._scope;
-    var thisUser = Twister.getUser(this._name);
+    var Freech = this._scope;
+    var thisUser = Freech.getUser(this._name);
   
     thisUser.doProfile(function(profile){
       
@@ -33665,9 +33665,9 @@ TwisterAccount.prototype.updateProfileFields = function (newdata,cbfunc) {
           profile._revisionNumber+1
         ],function(result){
           
-          var TwisterProfile = require("../TwisterProfile.js");
+          var FreechProfile = require("../FreechProfile.js");
           
-          var newprofile = new TwisterProfile(thisAccount._name,Twister);
+          var newprofile = new FreechProfile(thisAccount._name,Freech);
           newprofile._data = olddata;
           cbfunc(newprofile);
         
@@ -33679,9 +33679,9 @@ TwisterAccount.prototype.updateProfileFields = function (newdata,cbfunc) {
     
       if (error.code==32052) {
        
-        Twister.getUser(this._name)._profile._lastUpdate = Date.now()/1000;
-        Twister.getUser(this._name)._profile._revisionNumber = 0;
-        Twister.getUser(this._name)._profile._updateInProgress = false;
+        Freech.getUser(this._name)._profile._lastUpdate = Date.now()/1000;
+        Freech.getUser(this._name)._profile._revisionNumber = 0;
+        Freech.getUser(this._name)._profile._updateInProgress = false;
         
         thisAccount.updateProfileFields(newdata,cbfunc);
         
@@ -33691,13 +33691,13 @@ TwisterAccount.prototype.updateProfileFields = function (newdata,cbfunc) {
 
 }
 
-TwisterAccount.prototype.updateAvatar = function (newdata,cbfunc) {
+FreechAccount.prototype.updateAvatar = function (newdata,cbfunc) {
 
 	var thisAccount = this;
     
-    var Twister = this._scope;
+    var Freech = this._scope;
     
-    Twister.getUser(this._name).doAvatar(function(avatar){
+    Freech.getUser(this._name).doAvatar(function(avatar){
 	
 		thisAccount.RPC("dhtput",[
 			thisAccount._name,
@@ -33708,9 +33708,9 @@ TwisterAccount.prototype.updateAvatar = function (newdata,cbfunc) {
 			avatar._revisionNumber+1
 		],function(result){
           
-          var TwisterAvatar = require("../TwisterAvatar.js");
+          var FreechAvatar = require("../FreechAvatar.js");
           
-          var newprofile = new TwisterAvatar(thisAccount._name,Twister);
+          var newprofile = new FreechAvatar(thisAccount._name,Freech);
           newprofile._data = newdata;
           cbfunc(newprofile);
 		
@@ -33722,9 +33722,9 @@ TwisterAccount.prototype.updateAvatar = function (newdata,cbfunc) {
     
       if (error.code==32052) {
        
-        Twister.getUser(this._name)._avatar._lastUpdate = Date.now()/1000;
-        Twister.getUser(this._name)._avatar._revisionNumber = 0;
-        Twister.getUser(this._name)._avatar._updateInProgress = false;
+        Freech.getUser(this._name)._avatar._lastUpdate = Date.now()/1000;
+        Freech.getUser(this._name)._avatar._revisionNumber = 0;
+        Freech.getUser(this._name)._avatar._updateInProgress = false;
         
         thisAccount.updateAvatar(newdata,cbfunc);
         
@@ -33734,11 +33734,11 @@ TwisterAccount.prototype.updateAvatar = function (newdata,cbfunc) {
 
 }
 
-TwisterAccount.prototype.post = function (msg,cbfunc) {
+FreechAccount.prototype.post = function (msg,cbfunc) {
   
   var thisAccount = this;
     
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   this.getTorrent(this._name)._checkQueryAndDo(function(thisTorrent){
 
@@ -33751,15 +33751,15 @@ TwisterAccount.prototype.post = function (msg,cbfunc) {
         msg
     ],function(result){
       
-//      var TwisterPost = require("../TwisterPost.js");      
+//      var FreechPost = require("../FreechPost.js");      
 //      var data = {};
 //      data.n = thisAccount._name;
 //      data.k = newid;
 //      data.time = Math.round(Date.now()/1000);
 //      data.msg = msg;
-//      var newpost = new TwisterPost(data,"",Twister);
+//      var newpost = new FreechPost(data,"",Freech);
 //      cbfunc(newpost);
-      Twister.getUser(thisAccount._name).doStatus(cbfunc,{outdatedLimit: 0});
+      Freech.getUser(thisAccount._name).doStatus(cbfunc,{outdatedLimit: 0});
     },function(error){
       thisAccount._handleError(error);
     });
@@ -33768,11 +33768,11 @@ TwisterAccount.prototype.post = function (msg,cbfunc) {
 
 }
 
-TwisterAccount.prototype.reply = function (replyusername,replyid,msg,cbfunc) {
+FreechAccount.prototype.reply = function (replyusername,replyid,msg,cbfunc) {
   
   var thisAccount = this;
     
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   this.getTorrent(this._name)._checkQueryAndDo(function(thisTorrent){
 
@@ -33787,16 +33787,16 @@ TwisterAccount.prototype.reply = function (replyusername,replyid,msg,cbfunc) {
         replyid
     ],function(result){
       
-//      var TwisterPost = require("../TwisterPost.js");      
+//      var FreechPost = require("../FreechPost.js");      
 //      var data = {};
 //      data.n = thisAccount._name;
 //      data.k = newid;
 //      data.time = Math.round(Date.now()/1000);
 //      data.msg = msg;
 //      data.reply = { k: replyid, n: replyusername };
-//      var newpost = new TwisterPost(data,"",Twister);
+//      var newpost = new FreechPost(data,"",Freech);
 //      cbfunc(newpost);
-      Twister.getUser(thisAccount._name).doStatus(cbfunc,{outdatedLimit: 0});
+      Freech.getUser(thisAccount._name).doStatus(cbfunc,{outdatedLimit: 0});
     },function(error){
       thisAccount._handleError(error);
     });
@@ -33805,18 +33805,18 @@ TwisterAccount.prototype.reply = function (replyusername,replyid,msg,cbfunc) {
 
 }
 
-TwisterAccount.prototype.retwist = function (rtusername,rtid,cbfunc) {
+FreechAccount.prototype.retwist = function (rtusername,rtid,cbfunc) {
   
   var thisAccount = this;
     
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   this.getTorrent(this._name)._checkQueryAndDo(function(thisTorrent){
 
     var newid = thisTorrent._latestId+1;
     //thisTorrent._latestId = newid;
     
-    Twister.getUser(rtusername).doPost(rtid,function(post){
+    Freech.getUser(rtusername).doPost(rtid,function(post){
 
       thisAccount.RPC("newrtmsg",[
           thisAccount._name,
@@ -33824,15 +33824,15 @@ TwisterAccount.prototype.retwist = function (rtusername,rtid,cbfunc) {
           {  sig_userpost: post._signature, userpost: post._data }
       ],function(result){
 
-//        var TwisterPost = require("../TwisterPost.js");      
+//        var FreechPost = require("../FreechPost.js");      
 //        var data = {};
 //        data.n = thisAccount._name;
 //        data.k = newid;
 //        data.time = Math.round(Date.now()/1000);
 //        data.rt = post._data;
-//        var newpost = new TwisterPost(data,"",Twister);
+//        var newpost = new FreechPost(data,"",Freech);
 //        cbfunc(newpost);
-        Twister.getUser(thisAccount._name).doStatus(cbfunc,{outdatedLimit: 0});
+        Freech.getUser(thisAccount._name).doStatus(cbfunc,{outdatedLimit: 0});
         
       },function(error){
         thisAccount._handleError(error);
@@ -33844,26 +33844,26 @@ TwisterAccount.prototype.retwist = function (rtusername,rtid,cbfunc) {
 
 }
 
-TwisterAccount.prototype.getTorrent = function (username) {
+FreechAccount.prototype.getTorrent = function (username) {
   
   if( username in this._torrents ) {
     return this._torrents[username];
   } else {
-    var TwisterTorrent = require('./TwisterTorrent.js');
-    var newtorrent = new TwisterTorrent(this._name,username,this._scope);
+    var FreechTorrent = require('./FreechTorrent.js');
+    var newtorrent = new FreechTorrent(this._name,username,this._scope);
     this._torrents[username]=newtorrent;
     return this._torrents[username];
   }
 
 }
 
-TwisterAccount.prototype.getDirectMessages = function (username, cbfunc, querySettings) {
+FreechAccount.prototype.getDirectMessages = function (username, cbfunc, querySettings) {
 
 	if ( !(username in this._directmessages) ){
 	
-		var TwisterDirectMessages = require("./TwisterDirectMessages.js");
+		var FreechDirectMessages = require("./FreechDirectMessages.js");
 		
-		var newdmsgs = new TwisterDirectMessages(this._name,username,this._scope);
+		var newdmsgs = new FreechDirectMessages(this._name,username,this._scope);
 		
 		this._directmessages[username] = newdmsgs;
 	
@@ -33873,36 +33873,36 @@ TwisterAccount.prototype.getDirectMessages = function (username, cbfunc, querySe
 
 }
 
-TwisterAccount.prototype.doLatestDirectMessage = function (username, cbfunc, querySettings) {
+FreechAccount.prototype.doLatestDirectMessage = function (username, cbfunc, querySettings) {
 
 	this.getDirectMessages(username)._checkQueryAndDo(cbfunc, querySettings);
 
 }
 
-TwisterAccount.prototype.doLatestDirectMessagesUntil = function (username, cbfunc, querySettings) {
+FreechAccount.prototype.doLatestDirectMessagesUntil = function (username, cbfunc, querySettings) {
 
 	this.getDirectMessages(username)._doUntil(cbfunc, querySettings);
 
 }
-},{"../TwisterAvatar.js":194,"../TwisterProfile.js":199,"../TwisterResource.js":203,"./TwisterDirectMessages.js":191,"./TwisterTorrent.js":192,"inherits":98}],191:[function(require,module,exports){
+},{"../FreechAvatar.js":194,"../FreechProfile.js":199,"../FreechResource.js":203,"./FreechDirectMessages.js":191,"./FreechTorrent.js":192,"inherits":98}],191:[function(require,module,exports){
 arguments[4][187][0].apply(exports,arguments)
-},{"../TwisterPost.js":198,"../TwisterResource.js":203,"dup":187,"inherits":98}],192:[function(require,module,exports){
+},{"../FreechPost.js":198,"../FreechResource.js":203,"dup":187,"inherits":98}],192:[function(require,module,exports){
 //'use strict';
 
 var inherits = require('inherits');
-var TwisterResource = require('../TwisterResource.js');
+var FreechResource = require('../FreechResource.js');
 
 /**
- * Describes the torrent of the {@link TwisterPosts} of a {@link TwisterUser} when available on the host. The torrent significantly speeds up post querying time. It is implemented as a look-ahead that is queryied when accessing a post that is not already in cache.
+ * Describes the torrent of the {@link FreechPosts} of a {@link FreechUser} when available on the host. The torrent significantly speeds up post querying time. It is implemented as a look-ahead that is queryied when accessing a post that is not already in cache.
  * @class
  */
-TwisterTorrent = function (walletusername,name,scope) {
+FreechTorrent = function (walletusername,name,scope) {
     
   this._hasParentUser = true;
 
   this._walletusername = walletusername;
 
-  TwisterResource.call(this,name,scope);
+  FreechResource.call(this,name,scope);
 
   this._latestId = -1;
   this._messages = {};
@@ -33913,13 +33913,13 @@ TwisterTorrent = function (walletusername,name,scope) {
 
 }
 
-inherits(TwisterTorrent,TwisterResource);
+inherits(FreechTorrent,FreechResource);
 
-module.exports = TwisterTorrent;
+module.exports = FreechTorrent;
 
-TwisterTorrent.prototype.flatten = function () {
+FreechTorrent.prototype.flatten = function () {
 
-  var flatData = TwisterResource.prototype.flatten.call(this);
+  var flatData = FreechResource.prototype.flatten.call(this);
 
   flatData.active = this._active;
 
@@ -33927,15 +33927,15 @@ TwisterTorrent.prototype.flatten = function () {
     
 }
 
-TwisterTorrent.prototype.inflate = function (flatData) {
+FreechTorrent.prototype.inflate = function (flatData) {
 
-  TwisterResource.prototype.inflate.call(this,flatData);
+  FreechResource.prototype.inflate.call(this,flatData);
 
   this._active = flatData.active;
 
 }
 
-TwisterTorrent.prototype.trim = function (timestamp) {
+FreechTorrent.prototype.trim = function (timestamp) {
 
   if ( !this._active && (!timestamp || timestamp > this._lastUpdate) ){
 
@@ -33947,42 +33947,42 @@ TwisterTorrent.prototype.trim = function (timestamp) {
 
 }
 
-TwisterTorrent.prototype.activate = function () {
+FreechTorrent.prototype.activate = function () {
   
   this._active = true;
-  var thisStream = Twister.getUser(this._name)._stream;
+  var thisStream = Freech.getUser(this._name)._stream;
   thisStream._activeTorrentUser = this._walletusername;
 
 }
 
-TwisterTorrent.prototype.deactivate = function () {
+FreechTorrent.prototype.deactivate = function () {
   
   this._active = false;
   
   var foundReplacement = false;
   
-  for (var username in Twister._wallet){
+  for (var username in Freech._wallet){
 
-    if (this._name in Twister._wallet[username]._torrents) {
-      if (Twister._wallet[username]._torrents[this._name]._active) {
-        Twister.getUser(this._name)._stream._activeTorrentUser=username;
+    if (this._name in Freech._wallet[username]._torrents) {
+      if (Freech._wallet[username]._torrents[this._name]._active) {
+        Freech.getUser(this._name)._stream._activeTorrentUser=username;
         foundReplacement = true;
       }
     }
   }
   
   if (!foundReplacement) {
-    var thisStream = Twister.getUser(this._name)._stream;
+    var thisStream = Freech.getUser(this._name)._stream;
     thisStream._activeTorrentUser = null;
   }
 
 }
 
-TwisterTorrent.prototype.getQuerySetting = function (setting) {
+FreechTorrent.prototype.getQuerySetting = function (setting) {
 
   //console.log(this._name);
 
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   if (setting in this._activeQuerySettings) {
     return this._activeQuerySettings[setting];
@@ -33992,29 +33992,29 @@ TwisterTorrent.prototype.getQuerySetting = function (setting) {
     return this._querySettings[setting];
   }
 
-  if (setting in Twister.getAccount(this._walletusername)._querySettings) {
-    return Twister.getAccount(this._walletusername)._querySettings[setting];
+  if (setting in Freech.getAccount(this._walletusername)._querySettings) {
+    return Freech.getAccount(this._walletusername)._querySettings[setting];
   }
 
-  if (setting in Twister.getUser(this._name)._stream._activeQuerySettings) {
-    return Twister.getUser(this._name)._stream._activeQuerySettings[setting];
+  if (setting in Freech.getUser(this._name)._stream._activeQuerySettings) {
+    return Freech.getUser(this._name)._stream._activeQuerySettings[setting];
   }
 
-  if (setting in Twister.getUser(this._name)._stream._querySettings) {
-    return Twister.getUser(this._name)._stream._querySettings[setting];
+  if (setting in Freech.getUser(this._name)._stream._querySettings) {
+    return Freech.getUser(this._name)._stream._querySettings[setting];
   }
 
-  return TwisterResource.prototype.getQuerySetting.call(this,setting);
+  return FreechResource.prototype.getQuerySetting.call(this,setting);
 
 }
 
-TwisterTorrent.prototype._queryAndDo = function (cbfunc) {
+FreechTorrent.prototype._queryAndDo = function (cbfunc) {
 
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   var thisTorrent = this;
   
-  var thisAccount = Twister.getAccount(this._walletusername);
+  var thisAccount = Freech.getAccount(this._walletusername);
   
   if (thisTorrent._active) {
     
@@ -34093,19 +34093,19 @@ TwisterTorrent.prototype._queryAndDo = function (cbfunc) {
 
 }
 
-TwisterTorrent.prototype._fillCacheUsingGetposts = function (count,requests,cbfunc) {
+FreechTorrent.prototype._fillCacheUsingGetposts = function (count,requests,cbfunc) {
 
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   var thisTorrent = this;
-  var thisStream = Twister.getUser(this._name)._stream;
+  var thisStream = Freech.getUser(this._name)._stream;
 
   if (thisTorrent._active) {
 
     thisStream._log("querying getposts for "+requests.length+" users")
 
     for (var i in requests){
-      Twister.getUser(requests[i].username)._stream._updateInProgress = true;    
+      Freech.getUser(requests[i].username)._stream._updateInProgress = true;    
     }
 
     thisTorrent.RPC("getposts", [ count , requests ], function(res) {
@@ -34125,7 +34125,7 @@ TwisterTorrent.prototype._fillCacheUsingGetposts = function (count,requests,cbfu
             minIds[resUsername]=resId;
           }
 
-          var resStream = Twister.getUser(res[i].userpost.n)._stream;
+          var resStream = Freech.getUser(res[i].userpost.n)._stream;
 
           resStream._verifyAndCachePost(res[i]);
 
@@ -34137,8 +34137,8 @@ TwisterTorrent.prototype._fillCacheUsingGetposts = function (count,requests,cbfu
 
           for (var i in requests){
             if ( !requests.max_id || requests.max_id==-1 ) {
-              Twister.getUser(requests[i].username)._stream._lastUpdate = Date.now()/1000;
-              Twister.getUser(requests[i].username)._stream._updateInProgress = false;
+              Freech.getUser(requests[i].username)._stream._lastUpdate = Date.now()/1000;
+              Freech.getUser(requests[i].username)._stream._updateInProgress = false;
             }
           }
 
@@ -34153,14 +34153,14 @@ TwisterTorrent.prototype._fillCacheUsingGetposts = function (count,requests,cbfu
             if (!(requests[i].username in minIds)) {
               newrequests.push(requests[i]);
             } else {
-              Twister.getUser(requests[i].username)._stream._lastUpdate = Date.now()/1000;
-              Twister.getUser(requests[i].username)._stream._updateInProgress = false;
+              Freech.getUser(requests[i].username)._stream._lastUpdate = Date.now()/1000;
+              Freech.getUser(requests[i].username)._stream._updateInProgress = false;
             }
 
 
             if ( !requests.max_id || requests.max_id==-1 ) {
-              Twister.getUser(requests[i].username)._stream._lastUpdate = Date.now()/1000;
-              Twister.getUser(requests[i].username)._stream._updateInProgress = false;
+              Freech.getUser(requests[i].username)._stream._lastUpdate = Date.now()/1000;
+              Freech.getUser(requests[i].username)._stream._updateInProgress = false;
             }
 
 
@@ -34204,19 +34204,19 @@ TwisterTorrent.prototype._fillCacheUsingGetposts = function (count,requests,cbfu
     
 }
 
-TwisterTorrent.prototype._checkForUpdatesUsingGetLastHave = function (cbfunc) {
+FreechTorrent.prototype._checkForUpdatesUsingGetLastHave = function (cbfunc) {
 
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   var thisTorrent = this;
-  var thisStream = Twister.getUser(this._name)._stream;
-  var thisAccount = Twister.getAccount(this._walletusername);
+  var thisStream = Freech.getUser(this._name)._stream;
+  var thisAccount = Freech.getAccount(this._walletusername);
     
   
   for (var username in thisAccount._torrents){
 
     if (thisAccount._torrents[username]._active) {              
-        Twister.getUser(username)._stream._updateInProgress = true;
+        Freech.getUser(username)._stream._updateInProgress = true;
     }
   }
   
@@ -34238,10 +34238,10 @@ TwisterTorrent.prototype._checkForUpdatesUsingGetLastHave = function (cbfunc) {
 
         }
 
-        if (resTorrent._latestId==Twister.getUser(username)._stream._latestId) {
+        if (resTorrent._latestId==Freech.getUser(username)._stream._latestId) {
 
-          Twister.getUser(username)._stream._lastUpdate=Date.now()/1000;
-          Twister.getUser(username)._stream._updateInProgress=false;
+          Freech.getUser(username)._stream._lastUpdate=Date.now()/1000;
+          Freech.getUser(username)._stream._updateInProgress=false;
 
         } else {
 
@@ -34258,7 +34258,7 @@ TwisterTorrent.prototype._checkForUpdatesUsingGetLastHave = function (cbfunc) {
           for (var username in thisAccount._torrents){
 
             if (thisAccount._torrents[username]._active) {              
-                Twister.getUser(username)._stream._updateInProgress = false;
+                Freech.getUser(username)._stream._updateInProgress = false;
             }
           }
 
@@ -34273,7 +34273,7 @@ TwisterTorrent.prototype._checkForUpdatesUsingGetLastHave = function (cbfunc) {
     for (var username in thisAccount._torrents){
 
       if (thisAccount._torrents[username]._active) {              
-          Twister.getUser(username)._stream._updateInProgress = false;
+          Freech.getUser(username)._stream._updateInProgress = false;
       }
     }
 
@@ -34281,12 +34281,12 @@ TwisterTorrent.prototype._checkForUpdatesUsingGetLastHave = function (cbfunc) {
     
 }
 
-TwisterTorrent.prototype.updatePostsCache = function (cbfunc) {
+FreechTorrent.prototype.updatePostsCache = function (cbfunc) {
     
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   var thisTorrent = this;
-  var thisStream = Twister.getUser(this._name)._stream;
+  var thisStream = Freech.getUser(this._name)._stream;
 
   thisStream._log("update posts cache "+thisStream._name)  
 
@@ -34308,65 +34308,65 @@ TwisterTorrent.prototype.updatePostsCache = function (cbfunc) {
     
 }
 
-TwisterTorrent.prototype.fillPostsCache = function (id,cbfunc) {
+FreechTorrent.prototype.fillPostsCache = function (id,cbfunc) {
 
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   var thisTorrent = this;
-  var thisUser = Twister.getUser(this._name);
-  var thisStream = Twister.getUser(this._name)._stream;
+  var thisUser = Freech.getUser(this._name);
+  var thisStream = Freech.getUser(this._name)._stream;
 
   thisStream._log("fill cache "+thisTorrent._name+" id "+id)  
 
   thisTorrent._fillCacheUsingGetposts(30,[{username:thisTorrent._name,max_id:id}],cbfunc);
 
 }
-},{"../TwisterResource.js":203,"inherits":98}],193:[function(require,module,exports){
+},{"../FreechResource.js":203,"inherits":98}],193:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
 /**
- * Twister singleton class descriping the state fo the Twister network.
+ * Freech singleton class descriping the state fo the Freech network.
  * @module
  */
 
 var Bitcoin = require('bitcoinjs-lib');
-var twister_network = Bitcoin.networks.bitcoin;
-twister_network.messagePrefix= '\x18twister Signed Message:\n';
+var freech_network = Bitcoin.networks.bitcoin;
+freech_network.messagePrefix= '\x18freech Signed Message:\n';
 
-var TwisterResource = require("./TwisterResource.js");
-var Twister = new TwisterResource("twister",{});
+var FreechResource = require("./FreechResource.js");
+var Freech = new FreechResource("freech",{});
 
-Twister._scope = Twister;
-Twister._type = "twister";
-Twister._hasParentUser = false;
+Freech._scope = Freech;
+Freech._type = "freech";
+Freech._hasParentUser = false;
 
-Twister._userCache = {};
-Twister._hashtags = {};
-Twister._wallet = {};
+Freech._userCache = {};
+Freech._hashtags = {};
+Freech._wallet = {};
 
-Twister._activeDHTQueries = 0;
-Twister._maxDHTQueries = 5;
+Freech._activeDHTQueries = 0;
+Freech._maxDHTQueries = 5;
 
-Twister._signatureVerification = "background";
-Twister._averageSignatureCompTime = 200;
-Twister._signatureVerificationsInProgress = 0;
+Freech._signatureVerification = "background";
+Freech._averageSignatureCompTime = 200;
+Freech._signatureVerificationsInProgress = 0;
 
 //default query settings:
-Twister._outdatedLimit = 45;
-Twister._querySettingsByType = {};
-Twister._logfunc = function(){};
-Twister._host = "http://user:pwd@127.0.0.1:28332";
-Twister._timeout = 20000;
-Twister._errorfunc = function(error){console.log("Twister error: "+error.message);};
+Freech._outdatedLimit = 45;
+Freech._querySettingsByType = {};
+Freech._logfunc = function(){};
+Freech._host = "http://user:pwd@127.0.0.1:28332";
+Freech._timeout = 20000;
+Freech._errorfunc = function(error){console.log("Freech error: "+error.message);};
 
-Twister._walletType = "server";
+Freech._walletType = "server";
 
 var availableOptions = ["host","timeout","errorfunc","signatureVerification",
                         "querySettingsByType","maxDHTQueries","walletType","logfunc"];
 
-var TwisterPromotedPosts = require("./TwisterPromotedPosts.js");
-Twister._promotedPosts = new TwisterPromotedPosts(Twister);
+var FreechPromotedPosts = require("./FreechPromotedPosts.js");
+Freech._promotedPosts = new FreechPromotedPosts(Freech);
 
 /** @function
  * @name init 
@@ -34377,13 +34377,13 @@ Twister._promotedPosts = new TwisterPromotedPosts(Twister);
  * @param {bool} options.querySettingsByType 
  * @param {bool} options.maxDHTQueries
  */
-Twister.setup = function (options) {
+Freech.setup = function (options) {
 
 	for (var key in options) {
 		
 		if (availableOptions.indexOf(key)>-1) {
 			
-    		Twister["_"+key] = options[key];
+    		Freech["_"+key] = options[key];
 			
 		}
 	
@@ -34391,30 +34391,30 @@ Twister.setup = function (options) {
 
 }
 
-Twister.getQuerySetting = function(key){
+Freech.getQuerySetting = function(key){
   if(availableOptions.indexOf(key)>-1){
-    return Twister["_"+key];
+    return Freech["_"+key];
   }
 }
 
 /** @function
  * @name getUser 
- * @description Creates TwisterUser object if not a present in cache and return it.
+ * @description Creates FreechUser object if not a present in cache and return it.
  * @param {string} username
  */
-Twister.getUser = function (username) {
+Freech.getUser = function (username) {
     
     if (username) {
     
-        if (Twister._userCache[username] === undefined) {
+        if (Freech._userCache[username] === undefined) {
 
-            var TwisterUser = require('./TwisterUser.js');
+            var FreechUser = require('./FreechUser.js');
 
-            Twister._userCache[username] = new TwisterUser(username,Twister);
+            Freech._userCache[username] = new FreechUser(username,Freech);
 
         }
 
-        return Twister._userCache[username];
+        return Freech._userCache[username];
         
     }
 
@@ -34422,69 +34422,69 @@ Twister.getUser = function (username) {
 
 /** @function
  * @name getUser 
- * @description Creates {@link TwisterUser} object if not a present in cache and return it.
+ * @description Creates {@link FreechUser} object if not a present in cache and return it.
  * @param {string} username
  */
-Twister.getHashtag = function (tag) {
+Freech.getHashtag = function (tag) {
 
-    if (Twister._hashtags[tag] === undefined) {
+    if (Freech._hashtags[tag] === undefined) {
     
-        var TwisterHashtag = require('./TwisterHashtag.js');
+        var FreechHashtag = require('./FreechHashtag.js');
         
-        Twister._hashtags[tag] = new TwisterHashtag(tag,Twister);
+        Freech._hashtags[tag] = new FreechHashtag(tag,Freech);
 
     }
     
-    return Twister._hashtags[tag];
+    return Freech._hashtags[tag];
     
 }
 
 /** @function
  * @name doHashtagPosts 
- * @description Creates {@link TwisterUser} object if not a present in cache and return it.
+ * @description Creates {@link FreechUser} object if not a present in cache and return it.
  * @param {string} tag
- * @param {function} cbfunc callback function. Gets called with an array of {@link TwisterPost} objects as parameter.
+ * @param {function} cbfunc callback function. Gets called with an array of {@link FreechPost} objects as parameter.
  * @param {Object} querySettings {@see getQuerySettings}
  */
-Twister.doHashtagPosts = function (tag,cbfunc,querySettings) {
-    Twister.getHashtag(tag)._checkQueryAndDo(cbfunc,querySettings);
+Freech.doHashtagPosts = function (tag,cbfunc,querySettings) {
+    Freech.getHashtag(tag)._checkQueryAndDo(cbfunc,querySettings);
 }
 
 /** @function
  * @name getPromotedPosts 
- * @description returns the {@link TwisterPromotedPosts} object.
+ * @description returns the {@link FreechPromotedPosts} object.
  */
-Twister.getPromotedPosts = function() {
-	return Twister._promotedPosts;
+Freech.getPromotedPosts = function() {
+	return Freech._promotedPosts;
 }
 
 /** @function
  * @name getAccount 
- * @description returns the {@link TwisterAccount} object for a given user. The user must already be loaded (except for the "guest" user). To load wallets from the server use loadServerAccounts.
+ * @description returns the {@link FreechAccount} object for a given user. The user must already be loaded (except for the "guest" user). To load wallets from the server use loadServerAccounts.
  */
-Twister.getAccount = function (name) {
+Freech.getAccount = function (name) {
 	
-	if(name=="guest" && !("guest" in Twister._wallet) && Twister._walletType=="server" ) {
+	if(name=="guest" && !("guest" in Freech._wallet) && Freech._walletType=="server" ) {
 	
-		var TwisterAccount = require('./ServerWallet/TwisterAccount.js');
+		var FreechAccount = require('./ServerWallet/FreechAccount.js');
         
-        Twister._wallet["guest"] = new TwisterAccount("guest",Twister);
+        Freech._wallet["guest"] = new FreechAccount("guest",Freech);
 		
 	}
 	
-	return Twister._wallet[name];
+	return Freech._wallet[name];
 }
 
 /** @function
  * @name getAccounts 
- * @description returns an array with all current {@link TwisterAccount} objects. To load wallets from the server use loadServerAccounts.
+ * @description returns an array with all current {@link FreechAccount} objects. To load wallets from the server use loadServerAccounts.
  */
-Twister.getAccounts = function () {
+Freech.getAccounts = function () {
 	
   var res = [];
   
-  for (var acc in Twister._wallet) {
-    res.push(Twister._wallet[acc]);
+  for (var acc in Freech._wallet) {
+    res.push(Freech._wallet[acc]);
   }
   
   return res;
@@ -34495,18 +34495,18 @@ Twister.getAccounts = function () {
  * @name loadAccounts 
  * @description loads available account into the wallet. 
  */
-Twister.loadServerAccounts = function (cbfunc) {
+Freech.loadServerAccounts = function (cbfunc) {
 	
-	Twister.RPC("listwalletusers", [], function(res){
+	Freech.RPC("listwalletusers", [], function(res){
 	
-		var TwisterAccount = require('./ServerWallet/TwisterAccount.js');
+		var FreechAccount = require('./ServerWallet/FreechAccount.js');
 		
 		if (res.length) {
 		
 			for (var i=0; i<res.length; i++) {
 			
-				if (!(res[i] in Twister._wallet)) {
-					Twister._wallet[res[i]] = new TwisterAccount(res[i],Twister);
+				if (!(res[i] in Freech._wallet)) {
+					Freech._wallet[res[i]] = new FreechAccount(res[i],Freech);
 				}
 			
 			}
@@ -34514,7 +34514,7 @@ Twister.loadServerAccounts = function (cbfunc) {
 		
 		} else {
 		
-			Twister._handleError({
+			Freech._handleError({
               message: "No wallet users found on the server.",
               code: 32081
             })
@@ -34525,7 +34525,7 @@ Twister.loadServerAccounts = function (cbfunc) {
 
 	},  function(res){
 
-		Twister._handleError(res);
+		Freech._handleError(res);
 
 	});
 
@@ -34535,22 +34535,22 @@ Twister.loadServerAccounts = function (cbfunc) {
  * @name importClientSideAccount 
  * @description imports an account into client side wallet. The private key is not send to any server. 
  */
-Twister.importClientSideAccount = function (name,key,cbfunc) {
+Freech.importClientSideAccount = function (name,key,cbfunc) {
 	
-  var TwisterAccount = require('./ClientWallet/TwisterAccount.js');
+  var FreechAccount = require('./ClientWallet/FreechAccount.js');
 
-  Twister._wallet[name] = new TwisterAccount(name,Twister);
+  Freech._wallet[name] = new FreechAccount(name,Freech);
 
-  Twister._wallet[name]._privkey.setKey(key)
-  Twister._wallet[name]._privkey.verifyKey(function(key){
+  Freech._wallet[name]._privkey.setKey(key)
+  Freech._wallet[name]._privkey.verifyKey(function(key){
 
     if(key.getStatus()=="confirmed"){
       
-      if(cbfunc) cbfunc(Twister._wallet[name])
+      if(cbfunc) cbfunc(Freech._wallet[name])
       
     }else{
       
-      Twister._handleError({
+      Freech._handleError({
         message: "Private key is in conflict with public key.",
         code: 32064
       })
@@ -34566,23 +34566,23 @@ Twister.importClientSideAccount = function (name,key,cbfunc) {
  * @name importClientSideAccount 
  * @description imports an account into client side wallet. The private key is not send to any server. 
  */
-Twister.importClientSideAccountFromEncryptedKey = function (name,encryptedKey,passphrase,cbfunc) {
+Freech.importClientSideAccountFromEncryptedKey = function (name,encryptedKey,passphrase,cbfunc) {
 	
-  var TwisterAccount = require('./ClientWallet/TwisterAccount.js');
+  var FreechAccount = require('./ClientWallet/FreechAccount.js');
 
-  Twister._wallet[name] = new TwisterAccount(name,Twister);
+  Freech._wallet[name] = new FreechAccount(name,Freech);
 
-  Twister._wallet[name]._privkey.decryptAndImportPrivateKey(encryptedKey,passphrase,function(){
+  Freech._wallet[name]._privkey.decryptAndImportPrivateKey(encryptedKey,passphrase,function(){
     
-    Twister._wallet[name]._privkey.verifyKey(function(key){
+    Freech._wallet[name]._privkey.verifyKey(function(key){
 
       if(key.getStatus()=="confirmed"){
 
-        if(cbfunc) cbfunc(Twister._wallet[name])
+        if(cbfunc) cbfunc(Freech._wallet[name])
 
       }else{
 
-        Twister._handleError({
+        Freech._handleError({
           message: "Private key is in conflict with public key.",
           code: 32064
         })
@@ -34601,40 +34601,40 @@ Twister.importClientSideAccountFromEncryptedKey = function (name,encryptedKey,pa
  * @name generateClientSideAccount 
  * @description generate an account in the client side wallet. The private key is not send to any server. 
  */
-Twister.generateClientSideAccount = function (name,cbfunc) {
+Freech.generateClientSideAccount = function (name,cbfunc) {
 	
-  var TwisterAccount = require('./ClientWallet/TwisterAccount.js');
+  var FreechAccount = require('./ClientWallet/FreechAccount.js');
 
-  Twister._wallet[name] = new TwisterAccount(name,Twister);
+  Freech._wallet[name] = new FreechAccount(name,Freech);
 
-  var newAccount = Twister._wallet[name];
+  var newAccount = Freech._wallet[name];
   
   newAccount._privkey.makeRandomKey()
   newAccount._privkey.verifyKey(function(){
 
     var pubkey = newAccount._privkey.getPubKey();
     
-    Twister.RPC("createrawtransaction",[name,pubkey],function(raw){
+    Freech.RPC("createrawtransaction",[name,pubkey],function(raw){
       
       console.log("raw transaction: ",raw);
       
-      Twister.RPC("sendrawtransaction",[raw],function(res){
+      Freech.RPC("sendrawtransaction",[raw],function(res){
         
         console.log("sent transaction",res);
       
-        var twisterPubKey = Twister.getUser(name)._pubkey
+        var freechPubKey = Freech.getUser(name)._pubkey
         
-        twisterPubKey._lastUpdate = Date.now()/1000;
+        freechPubKey._lastUpdate = Date.now()/1000;
 
-        twisterPubKey._data = pubkey;
+        freechPubKey._data = pubkey;
 
-        twisterPubKey._btcKey = Bitcoin.ECPair.fromPublicKeyBuffer(new Buffer(pubkey,"hex"),twister_network);
+        freechPubKey._btcKey = Bitcoin.ECPair.fromPublicKeyBuffer(new Buffer(pubkey,"hex"),freech_network);
         
-        var twisterStream= Twister.getUser(name)._stream
+        var freechStream= Freech.getUser(name)._stream
         
-        twisterPubKey._lastUpdate = Date.now()/1000;
+        freechPubKey._lastUpdate = Date.now()/1000;
 
-        twisterPubKey._latestId = 0;
+        freechPubKey._latestId = 0;
         
         if(cbfunc) cbfunc(newAccount)
         
@@ -34654,9 +34654,9 @@ Twister.generateClientSideAccount = function (name,cbfunc) {
  * @name checkUsernameAvailable 
  * @description checks if username is available by querying for its public key.
  */
-Twister.checkUsernameAvailable = function(username,cbfunc){
+Freech.checkUsernameAvailable = function(username,cbfunc){
   
-  Twister.RPC("dumppubkey",[username],function(pubkey){
+  Freech.RPC("dumppubkey",[username],function(pubkey){
           
     if(pubkey.length){
       cbfunc(false);
@@ -34675,9 +34675,9 @@ Twister.checkUsernameAvailable = function(username,cbfunc){
  * @name checkUsernameAvailable 
  * @description checks if username is available by querying for its public key.
  */
-Twister.removeAccount = function(username){
+Freech.removeAccount = function(username){
   
-  delete Twister._wallet[username];
+  delete Freech._wallet[username];
   
 }
 
@@ -34685,7 +34685,7 @@ Twister.removeAccount = function(username){
  * @name serializeCache 
  * @description Flattens the complete cache into a nested object which can be used to reload the cache later.
  */
-Twister.serializeCache = function () {
+Freech.serializeCache = function () {
 
     var retUser = [];
     
@@ -34708,7 +34708,7 @@ Twister.serializeCache = function () {
     var options = {};
     
     for(var i in availableOptions) {
-        options[availableOptions[i]]=Twister["_"+availableOptions[i]];        
+        options[availableOptions[i]]=Freech["_"+availableOptions[i]];        
     }
     
     var promotedPosts =  this._promotedPosts.flatten();
@@ -34726,19 +34726,19 @@ Twister.serializeCache = function () {
  * @name serializeCache 
  * @description Reloads the cache from a flattened cache object
  */
-Twister.deserializeCache = function (flatData) {
+Freech.deserializeCache = function (flatData) {
 
     if (flatData) {
 
-        Twister.setup(flatData.options);
+        Freech.setup(flatData.options);
         
-        if (Twister._walletType=="server") {
-            var TwisterAccount = require('./ServerWallet/TwisterAccount.js');
+        if (Freech._walletType=="server") {
+            var FreechAccount = require('./ServerWallet/FreechAccount.js');
         } 
-        if (Twister._walletType=="client") {
-            var TwisterAccount = require('./ClientWallet/TwisterAccount.js');
+        if (Freech._walletType=="client") {
+            var FreechAccount = require('./ClientWallet/FreechAccount.js');
         }else {
-            Twister._handleError({
+            Freech._handleError({
               message: "Unsupported wallet type.",
               code: 32080
             })
@@ -34747,27 +34747,27 @@ Twister.deserializeCache = function (flatData) {
 
         for(var i in flatData.wallet){
 
-            var newacc = new TwisterAccount(flatData.wallet[i].name,Twister);
+            var newacc = new FreechAccount(flatData.wallet[i].name,Freech);
             newacc.inflate(flatData.wallet[i]);
             this._wallet[flatData.wallet[i].name]=newacc;
 
         }        
         
-        var TwisterUser = require('./TwisterUser.js');
+        var FreechUser = require('./FreechUser.js');
 
         for(var i in flatData.users){
 
-            var newuser = new TwisterUser(flatData.users[i].name,Twister);
+            var newuser = new FreechUser(flatData.users[i].name,Freech);
             newuser.inflate(flatData.users[i]);
             this._userCache[flatData.users[i].name]=newuser;
 
         }
 
-        var TwisterHashtag = require('./TwisterHashtag.js');
+        var FreechHashtag = require('./FreechHashtag.js');
 
         for(var i in flatData.hashtags){
 
-            var newhashtag = new TwisterHashtag(flatData.hashtags[i].name,Twister);
+            var newhashtag = new FreechHashtag(flatData.hashtags[i].name,Freech);
             newhashtag.inflate(flatData.users[i]);
             this._hashtags[flatData.hashtags[i].name]=newhashtag;
 
@@ -34779,7 +34779,7 @@ Twister.deserializeCache = function (flatData) {
     
 }
 
-Twister.trimCache = function (timestamp) {
+Freech.trimCache = function (timestamp) {
     
   for (var username in this._userCache){
       this._userCache[username].trim(timestamp);
@@ -34797,93 +34797,93 @@ Twister.trimCache = function (timestamp) {
 
 }
 
-Twister._activeQueryIds = {};
+Freech._activeQueryIds = {};
 
-Twister.raiseQueryId = function (id) {
+Freech.raiseQueryId = function (id) {
 
   console.log("raise id ",id)
   
   if (id) {
-    if(!Twister._activeQueryIds[id]){
-      Twister._activeQueryIds[id]={func:null,count:1};
+    if(!Freech._activeQueryIds[id]){
+      Freech._activeQueryIds[id]={func:null,count:1};
     }else{
-      Twister._activeQueryIds[id].count++;
+      Freech._activeQueryIds[id].count++;
     }
   }
 
 }
 
-Twister.bumpQueryId = function (id) {
+Freech.bumpQueryId = function (id) {
     
   console.log("bump id ",id)
   
   if (id) {
-    Twister._activeQueryIds[id].count--;
-    if (Twister._activeQueryIds[id].count==0) {
-      if (Twister._activeQueryIds[id].func) { 
-        Twister._activeQueryIds[id].func(); 
+    Freech._activeQueryIds[id].count--;
+    if (Freech._activeQueryIds[id].count==0) {
+      if (Freech._activeQueryIds[id].func) { 
+        Freech._activeQueryIds[id].func(); 
       }
-      delete Twister._activeQueryIds[id];
+      delete Freech._activeQueryIds[id];
     }
   }
   
 }
 
-Twister.onQueryComplete = function (id, cbfunc){
+Freech.onQueryComplete = function (id, cbfunc){
   
   console.log("complete id ",id)
   
-  if(!Twister._activeQueryIds[id]){
-    Twister._activeQueryIds[id]={func:cbfunc,count:0};
+  if(!Freech._activeQueryIds[id]){
+    Freech._activeQueryIds[id]={func:cbfunc,count:0};
   }else{
-    Twister._activeQueryIds[id].func=cbfunc;
+    Freech._activeQueryIds[id].func=cbfunc;
   }
 
 }
 
-module.exports = Twister;
+module.exports = Freech;
 
 }).call(this,require("buffer").Buffer)
-},{"./ClientWallet/TwisterAccount.js":185,"./ServerWallet/TwisterAccount.js":190,"./TwisterHashtag.js":196,"./TwisterPromotedPosts.js":200,"./TwisterResource.js":203,"./TwisterUser.js":206,"bitcoinjs-lib":90,"buffer":223}],194:[function(require,module,exports){
+},{"./ClientWallet/FreechAccount.js":185,"./ServerWallet/FreechAccount.js":190,"./FreechHashtag.js":196,"./FreechPromotedPosts.js":200,"./FreechResource.js":203,"./FreechUser.js":206,"bitcoinjs-lib":90,"buffer":223}],194:[function(require,module,exports){
 var inherits = require('inherits');
 
-var TwisterResource = require('./TwisterResource.js');
+var FreechResource = require('./FreechResource.js');
 
 /**
- * Describes the avatar of a {@link TwisterUser}.
+ * Describes the avatar of a {@link FreechUser}.
  * @module 
  */
-var TwisterAvatar = function (name,scope) {
+var FreechAvatar = function (name,scope) {
     
-    TwisterResource.call(this,name,scope);
+    FreechResource.call(this,name,scope);
   
     this._type = "avatar";
     
 }
 
-inherits(TwisterAvatar,TwisterResource);
+inherits(FreechAvatar,FreechResource);
 
-module.exports = TwisterAvatar;
+module.exports = FreechAvatar;
 
-TwisterAvatar.prototype.trim = function (timestamp) {
+FreechAvatar.prototype.trim = function (timestamp) {
 
   if (!timestamp || timestamp > this._lastUpdate){
 
     var thisUser = this._scope.getUser(this._name);
 
-    var TwisterAvatar = require("./TwisterAvatar.js");
+    var FreechAvatar = require("./FreechAvatar.js");
     
-    thisUser._avatar = new TwisterAvatar(this._name,this._scope);
+    thisUser._avatar = new FreechAvatar(this._name,this._scope);
     
   }
 
 }
 
-TwisterAvatar.prototype._queryAndDo = function (cbfunc) {
+FreechAvatar.prototype._queryAndDo = function (cbfunc) {
 
     var thisResource = this;
     
-    var Twister = this._scope;
+    var Freech = this._scope;
     
     thisResource.dhtget([thisResource._name, "avatar", "s"],
                    
@@ -34920,7 +34920,7 @@ TwisterAvatar.prototype._queryAndDo = function (cbfunc) {
  * @name getUrl 
  * @description return the (data-)url of the avatar
  */
-TwisterAvatar.prototype.getUrl = function () {
+FreechAvatar.prototype.getUrl = function () {
 
     return this._data;
     
@@ -34930,61 +34930,61 @@ TwisterAvatar.prototype.getUrl = function () {
  * @name getUsername 
  * @description return the username of the owner of the avatar
  */
-TwisterAvatar.prototype.getUsername = function () {
+FreechAvatar.prototype.getUsername = function () {
 
     return this._name;
     
 }
-},{"./TwisterAvatar.js":194,"./TwisterResource.js":203,"inherits":98}],195:[function(require,module,exports){
+},{"./FreechAvatar.js":194,"./FreechResource.js":203,"inherits":98}],195:[function(require,module,exports){
 var inherits = require('inherits');
 
-var TwisterResource = require('./TwisterResource.js');
+var FreechResource = require('./FreechResource.js');
 
 /**
- * Describes the followings of a {@link TwisterUser}
+ * Describes the followings of a {@link FreechUser}
  * @module
  */
-var TwisterFollowings = function (name,scope) {
+var FreechFollowings = function (name,scope) {
     
-    TwisterResource.call(this,name,scope);
+    FreechResource.call(this,name,scope);
     this._type = "followings";
     this._revisionNumber = {};
     
 }
 
-inherits(TwisterFollowings,TwisterResource);
+inherits(FreechFollowings,FreechResource);
 
-TwisterFollowings.prototype.trim = function (timestamp) {
+FreechFollowings.prototype.trim = function (timestamp) {
 
   if (!timestamp || timestamp > this._lastUpdate){
 
     var thisUser = this._scope.getUser(this._name);
 
-    var TwisterFollowings = require("./TwisterFollowings.js");
+    var FreechFollowings = require("./FreechFollowings.js");
     
-    thisUser._followings = new TwisterFollowings(this._name,this._scope);
+    thisUser._followings = new FreechFollowings(this._name,this._scope);
     
   }
 
 }
 
-TwisterFollowings.prototype._do= function (cbfunc) {
+FreechFollowings.prototype._do= function (cbfunc) {
 	this.doUsers(cbfunc);
 }
 
-TwisterFollowings.prototype._queryAndDo = function (cbfunc) {
+FreechFollowings.prototype._queryAndDo = function (cbfunc) {
         
   var thisResource = this;
 
-  var Twister = this._scope;
+  var Freech = this._scope;
   
-  var thisStream = Twister.getUser(this._name)._stream;
+  var thisStream = Freech.getUser(this._name)._stream;
   
-  if (thisStream._activeTorrentUser && thisStream._activeTorrentUser==this._name && Twister._wallet[this._name]._wallettype=="server") {
+  if (thisStream._activeTorrentUser && thisStream._activeTorrentUser==this._name && Freech._wallet[this._name]._wallettype=="server") {
     
     thisResource._log("using getfollowing rpc method")
     
-    var thisAccount = Twister._wallet[this._name];
+    var thisAccount = Freech._wallet[this._name];
     
     thisAccount.RPC("getfollowing",[thisAccount._name],function(result){
 
@@ -35049,7 +35049,7 @@ TwisterFollowings.prototype._queryAndDo = function (cbfunc) {
  * @name getNames 
  * @description returns the usernames of the following users
  */
-TwisterFollowings.prototype.getNames = function () {
+FreechFollowings.prototype.getNames = function () {
 
     return this._data;
     
@@ -35057,12 +35057,12 @@ TwisterFollowings.prototype.getNames = function () {
 
 /** @function
  * @name doUsers 
- * @description calls cbfunc with every {@link TwisterUser} object of the following users.
+ * @description calls cbfunc with every {@link FreechUser} object of the following users.
  * @param {function} cbfunc callback function
  */
-TwisterFollowings.prototype.doUsers = function(cbfunc) {
+FreechFollowings.prototype.doUsers = function(cbfunc) {
 
-    var Twister = this._scope;
+    var Freech = this._scope;
     
     var followingNames = this.getNames();
     
@@ -35070,7 +35070,7 @@ TwisterFollowings.prototype.doUsers = function(cbfunc) {
 	
     for (var i in followingNames) {
 
-        followings.push(Twister.getUser(followingNames[i]));
+        followings.push(Freech.getUser(followingNames[i]));
 
     }
 	
@@ -35078,29 +35078,29 @@ TwisterFollowings.prototype.doUsers = function(cbfunc) {
 
 }
 
-module.exports = TwisterFollowings;
-},{"./TwisterFollowings.js":195,"./TwisterResource.js":203,"inherits":98}],196:[function(require,module,exports){
+module.exports = FreechFollowings;
+},{"./FreechFollowings.js":195,"./FreechResource.js":203,"inherits":98}],196:[function(require,module,exports){
 var inherits = require('inherits');
 
-var TwisterResource = require('./TwisterResource.js');
+var FreechResource = require('./FreechResource.js');
 
 
 /**
  * Describes a hashtag resource.
  * @module
  */
-var TwisterHashtag = function (name,scope) {
+var FreechHashtag = function (name,scope) {
     
-    TwisterResource.call(this,name,scope);
+    FreechResource.call(this,name,scope);
     this._type = "hashtag";
     this._data = {};
 	this._hasParentUser = false;
     
 }
 
-inherits(TwisterHashtag,TwisterResource);
+inherits(FreechHashtag,FreechResource);
 
-TwisterHashtag.prototype.trim = function (timestamp) {
+FreechHashtag.prototype.trim = function (timestamp) {
 
   if (!timestamp || timestamp > this._lastUpdate){
 
@@ -35110,15 +35110,15 @@ TwisterHashtag.prototype.trim = function (timestamp) {
 
 }
 
-TwisterHashtag.prototype._do = function (cbfunc) {
+FreechHashtag.prototype._do = function (cbfunc) {
 	this.doPosts(cbfunc);
 }
 
-TwisterHashtag.prototype._queryAndDo = function (cbfunc, querySettings) {
+FreechHashtag.prototype._queryAndDo = function (cbfunc, querySettings) {
     
     var currentCounter = 1;
         
-    var Twister = this._scope;
+    var Freech = this._scope;
     
     var thisHashtag = this;
     
@@ -35130,7 +35130,7 @@ TwisterHashtag.prototype._queryAndDo = function (cbfunc, querySettings) {
 
         function (result) {
       
-            var TwisterPost = require("./TwisterPost.js");
+            var FreechPost = require("./FreechPost.js");
 
             for (i=0; i<result.length; i++) {
 
@@ -35139,9 +35139,9 @@ TwisterHashtag.prototype._queryAndDo = function (cbfunc, querySettings) {
 
                 thisHashtag._data[username+":post"+id]=true;                
 
-                if (! (id in Twister.getUser(username)._stream._posts ) ) {
+                if (! (id in Freech.getUser(username)._stream._posts ) ) {
                 
-                    Twister.getUser(username)._stream._verifyAndCachePost(result[i].p.v);
+                    Freech.getUser(username)._stream._verifyAndCachePost(result[i].p.v);
                     
                 }
 
@@ -35158,10 +35158,10 @@ TwisterHashtag.prototype._queryAndDo = function (cbfunc, querySettings) {
 
 /** @function
  * @name doPosts 
- * @description calls cbfunc with every {@link TwisterPost} object of the hashtag.
+ * @description calls cbfunc with every {@link FreechPost} object of the hashtag.
  * @param {function} cbfunc callback function
  */
-TwisterHashtag.prototype.doPosts = function (cbfunc) {
+FreechHashtag.prototype.doPosts = function (cbfunc) {
 
 	var posts = [];
 	
@@ -35171,7 +35171,7 @@ TwisterHashtag.prototype.doPosts = function (cbfunc) {
         var username = nandk[0];
         var id = parseInt(nandk[1]);
         
-		posts.push(Twister.getUser(username).getPost(id));
+		posts.push(Freech.getUser(username).getPost(id));
 		
     }
 	
@@ -35179,53 +35179,53 @@ TwisterHashtag.prototype.doPosts = function (cbfunc) {
 
 }
 
-module.exports = TwisterHashtag;
-},{"./TwisterPost.js":198,"./TwisterResource.js":203,"inherits":98}],197:[function(require,module,exports){
+module.exports = FreechHashtag;
+},{"./FreechPost.js":198,"./FreechResource.js":203,"inherits":98}],197:[function(require,module,exports){
 var inherits = require('inherits');
 
-var TwisterResource = require('./TwisterResource.js');
+var FreechResource = require('./FreechResource.js');
 
 /**
- * Describes the mentions of a {@link TwisterUser}.
+ * Describes the mentions of a {@link FreechUser}.
  * @module
  */
-var TwisterMentions = function (name,scope) {
+var FreechMentions = function (name,scope) {
     
-    TwisterResource.call(this,name,scope);
+    FreechResource.call(this,name,scope);
     this._type = "mentions";
     this._data = {};
     
 }
 
-inherits(TwisterMentions,TwisterResource);
+inherits(FreechMentions,FreechResource);
 
-TwisterMentions.prototype.trim = function (timestamp) {
+FreechMentions.prototype.trim = function (timestamp) {
 
   if (!timestamp || timestamp > this._lastUpdate){
 
     var thisUser = this._scope.getUser(this._name);
 
-    var TwisterMentions = require("./TwisterMentions.js");
+    var FreechMentions = require("./FreechMentions.js");
     
-    thisUser._mentions = new TwisterMentions(this._name,this._scope);
+    thisUser._mentions = new FreechMentions(this._name,this._scope);
     
   }
 
 }
 
-TwisterMentions.prototype._do = function (cbfunc) {
+FreechMentions.prototype._do = function (cbfunc) {
 	this.doPosts(cbfunc);
 }
 
-TwisterMentions.prototype._queryAndDo = function (cbfunc) {
+FreechMentions.prototype._queryAndDo = function (cbfunc) {
     
     var currentCounter = 1;
         
-    var Twister = this._scope;
+    var Freech = this._scope;
     
     var thisMentions = this;
     
-    var thisUser = Twister.getUser(this._name);
+    var thisUser = Freech.getUser(this._name);
 
     thisMentions._data = {};
 
@@ -35235,7 +35235,7 @@ TwisterMentions.prototype._queryAndDo = function (cbfunc) {
 
         function (result) {
 
-            var TwisterPost = require("./TwisterPost.js");
+            var FreechPost = require("./FreechPost.js");
 
             for (i=0; i<result.length; i++) {
 
@@ -35244,9 +35244,9 @@ TwisterMentions.prototype._queryAndDo = function (cbfunc) {
 
                 thisMentions._data[username+":post"+id]=true;                
 
-                if (! (id in Twister.getUser(username)._stream._posts ) ) {
+                if (! (id in Freech.getUser(username)._stream._posts ) ) {
                 
-                    Twister.getUser(username)._stream._verifyAndCachePost(result[i].p.v);
+                    Freech.getUser(username)._stream._verifyAndCachePost(result[i].p.v);
                     
                 }
 
@@ -35262,10 +35262,10 @@ TwisterMentions.prototype._queryAndDo = function (cbfunc) {
 
 /** @function
  * @name doPosts 
- * @description calls cbfunc with every {@link TwisterPost} object of the mentions.
+ * @description calls cbfunc with every {@link FreechPost} object of the mentions.
  * @param {function} cbfunc callback function
  */
-TwisterMentions.prototype.doPosts = function (cbfunc) {
+FreechMentions.prototype.doPosts = function (cbfunc) {
 
 	var posts = [];
 	
@@ -35275,7 +35275,7 @@ TwisterMentions.prototype.doPosts = function (cbfunc) {
         var username = nandk[0];
         var id = parseInt(nandk[1]);
         
-		posts.push(Twister.getUser(username).getPost(id));
+		posts.push(Freech.getUser(username).getPost(id));
 		
     }
 	
@@ -35283,42 +35283,42 @@ TwisterMentions.prototype.doPosts = function (cbfunc) {
 
 }
 
-module.exports = TwisterMentions;
-},{"./TwisterMentions.js":197,"./TwisterPost.js":198,"./TwisterResource.js":203,"inherits":98}],198:[function(require,module,exports){
+module.exports = FreechMentions;
+},{"./FreechMentions.js":197,"./FreechPost.js":198,"./FreechResource.js":203,"inherits":98}],198:[function(require,module,exports){
 "use strict";
 
 var inherits = require('inherits');
-var TwisterResource = require('./TwisterResource.js');
-var TwisterReplies = require('./TwisterReplies.js');
-var TwisterRetwists = require('./TwisterRetwists.js');
+var FreechResource = require('./FreechResource.js');
+var FreechReplies = require('./FreechReplies.js');
+var FreechRetwists = require('./FreechRetwists.js');
 
 /**
- * Describes a single post of a {@link TwisterUser}.
+ * Describes a single post of a {@link FreechUser}.
  * @module
  */
-function TwisterPost(data,signature,scope) {
+function FreechPost(data,signature,scope) {
     
     var name = data.n;
     var id = data.k;
     
-    TwisterResource.call(this,name,scope);
+    FreechResource.call(this,name,scope);
     
     this._type = "post";
     this._data = data;
     this._signature = signature;
 	this._isPromotedPost = false;
-    this._replies = new TwisterReplies(name,id,scope);
-    this._retwists = new TwisterRetwists(name,id,scope);
+    this._replies = new FreechReplies(name,id,scope);
+    this._retwists = new FreechRetwists(name,id,scope);
     
 }
 
-inherits(TwisterPost,TwisterResource);
+inherits(FreechPost,FreechResource);
 
-module.exports = TwisterPost;
+module.exports = FreechPost;
 
-TwisterPost.prototype.flatten = function () {
+FreechPost.prototype.flatten = function () {
 
-    var flatData = TwisterResource.prototype.flatten.call(this);
+    var flatData = FreechResource.prototype.flatten.call(this);
     
     flatData.retwists = this._retwists.flatten();
     flatData.replies = this._replies.flatten();
@@ -35330,9 +35330,9 @@ TwisterPost.prototype.flatten = function () {
 
 }
 
-TwisterPost.prototype.inflate = function (flatData) {
+FreechPost.prototype.inflate = function (flatData) {
     
-    TwisterResource.prototype.inflate.call(this,flatData);
+    FreechResource.prototype.inflate.call(this,flatData);
     
     this._replies.inflate(flatData.replies);
     this._retwists.inflate(flatData.retwists);
@@ -35342,7 +35342,7 @@ TwisterPost.prototype.inflate = function (flatData) {
   
 }
 
-TwisterPost.prototype.trim = function (timestamp) {
+FreechPost.prototype.trim = function (timestamp) {
 
   var keepPost = false;
   
@@ -35368,15 +35368,15 @@ TwisterPost.prototype.trim = function (timestamp) {
 
 }
 
-TwisterPost.prototype._do = function (cbfunc) {
+FreechPost.prototype._do = function (cbfunc) {
     cbfunc(this);
 }
 
-TwisterPost.prototype._checkQueryAndDo = function (cbfunc) {
+FreechPost.prototype._checkQueryAndDo = function (cbfunc) {
     cbfunc(this);
 }
 
-TwisterPost.prototype._queryAndDo = function (cbfunc) {
+FreechPost.prototype._queryAndDo = function (cbfunc) {
     cbfunc(this);
 }
 
@@ -35384,7 +35384,7 @@ TwisterPost.prototype._queryAndDo = function (cbfunc) {
  * @name getId 
  * @description returns the post id.
  */
-TwisterPost.prototype.getId = function () {
+FreechPost.prototype.getId = function () {
     return this._data.k;
 }
 
@@ -35392,7 +35392,7 @@ TwisterPost.prototype.getId = function () {
  * @name getId 
  * @description returns the post id of the last post.
  */
-TwisterPost.prototype.getLastId = function () {
+FreechPost.prototype.getLastId = function () {
 	if (!this._isPromotedPost) {
 		return this._data.lastk;
 	} else {
@@ -35407,7 +35407,7 @@ TwisterPost.prototype.getLastId = function () {
  * @param cbfunc {function} 
  * @param querySettings {Object} 
  */
-TwisterPost.prototype.doPreviousPost = function (cbfunc,querySettings) {
+FreechPost.prototype.doPreviousPost = function (cbfunc,querySettings) {
 	
 	if (!this._isPromotedPost) {
 		this._scope.getUser(this.getUsername()).doPost(this.getLastId(),cbfunc,querySettings);
@@ -35422,7 +35422,7 @@ TwisterPost.prototype.doPreviousPost = function (cbfunc,querySettings) {
  * @name getTimestamp 
  * @description returns the timestamp of the post.
  */
-TwisterPost.prototype.getTimestamp = function () {
+FreechPost.prototype.getTimestamp = function () {
     return this._data.time;
 }
 
@@ -35431,7 +35431,7 @@ TwisterPost.prototype.getTimestamp = function () {
  * @name getContent 
  * @description returns the content of the post.
  */
-TwisterPost.prototype.getContent = function () {
+FreechPost.prototype.getContent = function () {
     return this._data.msg;
 }
 
@@ -35440,15 +35440,15 @@ TwisterPost.prototype.getContent = function () {
  * @name getUsername 
  * @description returns the user that posted the post.
  */
-TwisterPost.prototype.getUsername = function () {
+FreechPost.prototype.getUsername = function () {
     return this._data.n;
 }
 
 /** @function
  * @name getUsername 
- * @description returns the {@link TwisterUser} object of the user that posted the post.
+ * @description returns the {@link FreechUser} object of the user that posted the post.
  */
-TwisterPost.prototype.getUser = function () {
+FreechPost.prototype.getUser = function () {
     return this._scope.getUser(this._data.n);
 }
 
@@ -35457,7 +35457,7 @@ TwisterPost.prototype.getUser = function () {
  * @name isReply 
  * @description returns true if the postis an reply.
  */
-TwisterPost.prototype.isReply = function () {
+FreechPost.prototype.isReply = function () {
     return ("reply" in this._data);
 }
 
@@ -35466,7 +35466,7 @@ TwisterPost.prototype.isReply = function () {
  * @name getReplyUsername 
  * @description returns the username of the user to which this post is a reply.
  */
-TwisterPost.prototype.getReplyUsername = function () {
+FreechPost.prototype.getReplyUsername = function () {
     return this._data.reply.n;
 }
 
@@ -35475,7 +35475,7 @@ TwisterPost.prototype.getReplyUsername = function () {
  * @name getReplyId 
  * @description returns the id of the post that this post is replying to.
  */
-TwisterPost.prototype.getReplyId = function () {
+FreechPost.prototype.getReplyId = function () {
     return this._data.reply.k;
 }
 
@@ -35486,7 +35486,7 @@ TwisterPost.prototype.getReplyId = function () {
  * @param cbfunc {function} 
  * @param querySettings {Object} 
  */
-TwisterPost.prototype.doReplies = function (cbfunc,querySettings) {
+FreechPost.prototype.doReplies = function (cbfunc,querySettings) {
     this._replies._checkQueryAndDo(cbfunc,querySettings);  
 }
 
@@ -35496,7 +35496,7 @@ TwisterPost.prototype.doReplies = function (cbfunc,querySettings) {
  * @param cbfunc {function} 
  * @param querySettings {Object} 
  */
-TwisterPost.prototype.doPostRepliedTo = function (cbfunc,querySettings) {
+FreechPost.prototype.doPostRepliedTo = function (cbfunc,querySettings) {
     this._scope.getUser(this.getReplyUsername()).doPost(this.getReplyId(),cbfunc,querySettings);
 }
 
@@ -35504,7 +35504,7 @@ TwisterPost.prototype.doPostRepliedTo = function (cbfunc,querySettings) {
  * @name isRetwist 
  * @description returns true if the postis an rewtist.
  */
-TwisterPost.prototype.isRetwist = function () {
+FreechPost.prototype.isRetwist = function () {
     return ("rt" in this._data);
 }
 
@@ -35512,7 +35512,7 @@ TwisterPost.prototype.isRetwist = function () {
  * @name isRetwist 
  * @description returns true if the postis an rewtist.
  */
-TwisterPost.prototype.isRetwistWithComment = function () {
+FreechPost.prototype.isRetwistWithComment = function () {
     return ("rt" in this._data && "msg" in this._data);
 }
 
@@ -35521,7 +35521,7 @@ TwisterPost.prototype.isRetwistWithComment = function () {
  * @name getRetwistedId 
  * @description returns the id of the retwisted post.
  */
-TwisterPost.prototype.getRetwistedId = function () {
+FreechPost.prototype.getRetwistedId = function () {
     return this._data.rt.k;
 }
 
@@ -35529,7 +35529,7 @@ TwisterPost.prototype.getRetwistedId = function () {
  * @name getRetwistedlastId 
  * @description returns the last id of the rewisted post.
  */
-TwisterPost.prototype.getRetwistedlastId = function () {
+FreechPost.prototype.getRetwistedlastId = function () {
     return this._data.rt.lastk;
 }
 
@@ -35537,7 +35537,7 @@ TwisterPost.prototype.getRetwistedlastId = function () {
  * @name getRetwistedTimestamp 
  * @description returns the timestamp of the retwisted post
  */
-TwisterPost.prototype.getRetwistedTimestamp = function () {
+FreechPost.prototype.getRetwistedTimestamp = function () {
     return this._data.rt.time;
 }
 
@@ -35545,7 +35545,7 @@ TwisterPost.prototype.getRetwistedTimestamp = function () {
  * @name getRetwistedContent 
  * @description returns content of the rwteisted post
  */
-TwisterPost.prototype.getRetwistedContent = function () {
+FreechPost.prototype.getRetwistedContent = function () {
     return this._data.rt.msg;
 }
 
@@ -35553,7 +35553,7 @@ TwisterPost.prototype.getRetwistedContent = function () {
  * @name getRetwistedUser 
  * @description returns the username of the retwisted post.
  */
-TwisterPost.prototype.getRetwistedUsername = function () {
+FreechPost.prototype.getRetwistedUsername = function () {
     return this._data.rt.n;
 }
 
@@ -35563,19 +35563,19 @@ TwisterPost.prototype.getRetwistedUsername = function () {
  * @param cbfunc {function} 
  * @param querySettings {Object} 
  */
-TwisterPost.prototype.doRetwistingPosts = function (cbfunc,querySettings) {
+FreechPost.prototype.doRetwistingPosts = function (cbfunc,querySettings) {
     this._retwists._checkQueryAndDo(cbfunc,querySettings);
 }
 
 
 /** @function
  * @name getRetwistedPost 
- * @description return an uncached and unverified {@link TwisterPost} object of the retwisted post.
+ * @description return an uncached and unverified {@link FreechPost} object of the retwisted post.
  * @param cbfunc {function} 
  */
-TwisterPost.prototype.getRetwistedPost = function (cbfunc) {
+FreechPost.prototype.getRetwistedPost = function (cbfunc) {
     
-    return new TwisterPost(this._data.rt,this._data.sig_rt,this._scope);
+    return new FreechPost(this._data.rt,this._data.sig_rt,this._scope);
     
 }
 
@@ -35584,70 +35584,70 @@ TwisterPost.prototype.getRetwistedPost = function (cbfunc) {
  * @description Verifies and caches the retwisted post and calls cbfunc with it.
  * @param cbfunc {function} 
  */
-TwisterPost.prototype.doRetwistedPost = function (cbfunc) {
+FreechPost.prototype.doRetwistedPost = function (cbfunc) {
     
-    var Twister = this._scope;
+    var Freech = this._scope;
     
     var id = this._data.rt.k;
     
-    if (!Twister.getUser(this._data.rt.n)._posts[id]) {
+    if (!Freech.getUser(this._data.rt.n)._posts[id]) {
         
         var payload= {
             userpost: this._data.rt,
             sig_userpost: this._data.sig_rt
         };
         
-        Twister.getUser(this._data.rt.n)._verifyAndCachePost(payload,cbfunc);
+        Freech.getUser(this._data.rt.n)._verifyAndCachePost(payload,cbfunc);
         
     } else {
 
-        cbfunc(Twister.getUser(this._data.rt.n)._posts[id]);
+        cbfunc(Freech.getUser(this._data.rt.n)._posts[id]);
         
     }
     
 }
 
-},{"./TwisterReplies.js":202,"./TwisterResource.js":203,"./TwisterRetwists.js":204,"inherits":98}],199:[function(require,module,exports){
+},{"./FreechReplies.js":202,"./FreechResource.js":203,"./FreechRetwists.js":204,"inherits":98}],199:[function(require,module,exports){
 var inherits = require('inherits');
 
-var TwisterResource = require('./TwisterResource.js');
+var FreechResource = require('./FreechResource.js');
 
 /**
- * Describes the profile of a {@link TwisterUser}.
+ * Describes the profile of a {@link FreechUser}.
  * @class
  */
-var TwisterProfile = function (name,scope) {
+var FreechProfile = function (name,scope) {
     
-    TwisterResource.call(this,name,scope);
+    FreechResource.call(this,name,scope);
     
     this._type = "profile";
 
     
 }
 
-inherits(TwisterProfile,TwisterResource);
+inherits(FreechProfile,FreechResource);
 
-module.exports = TwisterProfile;
+module.exports = FreechProfile;
 
-TwisterProfile.prototype.trim = function (timestamp) {
+FreechProfile.prototype.trim = function (timestamp) {
 
   if (!timestamp || timestamp > this._lastUpdate){
 
     var thisUser = this._scope.getUser(this._name);
 
-    var TwisterProfile = require("./TwisterProfile.js");
+    var FreechProfile = require("./FreechProfile.js");
     
-    thisUser._profile = new TwisterProfile(this._name,this._scope);
+    thisUser._profile = new FreechProfile(this._name,this._scope);
     
   }
 
 }
 
-TwisterProfile.prototype._queryAndDo = function (cbfunc) {
+FreechProfile.prototype._queryAndDo = function (cbfunc) {
 
     var thisResource = this;
     
-    var Twister = this._scope;
+    var Freech = this._scope;
     
     //console.log("before dhtget"+thisResource._name+" "+thisResource._type)
                                 
@@ -35684,13 +35684,13 @@ TwisterProfile.prototype._queryAndDo = function (cbfunc) {
  * @name getAllFields 
  * @description returns the complete profile as Object
  */
-TwisterProfile.prototype.getAllFields = function () {
+FreechProfile.prototype.getAllFields = function () {
 
     return this._data;
     
 }
 
-TwisterProfile.prototype.getUsername = function () {
+FreechProfile.prototype.getUsername = function () {
   return this._name;
 }
 
@@ -35698,28 +35698,28 @@ TwisterProfile.prototype.getUsername = function () {
  * @name getField 
  * @description returns a single field of the profile
  */
-TwisterProfile.prototype.getField = function (fieldname) {
+FreechProfile.prototype.getField = function (fieldname) {
   
   if (this._data) {
     return this._data[fieldname];
   } else { return null }
     
 }
-},{"./TwisterProfile.js":199,"./TwisterResource.js":203,"inherits":98}],200:[function(require,module,exports){
+},{"./FreechProfile.js":199,"./FreechResource.js":203,"inherits":98}],200:[function(require,module,exports){
 var inherits = require('inherits');
 
-var TwisterResource = require('./TwisterResource.js');
+var FreechResource = require('./FreechResource.js');
 
 /**
- * Describes the promoted posts that are part of the twister blockchain.
+ * Describes the promoted posts that are part of the freech blockchain.
  * @class
  */
-var TwisterPromotedPosts = function (scope) {
+var FreechPromotedPosts = function (scope) {
     
     var name = "promoted";
 	this._hasParentUser = false;
 	
-    TwisterResource.call(this,name,scope);
+    FreechResource.call(this,name,scope);
     
     this._latestId = -1;
     this._posts = {};
@@ -35728,11 +35728,11 @@ var TwisterPromotedPosts = function (scope) {
 
 }
 
-inherits(TwisterPromotedPosts,TwisterResource);
+inherits(FreechPromotedPosts,FreechResource);
 
-TwisterPromotedPosts.prototype.flatten = function () {
+FreechPromotedPosts.prototype.flatten = function () {
 
-    var flatData = TwisterResource.prototype.flatten.call(this);
+    var flatData = FreechResource.prototype.flatten.call(this);
     
     var flatPosts = [];
     
@@ -35747,17 +35747,17 @@ TwisterPromotedPosts.prototype.flatten = function () {
 
 }
 
-TwisterPromotedPosts.prototype.inflate = function (flatData) {
+FreechPromotedPosts.prototype.inflate = function (flatData) {
     
-    var TwisterPost = require('./TwisterPost.js');
+    var FreechPost = require('./FreechPost.js');
     
-    TwisterResource.prototype.inflate.call(this,flatData);
+    FreechResource.prototype.inflate.call(this,flatData);
     
     this._latestId = flatData.latestId;
     
     for(var i = 0; i < flatData.posts.length; i++){
         
-        var newpost = new TwisterPost(flatData.posts[i].data,flatData.posts[i].signature,this._scope);
+        var newpost = new FreechPost(flatData.posts[i].data,flatData.posts[i].signature,this._scope);
         newpost.inflate(flatData.posts[i]);
         this._posts[newpost.getId()]=newpost;
     
@@ -35765,7 +35765,7 @@ TwisterPromotedPosts.prototype.inflate = function (flatData) {
 
 }
 
-TwisterPromotedPosts.prototype.trim =  function (timestamp) {
+FreechPromotedPosts.prototype.trim =  function (timestamp) {
   
   for (var id in this._posts) {
       
@@ -35791,9 +35791,9 @@ TwisterPromotedPosts.prototype.trim =  function (timestamp) {
 
     if (postCount==0) {
 
-      var TwisterPromotedPosts = require("./TwisterPromotedPosts.js");
+      var FreechPromotedPosts = require("./FreechPromotedPosts.js");
 
-      this._scope._promotedPosts = new TwisterPromotedPosts(this._name,this._scope);
+      this._scope._promotedPosts = new FreechPromotedPosts(this._name,this._scope);
       
     }
 
@@ -35801,13 +35801,13 @@ TwisterPromotedPosts.prototype.trim =  function (timestamp) {
   
 }
 
-TwisterPromotedPosts.prototype._do =  function (cbfunc) {
+FreechPromotedPosts.prototype._do =  function (cbfunc) {
     
     this._doPost(this._latestId,cbfunc);
     
 }
 
-TwisterPromotedPosts.prototype._queryAndDo = function (cbfunc) {
+FreechPromotedPosts.prototype._queryAndDo = function (cbfunc) {
     	
     var thisResource = this;
         
@@ -35845,9 +35845,9 @@ TwisterPromotedPosts.prototype._queryAndDo = function (cbfunc) {
         
 }
 
-TwisterPromotedPosts.prototype._verifyAndCachePost =  function (payload,cbfunc) {
+FreechPromotedPosts.prototype._verifyAndCachePost =  function (payload,cbfunc) {
 	
-    var Twister = this._scope;
+    var Freech = this._scope;
         
     var thisResource = this;
     
@@ -35858,9 +35858,9 @@ TwisterPromotedPosts.prototype._verifyAndCachePost =  function (payload,cbfunc) 
 
 		var signatureVerification = thisResource.getQuerySetting("signatureVerification");
 
-        var TwisterPost = require('./TwisterPost.js');
+        var FreechPost = require('./FreechPost.js');
 
-        var newpost = new TwisterPost(payload.userpost,payload.sig_userpost,thisResource._scope);
+        var newpost = new FreechPost(payload.userpost,payload.sig_userpost,thisResource._scope);
 
 		newpost._isPromotedPost = true;
 		
@@ -35884,9 +35884,9 @@ TwisterPromotedPosts.prototype._verifyAndCachePost =  function (payload,cbfunc) 
 
 }
 
-TwisterPromotedPosts.prototype._doPost = function (id,cbfunc) {
+FreechPromotedPosts.prototype._doPost = function (id,cbfunc) {
 
-    var Twister = this._scope;
+    var Freech = this._scope;
     
     if (id && id>0) {
 
@@ -35927,9 +35927,9 @@ TwisterPromotedPosts.prototype._doPost = function (id,cbfunc) {
 };
 
 
-TwisterPromotedPosts.prototype.doLatestPostsUntil = function (cbfunc, querySettings) {
+FreechPromotedPosts.prototype.doLatestPostsUntil = function (cbfunc, querySettings) {
 
-  Twister._promotedPosts._checkQueryAndDo(function doUntil(post){
+  Freech._promotedPosts._checkQueryAndDo(function doUntil(post){
 
     var retVal = cbfunc(post);
 
@@ -35943,14 +35943,14 @@ TwisterPromotedPosts.prototype.doLatestPostsUntil = function (cbfunc, querySetti
 	
 }
 
-module.exports = TwisterPromotedPosts;
+module.exports = FreechPromotedPosts;
 
 
-},{"./TwisterPost.js":198,"./TwisterPromotedPosts.js":200,"./TwisterResource.js":203,"inherits":98}],201:[function(require,module,exports){
+},{"./FreechPost.js":198,"./FreechPromotedPosts.js":200,"./FreechResource.js":203,"inherits":98}],201:[function(require,module,exports){
 (function (Buffer){
 var inherits = require('inherits');
 
-var TwisterResource = require('./TwisterResource.js');
+var FreechResource = require('./FreechResource.js');
 
 var Bitcoin = require('bitcoinjs-lib');
 var Crypto = require('crypto');
@@ -35958,21 +35958,21 @@ var buffer = require('buffer').Buffer;
 var bencode = require('bencode');
 
 
-var twister_network = Bitcoin.networks.bitcoin;
+var freech_network = Bitcoin.networks.bitcoin;
 
-twister_network.messagePrefix= '\x18twister Signed Message:\n';
+freech_network.messagePrefix= '\x18freech Signed Message:\n';
 
 /**
  * Describes the public key of a user.
  * @class
  */
-var TwisterPubKey = function (name,scope) {
+var FreechPubKey = function (name,scope) {
     
     this._name = name;
     this._data =  null;
     this._btcKey =  null;
 
-    TwisterResource.call(this,name,scope);   
+    FreechResource.call(this,name,scope);   
     
     this._type = "pubkey";
   
@@ -35981,37 +35981,37 @@ var TwisterPubKey = function (name,scope) {
     
 }
 
-inherits(TwisterPubKey,TwisterResource);
+inherits(FreechPubKey,FreechResource);
 
-module.exports = TwisterPubKey;
+module.exports = FreechPubKey;
 
-TwisterPubKey.prototype.inflate = function (flatData) {
+FreechPubKey.prototype.inflate = function (flatData) {
 
-    TwisterResource.prototype.inflate.call(this,flatData);
+    FreechResource.prototype.inflate.call(this,flatData);
     
     if (this._data) {
     
-        this._btcKey = Bitcoin.ECPair.fromPublicKeyBuffer(new Buffer(this._data,"hex"),twister_network);
+        this._btcKey = Bitcoin.ECPair.fromPublicKeyBuffer(new Buffer(this._data,"hex"),freech_network);
     
     }
 
 }
 
-TwisterPubKey.prototype.trim = function (timestamp) {
+FreechPubKey.prototype.trim = function (timestamp) {
 
   if (!timestamp || timestamp > this._lastUpdate){
 
     var thisUser = this._scope.getUser(this._name);
 
-    var TwisterPubKey = require("./TwisterPubKey.js");
+    var FreechPubKey = require("./FreechPubKey.js");
     
-    thisUser._pubkey = new TwisterPubKey(this._name,this._scope);
+    thisUser._pubkey = new FreechPubKey(this._name,this._scope);
     
   }
 
 }
 
-TwisterPubKey.prototype._queryAndDo = function (cbfunc) {
+FreechPubKey.prototype._queryAndDo = function (cbfunc) {
 	
     var thisResource = this;
             
@@ -36023,7 +36023,7 @@ TwisterPubKey.prototype._queryAndDo = function (cbfunc) {
 
           thisResource._data = res;
           
-          thisResource._btcKey = Bitcoin.ECPair.fromPublicKeyBuffer(new Buffer(res,"hex"),twister_network);
+          thisResource._btcKey = Bitcoin.ECPair.fromPublicKeyBuffer(new Buffer(res,"hex"),freech_network);
 
           if (cbfunc) {
 
@@ -36048,13 +36048,13 @@ TwisterPubKey.prototype._queryAndDo = function (cbfunc) {
         
 }
 
-TwisterPubKey.prototype.getKey = function () {
+FreechPubKey.prototype.getKey = function () {
 
     return this._data;
     
 }
 
-TwisterPubKey.prototype.verifySignature = function (message_ori, signature_ori, cbfunc) {
+FreechPubKey.prototype.verifySignature = function (message_ori, signature_ori, cbfunc) {
 
   var verifySignatures = (this.getQuerySetting("signatureVerification")!="none");
   
@@ -36083,13 +36083,13 @@ TwisterPubKey.prototype.verifySignature = function (message_ori, signature_ori, 
 
     //console.log("verifying message")
 
-    var Twister = this._scope;
+    var Freech = this._scope;
 
     var thisPubKey=this._btcKey;
 
-    Twister._signatureVerificationsInProgress++;
+    Freech._signatureVerificationsInProgress++;
 
-    var timeout=Twister._signatureVerificationsInProgress*Twister._averageSignatureCompTime*4;
+    var timeout=Freech._signatureVerificationsInProgress*Freech._averageSignatureCompTime*4;
 
     setTimeout(function(){
 
@@ -36102,7 +36102,7 @@ TwisterPubKey.prototype.verifySignature = function (message_ori, signature_ori, 
             signature = new Buffer(signature, 'hex');
           try {
             
-            var retVal = Bitcoin.message.verify(thisPubKey.getAddress(), signature, message, twister_network);
+            var retVal = Bitcoin.message.verify(thisPubKey.getAddress(), signature, message, freech_network);
           } catch(e) {
             var retVal = false;	
             thisResource._log("verification went sideways");
@@ -36116,9 +36116,9 @@ TwisterPubKey.prototype.verifySignature = function (message_ori, signature_ori, 
 
         var compTime = Date.now()-startTime;
 
-        Twister._averageSignatureCompTime = 0.9*Twister._averageSignatureCompTime + 0.1*compTime;
+        Freech._averageSignatureCompTime = 0.9*Freech._averageSignatureCompTime + 0.1*compTime;
         
-        Twister._signatureVerificationsInProgress--;
+        Freech._signatureVerificationsInProgress--;
 
         cbfunc(retVal)
 
@@ -36130,29 +36130,29 @@ TwisterPubKey.prototype.verifySignature = function (message_ori, signature_ori, 
 
 }
 }).call(this,require("buffer").Buffer)
-},{"./TwisterPubKey.js":201,"./TwisterResource.js":203,"bencode":1,"bitcoinjs-lib":90,"buffer":223,"crypto":229,"inherits":98}],202:[function(require,module,exports){
+},{"./FreechPubKey.js":201,"./FreechResource.js":203,"bencode":1,"bitcoinjs-lib":90,"buffer":223,"crypto":229,"inherits":98}],202:[function(require,module,exports){
 var inherits = require('inherits');
 
-var TwisterResource = require('./TwisterResource.js');
+var FreechResource = require('./FreechResource.js');
 
 /**
- * Describes the replies to a {ælink TwisterPost}.
+ * Describes the replies to a {ælink FreechPost}.
  * @class
  */
-var TwisterReplies = function (name,id,scope) {
+var FreechReplies = function (name,id,scope) {
     
-    TwisterResource.call(this,name,scope);
+    FreechResource.call(this,name,scope);
     this._type = "replies";
     this._id = id;
     this._data = {};
     
 }
 
-inherits(TwisterReplies,TwisterResource);
+inherits(FreechReplies,FreechResource);
 
-TwisterReplies.prototype.flatten = function () {
+FreechReplies.prototype.flatten = function () {
 
-    var flatData = TwisterResource.prototype.flatten.call(this);
+    var flatData = FreechResource.prototype.flatten.call(this);
     
     flatData.id  = this._id;
     
@@ -36161,41 +36161,41 @@ TwisterReplies.prototype.flatten = function () {
 
 }
 
-TwisterReplies.prototype.inflate = function (flatData) {
+FreechReplies.prototype.inflate = function (flatData) {
     
-    TwisterResource.prototype.inflate.call(this,flatData);
+    FreechResource.prototype.inflate.call(this,flatData);
     
     this._id = flatData.id;
 
 }
 
-TwisterReplies.prototype.trim = function (timestamp) {
+FreechReplies.prototype.trim = function (timestamp) {
 
   if (!timestamp || timestamp > this._lastUpdate){
 
     var thisPost = this._scope.getUser(this._name).getPost(this._id);
 
-    var TwisterReplies = require("./TwisterReplies.js");
+    var FreechReplies = require("./FreechReplies.js");
     
-    thisPost._replies = new TwisterReplies(this._name,this._id,this._scope);
+    thisPost._replies = new FreechReplies(this._name,this._id,this._scope);
     
   }
 
 }
 
-TwisterReplies.prototype._do = function (cbfunc) {
+FreechReplies.prototype._do = function (cbfunc) {
 	this.doPosts(cbfunc);
 }
 
-TwisterReplies.prototype._queryAndDo = function (cbfunc) {
+FreechReplies.prototype._queryAndDo = function (cbfunc) {
     
     var currentCounter = 1;
         
-    var Twister = this._scope;
+    var Freech = this._scope;
     
     var thisReplies = this;
     
-    var thisUser = Twister.getUser(this._name);
+    var thisUser = Freech.getUser(this._name);
 
     thisReplies._data = {};
 
@@ -36205,7 +36205,7 @@ TwisterReplies.prototype._queryAndDo = function (cbfunc) {
 
         function (result) {
 
-            var TwisterPost = require("./TwisterPost.js");
+            var FreechPost = require("./FreechPost.js");
 
             for (i=0; i<result.length; i++) {
 
@@ -36214,9 +36214,9 @@ TwisterReplies.prototype._queryAndDo = function (cbfunc) {
 
                 thisReplies._data[username+":post"+id]=true;                
 
-                if (! (id in Twister.getUser(username)._stream._posts ) ) {
+                if (! (id in Freech.getUser(username)._stream._posts ) ) {
                 
-                    Twister.getUser(username)._stream._verifyAndCachePost(result[i].p.v);
+                    Freech.getUser(username)._stream._verifyAndCachePost(result[i].p.v);
                     
                 }
 
@@ -36230,7 +36230,7 @@ TwisterReplies.prototype._queryAndDo = function (cbfunc) {
         
 }
 
-TwisterReplies.prototype.doPosts = function (cbfunc) {
+FreechReplies.prototype.doPosts = function (cbfunc) {
 
     var posts = [];
 	
@@ -36240,7 +36240,7 @@ TwisterReplies.prototype.doPosts = function (cbfunc) {
         var username = nandk[0];
         var id = parseInt(nandk[1]);
         
-		posts.push(Twister.getUser(username).getPost(id));
+		posts.push(Freech.getUser(username).getPost(id));
 		
     }
 	
@@ -36248,15 +36248,15 @@ TwisterReplies.prototype.doPosts = function (cbfunc) {
 
 }
 
-module.exports = TwisterReplies;
-},{"./TwisterPost.js":198,"./TwisterReplies.js":202,"./TwisterResource.js":203,"inherits":98}],203:[function(require,module,exports){
+module.exports = FreechReplies;
+},{"./FreechPost.js":198,"./FreechReplies.js":202,"./FreechResource.js":203,"inherits":98}],203:[function(require,module,exports){
 "use strict";
 
 /**
- * General resource class. Inherited by all objects inside twister-lib-js.
+ * General resource class. Inherited by all objects inside freech-lib-js.
  * @class
  */
-function TwisterResource (name,scope) {
+function FreechResource (name,scope) {
 
     this._type = "none";
     this._scope = scope;
@@ -36276,9 +36276,9 @@ function TwisterResource (name,scope) {
 
 }
 
-module.exports = TwisterResource;
+module.exports = FreechResource;
 
-TwisterResource.prototype.flatten = function () {
+FreechResource.prototype.flatten = function () {
 
     return { 
         lastUpdate: this._lastUpdate,
@@ -36291,7 +36291,7 @@ TwisterResource.prototype.flatten = function () {
 
 }
 
-TwisterResource.prototype.inflate = function (flatData) {
+FreechResource.prototype.inflate = function (flatData) {
     
     this._lastUpdate = flatData.lastUpdate;
 	this._verified = flatData.verified;
@@ -36304,13 +36304,13 @@ TwisterResource.prototype.inflate = function (flatData) {
 
 }
 
-TwisterResource.prototype._do =  function (cbfunc) {
+FreechResource.prototype._do =  function (cbfunc) {
 
     cbfunc(this);
 
 }
 
-TwisterResource.prototype.inCache = function () {
+FreechResource.prototype.inCache = function () {
     return (this._lastUpdate>0);
 }
 
@@ -36320,12 +36320,12 @@ TwisterResource.prototype.inCache = function () {
  * @param {function} cbfunc callback function
  * @param {Object} querySettings
  */
-TwisterResource.prototype._checkQueryAndDo = function (cbfunc,querySettings) {
+FreechResource.prototype._checkQueryAndDo = function (cbfunc,querySettings) {
     
     if (querySettings===undefined) {querySettings={};} 
     //else {console.log(querySettings)}
     
-    var Twister = this._scope;
+    var Freech = this._scope;
 
     var thisResource = this;
         
@@ -36333,7 +36333,7 @@ TwisterResource.prototype._checkQueryAndDo = function (cbfunc,querySettings) {
         
         thisResource._activeQuerySettings = JSON.parse(JSON.stringify(querySettings));
         thisResource._updateInProgress = true;
-        if(thisResource._activeQuerySettings["queryId"]) Twister.raiseQueryId(thisResource._activeQuerySettings["queryId"]);
+        if(thisResource._activeQuerySettings["queryId"]) Freech.raiseQueryId(thisResource._activeQuerySettings["queryId"]);
 
         var outdatedTimestamp = 0;
       
@@ -36345,7 +36345,7 @@ TwisterResource.prototype._checkQueryAndDo = function (cbfunc,querySettings) {
             
             thisResource._log("resource present in cache");
           
-            if(thisResource._activeQuerySettings["queryId"]) Twister.bumpQueryId(thisResource._activeQuerySettings["queryId"]);
+            if(thisResource._activeQuerySettings["queryId"]) Freech.bumpQueryId(thisResource._activeQuerySettings["queryId"]);
             thisResource._activeQuerySettings = {};
             thisResource._updateInProgress = false;
 
@@ -36357,7 +36357,7 @@ TwisterResource.prototype._checkQueryAndDo = function (cbfunc,querySettings) {
                 
                 thisResource._do(cbfunc);
                 
-                if(thisResource._activeQuerySettings["queryId"]) Twister.bumpQueryId(thisResource._activeQuerySettings["queryId"]);
+                if(thisResource._activeQuerySettings["queryId"]) Freech.bumpQueryId(thisResource._activeQuerySettings["queryId"]);
                 thisResource._activeQuerySettings = {};
                 thisResource._updateInProgress = false;
             
@@ -36384,11 +36384,11 @@ TwisterResource.prototype._checkQueryAndDo = function (cbfunc,querySettings) {
  * @function
  * @param {string} settings
  */
-TwisterResource.prototype.getQuerySetting = function (setting) {
+FreechResource.prototype.getQuerySetting = function (setting) {
 
 	//console.log(setting,this._activeQuerySettings);
 	
-    var Twister = this._scope;
+    var Freech = this._scope;
     
     if (setting in this._activeQuerySettings) {
         return this._activeQuerySettings[setting];
@@ -36398,18 +36398,18 @@ TwisterResource.prototype.getQuerySetting = function (setting) {
         return this._querySettings[setting];
     }
     
-    //console.log(this._type,Twister._querySettingsByType)
+    //console.log(this._type,Freech._querySettingsByType)
   
-    if (setting in Twister._querySettingsByType && this._type in Twister._querySettingsByType[setting]) {
-        return Twister._querySettingsByType[setting][this._type];
+    if (setting in Freech._querySettingsByType && this._type in Freech._querySettingsByType[setting]) {
+        return Freech._querySettingsByType[setting][this._type];
     }
     
-    if (this._hasParentUser && setting in Twister.getUser(this._name)._querySettings) {
-        return Twister.getUser(this._name)._querySettings[setting];
+    if (this._hasParentUser && setting in Freech.getUser(this._name)._querySettings) {
+        return Freech.getUser(this._name)._querySettings[setting];
     }
     
-    if ( ("_"+setting) in Twister) {
-        return Twister[("_"+setting)];
+    if ( ("_"+setting) in Freech) {
+        return Freech[("_"+setting)];
     }
     
     this._handleError({
@@ -36419,7 +36419,7 @@ TwisterResource.prototype.getQuerySetting = function (setting) {
 
 }
 
-TwisterResource.prototype.setQuerySettings = function (settings) {
+FreechResource.prototype.setQuerySettings = function (settings) {
 
     for (var key in settings) {
 		
@@ -36429,22 +36429,22 @@ TwisterResource.prototype.setQuerySettings = function (settings) {
 
 }
 
-TwisterResource.prototype._handleError = function (error) {
+FreechResource.prototype._handleError = function (error) {
     
     this._updateInProgress = false;
     this.getQuerySetting("errorfunc").call(this,error);
-    if(this._activeQuerySettings["queryId"])  Twister.bumpQueryId(this._activeQuerySettings["queryId"]);
+    if(this._activeQuerySettings["queryId"])  Freech.bumpQueryId(this._activeQuerySettings["queryId"]);
     this._activeQuerySettings={};
   
 }
 
-TwisterResource.prototype._log = function (log) {
+FreechResource.prototype._log = function (log) {
     
     this.getQuerySetting("logfunc").call(this,log);
     
 }
 
-TwisterResource.prototype.RPC = function (method, params, resultFunc, errorFunc) {
+FreechResource.prototype.RPC = function (method, params, resultFunc, errorFunc) {
     
 	var thisResource = this;
   
@@ -36539,19 +36539,19 @@ TwisterResource.prototype.RPC = function (method, params, resultFunc, errorFunc)
       
 }
 
-TwisterResource.prototype.dhtget = function (args,cbfunc) {
+FreechResource.prototype.dhtget = function (args,cbfunc) {
 
-    var Twister = this._scope;
+    var Freech = this._scope;
     
     var thisResource = this;
   
-    if ( Twister._activeDHTQueries < Twister._maxDHTQueries ) {
+    if ( Freech._activeDHTQueries < Freech._maxDHTQueries ) {
     
-        Twister._activeDHTQueries++;
+        Freech._activeDHTQueries++;
         
         thisResource.RPC("dhtget", args, function(res){
             
-            Twister._activeDHTQueries--;
+            Freech._activeDHTQueries--;
             
             thisResource._log("dhtget result: "+JSON.stringify(res));
           
@@ -36570,7 +36570,7 @@ TwisterResource.prototype.dhtget = function (args,cbfunc) {
                 
                     if (signatureVerification=="background") { cbfunc(res); }
 
-                    Twister.getUser(signingUser)._doPubKey(function(pubkey){
+                    Freech.getUser(signingUser)._doPubKey(function(pubkey){
 
                         pubkey.verifySignature(res[0].p,res[0].sig_p,function(verified){
 
@@ -36609,7 +36609,7 @@ TwisterResource.prototype.dhtget = function (args,cbfunc) {
             
         }, function(error) {
             
-            Twister._activeDHTQueries--;
+            Freech._activeDHTQueries--;
             thisResource._handleError(error);
             
         });
@@ -36628,26 +36628,26 @@ TwisterResource.prototype.dhtget = function (args,cbfunc) {
 },{"request":99}],204:[function(require,module,exports){
 var inherits = require('inherits');
 
-var TwisterResource = require('./TwisterResource.js');
+var FreechResource = require('./FreechResource.js');
 
 /**
- * Describes the retwists of a {@link TwisterPost}.
+ * Describes the retwists of a {@link FreechPost}.
  * @class
  */
-var TwisterRetwists = function (name,id,scope) {
+var FreechRetwists = function (name,id,scope) {
     
-    TwisterResource.call(this,name,scope);
+    FreechResource.call(this,name,scope);
     this._type = "retwists";
     this._id = id;
     this._data = {};
     
 }
 
-inherits(TwisterRetwists,TwisterResource);
+inherits(FreechRetwists,FreechResource);
 
-TwisterRetwists.prototype.flatten = function () {
+FreechRetwists.prototype.flatten = function () {
 
-    var flatData = TwisterResource.prototype.flatten.call(this);
+    var flatData = FreechResource.prototype.flatten.call(this);
     
     flatData.id  = this._id;
     
@@ -36656,41 +36656,41 @@ TwisterRetwists.prototype.flatten = function () {
 
 }
 
-TwisterRetwists.prototype.inflate = function (flatData) {
+FreechRetwists.prototype.inflate = function (flatData) {
     
-    TwisterResource.prototype.inflate.call(this,flatData);
+    FreechResource.prototype.inflate.call(this,flatData);
     
     this._id = flatData.id;
 
 }
 
-TwisterRetwists.prototype.trim = function (timestamp) {
+FreechRetwists.prototype.trim = function (timestamp) {
 
   if (!timestamp || timestamp > this._lastUpdate){
 
     var thisPost = this._scope.getUser(this._name).getPost(this._id);
 
-    var TwisterRetwists = require("./TwisterRetwists.js");
+    var FreechRetwists = require("./FreechRetwists.js");
     
-    thisPost._retwists = new TwisterRetwists(this._name,this._id,this._scope);
+    thisPost._retwists = new FreechRetwists(this._name,this._id,this._scope);
     
   }
 
 }
 
-TwisterRetwists.prototype._do = function (cbfunc) {
+FreechRetwists.prototype._do = function (cbfunc) {
 	this.doPosts(cbfunc);
 }
 
-TwisterRetwists.prototype._queryAndDo = function (cbfunc) {
+FreechRetwists.prototype._queryAndDo = function (cbfunc) {
     
     var currentCounter = 1;
         
-    var Twister = this._scope;
+    var Freech = this._scope;
     
     var thisRetwists = this;
     
-    var thisUser = Twister.getUser(this._name);
+    var thisUser = Freech.getUser(this._name);
 
     thisRetwists._data = {};
 
@@ -36700,7 +36700,7 @@ TwisterRetwists.prototype._queryAndDo = function (cbfunc) {
 
         function (result) {
 
-            var TwisterPost = require("./TwisterPost.js");
+            var FreechPost = require("./FreechPost.js");
 
             for (i=0; i<result.length; i++) {
 
@@ -36709,9 +36709,9 @@ TwisterRetwists.prototype._queryAndDo = function (cbfunc) {
 
                 thisRetwists._data[username+":post"+id]=true;                
 
-                if (! (id in Twister.getUser(username)._stream._posts ) ) {
+                if (! (id in Freech.getUser(username)._stream._posts ) ) {
                 
-                    Twister.getUser(username)._stream._verifyAndCachePost(result[i].p.v);
+                    Freech.getUser(username)._stream._verifyAndCachePost(result[i].p.v);
                     
                 }
 
@@ -36725,7 +36725,7 @@ TwisterRetwists.prototype._queryAndDo = function (cbfunc) {
         
 }
 
-TwisterRetwists.prototype.doPosts = function (cbfunc) {
+FreechRetwists.prototype.doPosts = function (cbfunc) {
 
     var posts = [];
 	
@@ -36742,20 +36742,20 @@ TwisterRetwists.prototype.doPosts = function (cbfunc) {
 	cbfunc(posts);
 }
 
-module.exports = TwisterRetwists;
-},{"./TwisterPost.js":198,"./TwisterResource.js":203,"./TwisterRetwists.js":204,"inherits":98}],205:[function(require,module,exports){
+module.exports = FreechRetwists;
+},{"./FreechPost.js":198,"./FreechResource.js":203,"./FreechRetwists.js":204,"inherits":98}],205:[function(require,module,exports){
 var inherits = require('inherits');
 
-var TwisterResource = require('./TwisterResource.js');
-//var TwisterTorrent = require('./TwisterTorrent.js');
+var FreechResource = require('./FreechResource.js');
+//var FreechTorrent = require('./FreechTorrent.js');
 
 /**
- * Describes the stream of posts of a {@link TwisterUser}.
+ * Describes the stream of posts of a {@link FreechUser}.
  * @class
  */
-var TwisterStream = function (name,scope) {
+var FreechStream = function (name,scope) {
     
-    TwisterResource.call(this,name,scope);
+    FreechResource.call(this,name,scope);
     
     this._latestId = -1;
     this._posts = {};
@@ -36767,9 +36767,9 @@ var TwisterStream = function (name,scope) {
 
 }
 
-inherits(TwisterStream,TwisterResource);
+inherits(FreechStream,FreechResource);
 
-TwisterStream.prototype.trim = function (timestamp) {
+FreechStream.prototype.trim = function (timestamp) {
 
   for (var id in this._posts) {
       
@@ -36797,9 +36797,9 @@ TwisterStream.prototype.trim = function (timestamp) {
     
       var thisUser = this._scope.getUser(this._name);
 
-      var TwisterStream = require("./TwisterStream.js");
+      var FreechStream = require("./FreechStream.js");
 
-      thisUser._stream = new TwisterStream(this._name,this._scope);
+      thisUser._stream = new FreechStream(this._name,this._scope);
       
     }
 
@@ -36807,9 +36807,9 @@ TwisterStream.prototype.trim = function (timestamp) {
 
 }
 
-TwisterStream.prototype.flatten = function () {
+FreechStream.prototype.flatten = function () {
 
-    var flatData = TwisterResource.prototype.flatten.call(this);
+    var flatData = FreechResource.prototype.flatten.call(this);
     
     var flatPosts = [];
     
@@ -36825,13 +36825,13 @@ TwisterStream.prototype.flatten = function () {
 
 }
 
-TwisterStream.prototype.inflate = function (flatData) {
+FreechStream.prototype.inflate = function (flatData) {
     
-  var Twister = this._scope;
+  var Freech = this._scope;
 
-  var TwisterPost = require('./TwisterPost.js');
+  var FreechPost = require('./FreechPost.js');
 
-  TwisterResource.prototype.inflate.call(this,flatData);
+  FreechResource.prototype.inflate.call(this,flatData);
 
   this._latestId = flatData.latestId;
   this._activeTorrentUser = flatData.activeTorrentUser;
@@ -36840,7 +36840,7 @@ TwisterStream.prototype.inflate = function (flatData) {
 
     if (flatData.posts[i].verified) {
 
-      var newpost = new TwisterPost(flatData.posts[i].data,flatData.posts[i].signature,Twister);
+      var newpost = new FreechPost(flatData.posts[i].data,flatData.posts[i].signature,Freech);
       newpost.inflate(flatData.posts[i]);
       this._posts[newpost.getId()]=newpost;
 
@@ -36855,18 +36855,18 @@ TwisterStream.prototype.inflate = function (flatData) {
 
 }
 
-TwisterStream.prototype._do =  function (cbfunc) {
+FreechStream.prototype._do =  function (cbfunc) {
     
     this._doPost(this._latestId,cbfunc);
     
 }
 
-TwisterStream.prototype.updateCache = function (cbfunc) {
+FreechStream.prototype.updateCache = function (cbfunc) {
   
-  var Twister = this._scope;
+  var Freech = this._scope;
   
   if (this._activeTorrentUser) {
-    Twister._wallet[this._activeTorrentUser]._torrents[this._name].updatePostsCache(cbfunc);
+    Freech._wallet[this._activeTorrentUser]._torrents[this._name].updatePostsCache(cbfunc);
   } else {
     this._log("user has no active torrent")
     cbfunc(false);
@@ -36874,19 +36874,19 @@ TwisterStream.prototype.updateCache = function (cbfunc) {
 
 }
 
-TwisterStream.prototype.fillCache = function (id,cbfunc) {
+FreechStream.prototype.fillCache = function (id,cbfunc) {
   
-  var Twister = this._scope;
+  var Freech = this._scope;
   
   if (this._activeTorrentUser) {
-    Twister._wallet[this._activeTorrentUser]._torrents[this._name].fillPostsCache(id,cbfunc);
+    Freech._wallet[this._activeTorrentUser]._torrents[this._name].fillPostsCache(id,cbfunc);
   } else {
     cbfunc(false);
   }
 
 }
 
-TwisterStream.prototype._queryAndDo = function (cbfunc) {
+FreechStream.prototype._queryAndDo = function (cbfunc) {
   
     var thisResource = this;
         
@@ -36941,9 +36941,9 @@ TwisterStream.prototype._queryAndDo = function (cbfunc) {
         
 }
 
-TwisterStream.prototype._verifyAndCachePost =  function (payload,cbfunc) {
+FreechStream.prototype._verifyAndCachePost =  function (payload,cbfunc) {
     
-    var Twister = this._scope;
+    var Freech = this._scope;
         
     var thisResource = this;
     
@@ -36956,9 +36956,9 @@ TwisterStream.prototype._verifyAndCachePost =  function (payload,cbfunc) {
 
 		var signatureVerification = thisResource.getQuerySetting("signatureVerification");
 		
-        var TwisterPost = require('./TwisterPost.js');
+        var FreechPost = require('./FreechPost.js');
 
-        var newpost = new TwisterPost(payload.userpost,payload.sig_userpost,Twister);
+        var newpost = new FreechPost(payload.userpost,payload.sig_userpost,Freech);
 
         thisResource._posts[newpost.getId()] = newpost;
       
@@ -36989,7 +36989,7 @@ TwisterStream.prototype._verifyAndCachePost =  function (payload,cbfunc) {
             
             var errorfunc = thisResource.getQuerySetting("errorfunc");
 			
-			Twister.getUser(thisResource._name)._doPubKey(function(pubkey){
+			Freech.getUser(thisResource._name)._doPubKey(function(pubkey){
 
 				pubkey.verifySignature(payload.userpost,payload.sig_userpost,function(verified){
 
@@ -37002,7 +37002,7 @@ TwisterStream.prototype._verifyAndCachePost =  function (payload,cbfunc) {
                           var post_rt = payload.userpost.rt;
                           var sig_rt = payload.userpost.sig_rt;
                           
-                          Twister.getUser(post_rt.n)._doPubKey(function(pubkey){
+                          Freech.getUser(post_rt.n)._doPubKey(function(pubkey){
 
                             pubkey.verifySignature(post_rt,sig_rt,function(verified){
 
@@ -37056,13 +37056,13 @@ TwisterStream.prototype._verifyAndCachePost =  function (payload,cbfunc) {
 
 }
 
-TwisterStream.prototype._doPost = function (id, cbfunc, querySettings) {
+FreechStream.prototype._doPost = function (id, cbfunc, querySettings) {
 
   if (querySettings===undefined) {querySettings={};} 
   
   //console.log(querySettings)
   
-  var Twister = this._scope;
+  var Freech = this._scope;
 
   var thisResource = this;
   
@@ -37134,7 +37134,7 @@ TwisterStream.prototype._doPost = function (id, cbfunc, querySettings) {
     
 };
 
-TwisterStream.prototype._doUntil = function (cbfunc, querySettings) {
+FreechStream.prototype._doUntil = function (cbfunc, querySettings) {
 
   this._checkQueryAndDo(function doUntil(post){
 
@@ -37154,24 +37154,24 @@ TwisterStream.prototype._doUntil = function (cbfunc, querySettings) {
 	
 }
 
-module.exports = TwisterStream;
+module.exports = FreechStream;
 
 
-},{"./TwisterPost.js":198,"./TwisterResource.js":203,"./TwisterStream.js":205,"inherits":98}],206:[function(require,module,exports){
+},{"./FreechPost.js":198,"./FreechResource.js":203,"./FreechStream.js":205,"inherits":98}],206:[function(require,module,exports){
 'use strict';
 
-var TwisterProfile = require('./TwisterProfile.js');
-var TwisterAvatar = require('./TwisterAvatar.js');
-var TwisterFollowings = require('./TwisterFollowings.js');
-var TwisterPubKey = require('./TwisterPubKey.js');
-var TwisterStream = require('./TwisterStream.js');
-var TwisterMentions = require('./TwisterMentions.js');
+var FreechProfile = require('./FreechProfile.js');
+var FreechAvatar = require('./FreechAvatar.js');
+var FreechFollowings = require('./FreechFollowings.js');
+var FreechPubKey = require('./FreechPubKey.js');
+var FreechStream = require('./FreechStream.js');
+var FreechMentions = require('./FreechMentions.js');
 
 /**
- * Describes a user in {@ Twister}. Allows for accessing all public onformation about this user.
+ * Describes a user in {@ Freech}. Allows for accessing all public onformation about this user.
  * @class
  */
-function TwisterUser(name,scope) {
+function FreechUser(name,scope) {
     
     this._name = name;
     this._scope = scope;
@@ -37180,24 +37180,24 @@ function TwisterUser(name,scope) {
     this._querySettings = {};
 	this._hasParentUser = false;
 
-    this._profile = new TwisterProfile(name,scope);
-    this._avatar = new TwisterAvatar(name,scope);
-    this._followings = new TwisterFollowings(name,scope);
-    this._pubkey = new TwisterPubKey(name,scope);
-    this._stream = new TwisterStream(name,scope);
-    this._mentions = new TwisterMentions(name,scope);
+    this._profile = new FreechProfile(name,scope);
+    this._avatar = new FreechAvatar(name,scope);
+    this._followings = new FreechFollowings(name,scope);
+    this._pubkey = new FreechPubKey(name,scope);
+    this._stream = new FreechStream(name,scope);
+    this._mentions = new FreechMentions(name,scope);
 
 }
 
-module.exports = TwisterUser;
+module.exports = FreechUser;
 
-TwisterUser.prototype.trim = function () {
+FreechUser.prototype.trim = function () {
   
-  delete Twister._userCache[this._name];
+  delete Freech._userCache[this._name];
   
 }
 
-TwisterUser.prototype.flatten = function () {
+FreechUser.prototype.flatten = function () {
 
     return {
         
@@ -37216,7 +37216,7 @@ TwisterUser.prototype.flatten = function () {
 
 }
 
-TwisterUser.prototype.inflate = function (flatData) {
+FreechUser.prototype.inflate = function (flatData) {
     
     this._querySettings = flatData.querySettings;
     
@@ -37229,7 +37229,7 @@ TwisterUser.prototype.inflate = function (flatData) {
 
 }
 
-TwisterUser.prototype.trim = function (timestamp) {
+FreechUser.prototype.trim = function (timestamp) {
 
   var keepUser = false;
   
@@ -37257,48 +37257,48 @@ TwisterUser.prototype.trim = function (timestamp) {
   
 }
 
-TwisterUser.prototype.getUsername = function () {
+FreechUser.prototype.getUsername = function () {
     return this._name;
 }
 
-TwisterUser.prototype._doPubKey = function (cbfunc, querySettings) {
+FreechUser.prototype._doPubKey = function (cbfunc, querySettings) {
     this._pubkey._checkQueryAndDo(cbfunc, querySettings);
 }
 
-TwisterUser.prototype.doProfile = function (cbfunc, querySettings) {
+FreechUser.prototype.doProfile = function (cbfunc, querySettings) {
     this._profile._checkQueryAndDo(cbfunc, querySettings);
 };
 
-TwisterUser.prototype.getProfile = function () {
+FreechUser.prototype.getProfile = function () {
     return this._profile;
 };
 
-TwisterUser.prototype.doAvatar = function (cbfunc, querySettings) {
+FreechUser.prototype.doAvatar = function (cbfunc, querySettings) {
     this._avatar._checkQueryAndDo(cbfunc, querySettings);
 };
 
-TwisterUser.prototype.getAvatar = function () {
+FreechUser.prototype.getAvatar = function () {
     return this._avatar;
 };
 
-TwisterUser.prototype.doFollowings = function (cbfunc, querySettings) {
+FreechUser.prototype.doFollowings = function (cbfunc, querySettings) {
     this._followings._checkQueryAndDo(cbfunc, querySettings);
 };
 
-TwisterUser.prototype.getFollowings = function () {
+FreechUser.prototype.getFollowings = function () {
     return this._followings;
 };
 
-TwisterUser.prototype.doStatus = function (cbfunc, querySettings) {
+FreechUser.prototype.doStatus = function (cbfunc, querySettings) {
     this._stream._checkQueryAndDo(cbfunc, querySettings);
 };
 
-TwisterUser.prototype.doPost = function (id, cbfunc, querySettings) {
+FreechUser.prototype.doPost = function (id, cbfunc, querySettings) {
     this._stream._doPost(id, cbfunc, querySettings);
 }
 
 
-TwisterUser.prototype.getPost = function (id) {
+FreechUser.prototype.getPost = function (id) {
     if (id in this._stream._posts) {
 		return this._stream._posts[id];
 	} else {
@@ -37306,22 +37306,22 @@ TwisterUser.prototype.getPost = function (id) {
 	}
 }
 
-TwisterUser.prototype.doMentions = function (cbfunc, querySettings) {
+FreechUser.prototype.doMentions = function (cbfunc, querySettings) {
 
     this._mentions._checkQueryAndDo(cbfunc);
 
 }
 
-TwisterUser.prototype.getMentions = function () {
+FreechUser.prototype.getMentions = function () {
     return this._mentions;
 }
 
-TwisterUser.prototype.doLatestPostsUntil = function (cbfunc, querySettings) {
+FreechUser.prototype.doLatestPostsUntil = function (cbfunc, querySettings) {
 
     this._stream._doUntil(cbfunc, querySettings);
 
 }
-},{"./TwisterAvatar.js":194,"./TwisterFollowings.js":195,"./TwisterMentions.js":197,"./TwisterProfile.js":199,"./TwisterPubKey.js":201,"./TwisterStream.js":205}],207:[function(require,module,exports){
+},{"./FreechAvatar.js":194,"./FreechFollowings.js":195,"./FreechMentions.js":197,"./FreechProfile.js":199,"./FreechPubKey.js":201,"./FreechStream.js":205}],207:[function(require,module,exports){
 
 },{}],208:[function(require,module,exports){
 // http://wiki.commonjs.org/wiki/Unit_Testing/1.0

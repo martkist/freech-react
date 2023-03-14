@@ -28,7 +28,7 @@ module.exports = Featured = React.createClass({ displayName: "Featured",
   },
   getInitialState: function () {
     return {
-      usernames: ["twister", "mfreitas", "letstwist ", "newusers", "blockhash", "userstats", "calm_client", "theme_nin", "hn", "bbc_world", "intercept", "colossal", "rt_com", "lgbt", "soltempore", "fourtwenty", "torrentfreak_com", "schneier_sec", "smashingmag", "manliness", "meduza_en"]
+      usernames: ["freech", "mfreitas", "letstwist ", "newusers", "blockhash", "userstats", "calm_client", "theme_nin", "hn", "bbc_world", "intercept", "colossal", "rt_com", "lgbt", "soltempore", "fourtwenty", "torrentfreak_com", "schneier_sec", "smashingmag", "manliness", "meduza_en"]
     };
   },
   render: function () {

@@ -62,9 +62,9 @@ App = React.createClass({displayName: "App",
     
     var state={};
     
-    state.activeAccount = localStorage.getItem("twister-react-activeAccount")
+    state.activeAccount = localStorage.getItem("freech-react-activeAccount")
     
-    state.accounts = Twister.getAccounts().map(function(acc){
+    state.accounts = Freech.getAccounts().map(function(acc){
       return {
         name: acc.getUsername(),
         status: acc.getKeyStatus()
@@ -88,13 +88,13 @@ App = React.createClass({displayName: "App",
   },
   
   clearCache: function () {
-    localStorage.setItem("twister-cache", null);
+    localStorage.setItem("freech-cache", null);
   },
   
   saveCache: function () { 
     var timestamp = Date.now()/1000 - 60*60*24*14;
-    Twister.trimCache(timestamp);
-    localStorage.setItem("twister-cache", JSON.stringify(Twister.serializeCache()))
+    Freech.trimCache(timestamp);
+    localStorage.setItem("freech-cache", JSON.stringify(Freech.serializeCache()))
   },
   
   checkAccounts: function() {
@@ -103,7 +103,7 @@ App = React.createClass({displayName: "App",
     
     thisComponent.state.accounts.map(function(acc){
       
-      Twister.getAccount(acc.name).verifyKey(function(key){
+      Freech.getAccount(acc.name).verifyKey(function(key){
         thisComponent.setState(function(oldstate,props){
           
           oldstate.accounts.find(function(a){
@@ -127,12 +127,12 @@ App = React.createClass({displayName: "App",
     
     var afterwards = function(){
       thisComponent.setStateSafe({activeAccount: newaccoutname},function(){
-        localStorage.setItem("twister-react-activeAccount", newaccoutname);
+        localStorage.setItem("freech-react-activeAccount", newaccoutname);
       });
     }
     
     if(newaccoutname){
-      Twister.getAccount(newaccoutname).activateTorrents(afterwards);
+      Freech.getAccount(newaccoutname).activateTorrents(afterwards);
     }else{
       afterwards();
     }
@@ -300,15 +300,15 @@ initializeApp = function () {
    
 }
 
-Twister.deserializeCache(JSON.parse(localStorage.getItem("twister-cache")));
+Freech.deserializeCache(JSON.parse(localStorage.getItem("freech-cache")));
 
-//Twister.setup({logfunc: function(log){console.log(log)}})
+//Freech.setup({logfunc: function(log){console.log(log)}})
 
-var accounts = Twister.getAccounts();
+var accounts = Freech.getAccounts();
 
 if (accounts.length==0) {
 
-  if (!localStorage.getItem("twister-react-settings")) {
+  if (!localStorage.getItem("freech-react-settings")) {
 
     var appSettings = {
 
@@ -321,15 +321,15 @@ if (accounts.length==0) {
     
     console.log(appSettings)
     
-    localStorage.setItem("twister-react-settings",JSON.stringify(appSettings));
+    localStorage.setItem("freech-react-settings",JSON.stringify(appSettings));
 
   } else {
 
-    var appSettings = JSON.parse(localStorage.getItem("twister-react-settings"));
+    var appSettings = JSON.parse(localStorage.getItem("freech-react-settings"));
 
   }
   
-  Twister.setup({
+  Freech.setup({
     host: appSettings.host,
     logfunc: function(log){console.log(log)},
     outdatedLimit: appSettings.pollInterval,
@@ -352,21 +352,21 @@ if (accounts.length==0) {
   
 } else {
 
-  var activeAccount =  localStorage.getItem("twister-react-activeAccount");
+  var activeAccount =  localStorage.getItem("freech-react-activeAccount");
     
-  var accounts = Twister.getAccounts();
+  var accounts = Freech.getAccounts();
 
   if (!activeAccount) {
 
     activeAccount = accounts[0];
-    localStorage.setItem("twister-react-activeAccount",activeAccount);
+    localStorage.setItem("freech-react-activeAccount",activeAccount);
 
   }
 
   console.log("active account defaulted to "+activeAccount)
-    console.log(Twister.getAccount(activeAccount))
+    console.log(Freech.getAccount(activeAccount))
 
-  Twister.getAccount(activeAccount).activateTorrents(function(){
+  Freech.getAccount(activeAccount).activateTorrents(function(){
 
     initializeApp();
 
@@ -400,7 +400,7 @@ module.exports = AppSettingsMixin = {
     
     var state = {};
     
-    if (!localStorage.getItem("twister-react-settings")) {
+    if (!localStorage.getItem("freech-react-settings")) {
     
       state.appSettings = {
         
@@ -413,7 +413,7 @@ module.exports = AppSettingsMixin = {
     
     } else {
       
-      state.appSettings = JSON.parse(localStorage.getItem("twister-react-settings"));
+      state.appSettings = JSON.parse(localStorage.getItem("freech-react-settings"));
     
     }
     
@@ -483,13 +483,13 @@ module.exports = FollowButton = React.createClass({displayName: "FollowButton",
       var newValForState = !thisComponent.state.isCurrentlyFollowing;
       var eventName = thisComponent.state.isCurrentlyFollowing ? "unfollowbyuser" : "followbyuser";
 
-      Twister.getAccount(thisComponent.props.activeAccount)[methodName](
+      Freech.getAccount(thisComponent.props.activeAccount)[methodName](
         thisComponent.props.username,
         function(following){
 
           thisComponent.setStateSafe({isCurrentlyFollowing:newValForState});
 
-          Twister.getAccount(thisComponent.props.activeAccount).activateTorrent(thisComponent.props.username)
+          Freech.getAccount(thisComponent.props.activeAccount).activateTorrent(thisComponent.props.username)
           
       });
     
@@ -502,7 +502,7 @@ module.exports = FollowButton = React.createClass({displayName: "FollowButton",
     thisComponent = this;
     
     if(thisComponent.props.activeAccount){
-      Twister.getUser(thisComponent.props.activeAccount).doFollowings(function(followings){
+      Freech.getUser(thisComponent.props.activeAccount).doFollowings(function(followings){
         if(followings.map(function(fol){
           return fol.getUsername();
         }).indexOf(thisComponent.props.username)<0){
@@ -657,7 +657,7 @@ module.exports = Post = React.createClass({displayName: "Post",
     
     var thisComponent = this;
 
-    var post = Twister.getUser(this.props.post.username).getPost(this.props.post.id);
+    var post = Freech.getUser(this.props.post.username).getPost(this.props.post.id);
     
     if (post.isRetwist()) {
       
@@ -696,7 +696,7 @@ module.exports = Post = React.createClass({displayName: "Post",
   },
   render: function() {
     
-    var post = Twister.getUser(this.props.post.username).getPost(this.props.post.id);
+    var post = Freech.getUser(this.props.post.username).getPost(this.props.post.id);
     if(!post){
       return (
         React.createElement("span", null)
@@ -1262,7 +1262,7 @@ module.exports = ProfileMixin = {
       url: ""
     };
     
-    var profile = Twister.getUser(username).getProfile();
+    var profile = Freech.getUser(username).getProfile();
     
     if (profile.inCache()) {
     
@@ -1273,7 +1273,7 @@ module.exports = ProfileMixin = {
     
     }
     
-    var avatar = Twister.getUser(username).getAvatar();
+    var avatar = Freech.getUser(username).getAvatar();
     
     if (avatar.inCache()) {
     
@@ -1289,13 +1289,13 @@ module.exports = ProfileMixin = {
     
     var thisComponent = this;
 
-    Twister.getUser(this.state.username).doAvatar(function(avatar){
+    Freech.getUser(this.state.username).doAvatar(function(avatar){
       if (avatar.getUrl()) {
         thisComponent.setStateSafe({avatar: avatar.getUrl()});  
       }
     });
     
-    Twister.getUser(this.state.username).doProfile(function(profile){
+    Freech.getUser(this.state.username).doProfile(function(profile){
       thisComponent.setStateSafe({
         fullname: profile.getField("fullname"),
         bio: profile.getField("bio"),
@@ -1345,7 +1345,7 @@ module.exports = ReplyModalButton = React.createClass({displayName: "ReplyModalB
       return;
     }
         
-    Twister.getAccount(this.props.activeAccount).reply(
+    Freech.getAccount(this.props.activeAccount).reply(
       this.props.replyUsername,
       this.props.replyPostId,
       msg,
@@ -1409,7 +1409,7 @@ module.exports = RetwistModalButton = React.createClass({displayName: "RetwistMo
   handleRetwist: function (e) {
     e.preventDefault();
         
-    Twister.getAccount(this.props.activeAccount).retwist(
+    Freech.getAccount(this.props.activeAccount).retwist(
       this.props.retwistUsername,
       this.props.retwistPostId,
       function(post){
@@ -1618,7 +1618,7 @@ module.exports = Home = React.createClass({displayName: "Home",
 
     },function(){
     
-      Twister.getUser(username).doLatestPostsUntil(function(post){
+      Freech.getUser(username).doLatestPostsUntil(function(post){
         
         if(post.getTimestamp()<thisComponent.state.postrange) {
           return false;
@@ -1675,7 +1675,7 @@ module.exports = Home = React.createClass({displayName: "Home",
       var thisComponent = this;
       var thisUsername = this.state.usernames[i];
 
-      Twister.getUser(thisUsername).doLatestPostsUntil(function(post){
+      Freech.getUser(thisUsername).doLatestPostsUntil(function(post){
         
         if(post.getTimestamp()<thisComponent.state.postrange) {
           return false;
@@ -1704,7 +1704,7 @@ module.exports = Home = React.createClass({displayName: "Home",
 
       thisComponent.addUser(username);
       
-      Twister.getUser(username).doFollowings(function(followings){
+      Freech.getUser(username).doFollowings(function(followings){
 
         for(var i in followings){
           thisComponent.addUser(followings[i].getUsername());
@@ -1790,7 +1790,7 @@ module.exports = NewPostModalButton = React.createClass({displayName: "NewPostMo
       return;
     }
     
-    Twister.getAccount(this.props.activeAccount).post(msg,function(post){
+    Freech.getAccount(this.props.activeAccount).post(msg,function(post){
     
       var event = new CustomEvent('newpostbyuser',{detail: post});
       //alert("scrolled to bottom")
@@ -1962,7 +1962,7 @@ module.exports = Conversation = React.createClass({displayName: "Conversation",
 
     };
 
-    Twister.getUser(this.state.username).doPost(this.state.postid,goUpConversation,{outdatedLimit: outdatedLimit, logfunc: function(log){console.log(log)}});
+    Freech.getUser(this.state.username).doPost(this.state.postid,goUpConversation,{outdatedLimit: outdatedLimit, logfunc: function(log){console.log(log)}});
 
   },
   componentDidMount: function() {
@@ -2024,7 +2024,7 @@ module.exports = ExportAccountModalButton = React.createClass({displayName: "Exp
       encryptionInProgess: false,
       encryptionComplete: false,
       encryptedKey: "",
-      publishedOnTwister: false,
+      publishedOnFreech: false,
     });
   },
   handlePassphrase1Change: function(e) {
@@ -2033,7 +2033,7 @@ module.exports = ExportAccountModalButton = React.createClass({displayName: "Exp
       encryptionInProgess: false,
       encryptionComplete: false,
       encryptedKey: "",
-      publishedOnTwister: false,
+      publishedOnFreech: false,
     });
   },
   handlePassphrase2Change: function(e) {
@@ -2042,7 +2042,7 @@ module.exports = ExportAccountModalButton = React.createClass({displayName: "Exp
       encryptionInProgess: false,
       encryptionComplete: false,
       encryptedKey: "",
-      publishedOnTwister: false,
+      publishedOnFreech: false,
     });
   },
   handleToggle: function () {
@@ -2062,7 +2062,7 @@ module.exports = ExportAccountModalButton = React.createClass({displayName: "Exp
 
       thisComponent.setStateSafe({encryptionInProgess: true});
 
-      Twister.getAccount(this.props.username).encryptPrivateKey(passphrase,
+      Freech.getAccount(this.props.username).encryptPrivateKey(passphrase,
       function(encryptedKey){
 
         thisComponent.setStateSafe({encryptedKey: encryptedKey, encryptionComplete: true, encryptionInProgess: false});
@@ -2071,7 +2071,7 @@ module.exports = ExportAccountModalButton = React.createClass({displayName: "Exp
       
     }else{
       
-      var wif = Twister.getAccount(this.props.username).getPrivateKey();
+      var wif = Freech.getAccount(this.props.username).getPrivateKey();
       
       thisComponent.setStateSafe({encryptedKey: wif, encryptionComplete: true, encryptionInProgess: false});
       
@@ -2080,15 +2080,15 @@ module.exports = ExportAccountModalButton = React.createClass({displayName: "Exp
                 
     return;
   },
-  publishOnTwister: function() {
+  publishOnFreech: function() {
     
     var thisComponent = this;
     
     if(this.state.useEncryption && this.state.encryptedKey.length && this.state.encryptedKey.startsWith("6P")){
       
-      Twister.getAccount(this.props.username).updateProfileFields({bip38:this.state.encryptedKey},function(profile){
+      Freech.getAccount(this.props.username).updateProfileFields({bip38:this.state.encryptedKey},function(profile){
         
-        thisComponent.setStateSafe({publishedOnTwister: true});
+        thisComponent.setStateSafe({publishedOnFreech: true});
         
       })
       
@@ -2110,28 +2110,28 @@ module.exports = ExportAccountModalButton = React.createClass({displayName: "Exp
     if(this.state.encryptionComplete){
       if(this.state.useEncryption){
         
-        var formattedBody = "Your encrypted key for Twister: "
+        var formattedBody = "Your encrypted key for Freech: "
           +this.state.encryptedKey
           +"\n\nAdvice: Print this email and note down your username and passphrase on the same piece of paper.";
         
-        var subject = "Encrypted Twister Private Key";
+        var subject = "Encrypted Freech Private Key";
         
         var mailToLink = "mailto:?body=" + encodeURIComponent(formattedBody) + "&subject=" + encodeURIComponent(subject);
         
         var dataUrl = "data:text/plain;charset=utf-8;base64,"+btoa(this.state.encryptedKey);
         
-        var publishOnTwisterDisabled = this.props.accountStatus != "confirmed";
+        var publishOnFreechDisabled = this.props.accountStatus != "confirmed";
         
-        var publishedOnTwisterButtonStr = "Publish on Twister" + (this.state.publishedOnTwister?" ✓":"");
+        var publishedOnFreechButtonStr = "Publish on Freech" + (this.state.publishedOnFreech?" ✓":"");
         
         
         belowForm = (
           React.createElement("p", null, 
             "Your encrypted key: "+this.state.encryptedKey, 
             React.createElement("br", null), 
-            React.createElement(Button, {download: "twisterkey.txt", href: dataUrl}, "Download"), 
+            React.createElement(Button, {download: "freechkey.txt", href: dataUrl}, "Download"), 
             React.createElement(Button, {href: mailToLink}, "Send via Email"), 
-            React.createElement(Button, {onClick: this.publishOnTwister, disabled: publishOnTwisterDisabled}, publishedOnTwisterButtonStr)
+            React.createElement(Button, {onClick: this.publishOnFreech, disabled: publishOnFreechDisabled}, publishedOnFreechButtonStr)
           )
         )
       }else{        
@@ -2141,9 +2141,9 @@ module.exports = ExportAccountModalButton = React.createClass({displayName: "Exp
         belowForm = (
           React.createElement("p", null, 
             "Your private key: "+this.state.encryptedKey, 
-            React.createElement(Button, {download: "twisterkey.txt", href: dataUrl}, "Download"), 
+            React.createElement(Button, {download: "freechkey.txt", href: dataUrl}, "Download"), 
             React.createElement(Button, {disabled: true}, "Send via Email"), 
-            React.createElement(Button, {disabled: true}, "Publish on Twister")
+            React.createElement(Button, {disabled: true}, "Publish on Freech")
           )
         )
       }
@@ -2228,7 +2228,7 @@ module.exports = Featured = React.createClass({ displayName: "Featured",
   },
   getInitialState: function () {
     return {
-      usernames: ["twister", "mfreitas", "letstwist ", "newusers", "blockhash", "userstats", "calm_client", "theme_nin", "hn", "bbc_world", "intercept", "colossal", "rt_com", "lgbt", "soltempore", "fourtwenty", "torrentfreak_com", "schneier_sec", "smashingmag", "manliness", "meduza_en"]
+      usernames: ["freech", "mfreitas", "letstwist ", "newusers", "blockhash", "userstats", "calm_client", "theme_nin", "hn", "bbc_world", "intercept", "colossal", "rt_com", "lgbt", "soltempore", "fourtwenty", "torrentfreak_com", "schneier_sec", "smashingmag", "manliness", "meduza_en"]
     };
   },
   render: function () {
@@ -2269,7 +2269,7 @@ module.exports = GenerateAccountModalButton = React.createClass({displayName: "G
     this.setState({username: e.target.value});
     var thisComponent = this;
     if(e.target.value.length){
-      Twister.checkUsernameAvailable(e.target.value,function(result){
+      Freech.checkUsernameAvailable(e.target.value,function(result){
         thisComponent.setStateSafe({
           checkedUsername: e.target.value,
           available: result
@@ -2288,7 +2288,7 @@ module.exports = GenerateAccountModalButton = React.createClass({displayName: "G
     
     var newusername = this.state.username;
     
-    Twister.generateClientSideAccount(newusername,function(newaccount){
+    Freech.generateClientSideAccount(newusername,function(newaccount){
 
       console.log(newaccount._name);
       
@@ -2408,7 +2408,7 @@ module.exports = Hashtag = React.createClass({displayName: "Hashtag",
 
     var thisComponent = this;
     
-    Twister.doHashtagPosts(this.state.hashtag,function(posts){
+    Freech.doHashtagPosts(this.state.hashtag,function(posts){
     
       thisComponent.setStateSafe({loading: false});
       
@@ -2481,11 +2481,11 @@ module.exports = ImportAccountModalButton = React.createClass({displayName: "Imp
       isModalOpen: !this.state.isModalOpen
     });
   },
-  pullFromTwister: function(){
+  pullFromFreech: function(){
   
     var thisComponent = this;
     
-    Twister.getUser(this.state.username).doProfile(function(profile){
+    Freech.getUser(this.state.username).doProfile(function(profile){
       
       var key = profile.getField("bip38");
       
@@ -2519,9 +2519,9 @@ module.exports = ImportAccountModalButton = React.createClass({displayName: "Imp
     }
     
     if(passphrase.length){
-      Twister.importClientSideAccountFromEncryptedKey(newusername,newprivkey,passphrase,success)
+      Freech.importClientSideAccountFromEncryptedKey(newusername,newprivkey,passphrase,success)
     }else{
-      Twister.importClientSideAccount(newusername,newprivkey,success)
+      Freech.importClientSideAccount(newusername,newprivkey,success)
     }
     
     return;
@@ -2549,7 +2549,7 @@ module.exports = ImportAccountModalButton = React.createClass({displayName: "Imp
                   value: this.state.privkey, 
                   onChange: this.handlePrivkeyChange}
                 ), 
-                React.createElement(Button, {onClick: this.pullFromTwister}, "Pull From Twister"), 
+                React.createElement(Button, {onClick: this.pullFromFreech}, "Pull From Freech"), 
                 React.createElement(Input, {
                   type: "password", 
                   label: "Passphrase (only for encrypted keys)", 
@@ -2600,7 +2600,7 @@ module.exports = LogoutModalButton = React.createClass({displayName: "LogoutModa
     
     var username = this.props.username;
     
-    Twister.removeAccount(this.props.username);
+    Freech.removeAccount(this.props.username);
     
     var event = new CustomEvent('accountremovedbyuser',{detail: {username:this.props.username}});
     //alert("scrolled to bottom")
@@ -2671,7 +2671,7 @@ module.exports = Settings = React.createClass({displayName: "Settings",
     
     console.log(newsettings)
     
-    localStorage.setItem("twister-react-settings",JSON.stringify(newsettings));
+    localStorage.setItem("freech-react-settings",JSON.stringify(newsettings));
     
     var event = new CustomEvent('appsettingschanged',{detail: newsettings});
     window.dispatchEvent(event);
@@ -2795,7 +2795,7 @@ module.exports = EditAvatarModalButton = React.createClass({displayName: "EditAv
     var thisComponent = this;
     
     
-    Twister.getAccount(this.props.activeAccount).updateAvatar(newavatar,function(avatar){
+    Freech.getAccount(this.props.activeAccount).updateAvatar(newavatar,function(avatar){
     
       console.log(avatar._data);
       
@@ -2893,7 +2893,7 @@ module.exports = EditProfileModalButton = React.createClass({displayName: "EditP
     };
     
     
-    Twister.getAccount(this.props.activeAccount).updateProfileFields(newProfileFields,function(profile){
+    Freech.getAccount(this.props.activeAccount).updateProfileFields(newProfileFields,function(profile){
     
       console.log(profile._data);
       
@@ -2996,7 +2996,7 @@ module.exports = Followings = React.createClass({displayName: "Followings",
     
     if (!outdatedLimit) {outdatedLimit=this.state.appSettings.pollInterval/2;}
 
-    Twister.getUser(this.state.username).doFollowings(function(followings){
+    Freech.getUser(this.state.username).doFollowings(function(followings){
       
       thisComponent.setStateSafe(function(state){
       
@@ -3066,7 +3066,7 @@ module.exports = Mentions = React.createClass({displayName: "Mentions",
     
     if (outdatedLimit===undefined) {outdatedLimit=this.state.appSettings.pollInterval/2;}
 
-    Twister.getUser(this.state.username).doMentions(function(mentions){
+    Freech.getUser(this.state.username).doMentions(function(mentions){
           
       for(var i in mentions){
           thisComponent.addPost(mentions[i]);
@@ -3229,7 +3229,7 @@ module.exports = Timeline = React.createClass({displayName: "Timeline",
 
     var count = 0;
     
-    Twister.getUser(this.state.username).doLatestPostsUntil(function(post){
+    Freech.getUser(this.state.username).doLatestPostsUntil(function(post){
 
       //console.log("updating "+count);
       

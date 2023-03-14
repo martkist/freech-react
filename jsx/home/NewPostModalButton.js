@@ -32,7 +32,7 @@ module.exports = NewPostModalButton = React.createClass({
       return;
     }
     
-    Twister.getAccount(this.props.activeAccount).post(msg,function(post){
+    Freech.getAccount(this.props.activeAccount).post(msg,function(post){
     
       var event = new CustomEvent('newpostbyuser',{detail: post});
       //alert("scrolled to bottom")

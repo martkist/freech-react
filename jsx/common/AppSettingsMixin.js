@@ -3,7 +3,7 @@ module.exports = AppSettingsMixin = {
     
     var state = {};
     
-    if (!localStorage.getItem("twister-react-settings")) {
+    if (!localStorage.getItem("freech-react-settings")) {
     
       state.appSettings = {
         
@@ -16,7 +16,7 @@ module.exports = AppSettingsMixin = {
     
     } else {
       
-      state.appSettings = JSON.parse(localStorage.getItem("twister-react-settings"));
+      state.appSettings = JSON.parse(localStorage.getItem("freech-react-settings"));
     
     }
     

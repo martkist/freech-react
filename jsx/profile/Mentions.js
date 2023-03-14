@@ -25,7 +25,7 @@ module.exports = Mentions = React.createClass({
     
     if (outdatedLimit===undefined) {outdatedLimit=this.state.appSettings.pollInterval/2;}
 
-    Twister.getUser(this.state.username).doMentions(function(mentions){
+    Freech.getUser(this.state.username).doMentions(function(mentions){
           
       for(var i in mentions){
           thisComponent.addPost(mentions[i]);

@@ -1,7 +1,7 @@
-cd twister-core
-docker run -d -p 28332:28332 -v /root/.twister:/root/.twister -v /root/twister-react:/root/twister-react miguelfreitas/twister -htmldir=/root/twister-react -rpcthreads=100
+cd freech-core
+docker run -d -p 28332:28332 -v /root/.freech:/root/.freech -v /root/freech-react:/root/freech-react martkist/freech-core -htmldir=/root/freech-react -rpcthreads=100
 cd ..
 
-cd twister-proxy
-forever start twister-proxy.js &
+cd freech-proxy
+forever start freech-proxy.js &
 cd ..

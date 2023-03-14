@@ -46,7 +46,7 @@ module.exports = Timeline = React.createClass({
 
     var count = 0;
     
-    Twister.getUser(this.state.username).doLatestPostsUntil(function(post){
+    Freech.getUser(this.state.username).doLatestPostsUntil(function(post){
 
       //console.log("updating "+count);
       

@@ -35,11 +35,11 @@ module.exports = ImportAccountModalButton = React.createClass({
       isModalOpen: !this.state.isModalOpen
     });
   },
-  pullFromTwister: function(){
+  pullFromFreech: function(){
   
     var thisComponent = this;
     
-    Twister.getUser(this.state.username).doProfile(function(profile){
+    Freech.getUser(this.state.username).doProfile(function(profile){
       
       var key = profile.getField("bip38");
       
@@ -73,9 +73,9 @@ module.exports = ImportAccountModalButton = React.createClass({
     }
     
     if(passphrase.length){
-      Twister.importClientSideAccountFromEncryptedKey(newusername,newprivkey,passphrase,success)
+      Freech.importClientSideAccountFromEncryptedKey(newusername,newprivkey,passphrase,success)
     }else{
-      Twister.importClientSideAccount(newusername,newprivkey,success)
+      Freech.importClientSideAccount(newusername,newprivkey,success)
     }
     
     return;
@@ -103,7 +103,7 @@ module.exports = ImportAccountModalButton = React.createClass({
                   value={this.state.privkey}
                   onChange={this.handlePrivkeyChange} 
                 />
-                <Button onClick={this.pullFromTwister}>Pull From Twister</Button>
+                <Button onClick={this.pullFromFreech}>Pull From Freech</Button>
                 <Input 
                   type='password' 
                   label='Passphrase (only for encrypted keys)' 

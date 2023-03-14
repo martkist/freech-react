@@ -1,7 +1,7 @@
 {
-  "name": "twister-react",
+  "name": "freech-react",
   "version": "1.0.0",
-  "description": "proxy-based Twister client written with react-js",
+  "description": "proxy-based Freech client written with react-js",
   "main": "index.js",
   "dependencies": {
     "classnames": "*",
@@ -21,20 +21,20 @@
     "test": "jsx jsx build-buffer && node test/PosContentTest.js",
     "watch": "watch \"npm run pull-lib-and-build\" jsx",
     "build": "jsx jsx build-buffer && browserify build-buffer/App.js -o build/app-bundle.js",
-    "pull-lib-and-build": "cd ../twister-lib-js && npm run bundle && cd ../twister-react && cp ../twister-lib-js/twister-lib.js build && jsx jsx build-buffer && browserify build-buffer/App.js -o build/app-bundle.js"
+    "pull-lib-and-build": "cd ../freech-lib-js && npm run bundle && cd ../freech-react && cp ../freech-lib-js/freech-lib.js build && jsx jsx build-buffer && browserify build-buffer/App.js -o build/app-bundle.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tschaul/twister-react.git"
+    "url": "git+https://github.com/Tschaul/freech-react.git"
   },
   "keywords": [
     "react",
-    "twister"
+    "freech"
   ],
   "author": "Julian Steinwachs",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Tschaul/twister-react/issues"
+    "url": "https://github.com/Tschaul/freech-react/issues"
   },
-  "homepage": "https://github.com/Tschaul/twister-react#readme"
+  "homepage": "https://github.com/Tschaul/freech-react#readme"
 }

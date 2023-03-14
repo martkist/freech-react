@@ -37,7 +37,7 @@ module.exports = Followings = React.createClass({
     
     if (!outdatedLimit) {outdatedLimit=this.state.appSettings.pollInterval/2;}
 
-    Twister.getUser(this.state.username).doFollowings(function(followings){
+    Freech.getUser(this.state.username).doFollowings(function(followings){
       
       thisComponent.setStateSafe(function(state){
       

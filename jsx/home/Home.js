@@ -47,7 +47,7 @@ module.exports = Home = React.createClass({
 
     },function(){
     
-      Twister.getUser(username).doLatestPostsUntil(function(post){
+      Freech.getUser(username).doLatestPostsUntil(function(post){
         
         if(post.getTimestamp()<thisComponent.state.postrange) {
           return false;
@@ -104,7 +104,7 @@ module.exports = Home = React.createClass({
       var thisComponent = this;
       var thisUsername = this.state.usernames[i];
 
-      Twister.getUser(thisUsername).doLatestPostsUntil(function(post){
+      Freech.getUser(thisUsername).doLatestPostsUntil(function(post){
         
         if(post.getTimestamp()<thisComponent.state.postrange) {
           return false;
@@ -133,7 +133,7 @@ module.exports = Home = React.createClass({
 
       thisComponent.addUser(username);
       
-      Twister.getUser(username).doFollowings(function(followings){
+      Freech.getUser(username).doFollowings(function(followings){
 
         for(var i in followings){
           thisComponent.addUser(followings[i].getUsername());
