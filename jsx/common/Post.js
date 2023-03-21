@@ -14,7 +14,7 @@ var SetIntervalMixin = require("../common/SetIntervalMixin.js");
 var SafeStateChangeMixin = require('../common/SafeStateChangeMixin.js');
 var PostContent = require('../common/PostContent.js');
 var ReplyModalButton = require('../common/ReplyModalButton.js');
-var RetwistModalButton = require('../common/RetwistModalButton.js');
+var RefreechModalButton = require('../common/RefreechModalButton.js');
 var EventListenerMixin = require('../common/EventListenerMixin.js');
 
 module.exports = Post = React.createClass({
@@ -33,9 +33,9 @@ module.exports = Post = React.createClass({
         return state;
       })
     }
-    if(profile.getUsername()==this.state.retwistingUsername){
+    if(profile.getUsername()==this.state.refreechingUsername){
       this.setState(function(state){
-        state.retwistingUserFullname = profile.getField("fullname");
+        state.refreechingUserFullname = profile.getField("fullname");
         return state;
       })
     }
@@ -57,9 +57,9 @@ module.exports = Post = React.createClass({
       avatar: "img/genericPerson.png", 
       fullname: "",
       timeAgo: "",
-      retwistingUsername: this.props.post.username,
-      retwistingUserFullname: this.props.post.username,
-      retwistingUserAvatar: "img/genericPerson.png",
+      refreechingUsername: this.props.post.username,
+      refreechingUserFullname: this.props.post.username,
+      refreechingUserAvatar: "img/genericPerson.png",
     };
   },
   updateTimeAgo: function() {
@@ -83,22 +83,22 @@ module.exports = Post = React.createClass({
 
     var post = Freech.getUser(this.props.post.username).getPost(this.props.post.id);
     
-    if (post.isRetwist()) {
+    if (post.isRefreech()) {
       
       post.getUser().doProfile(function(profile){
         thisComponent.setStateSafe({
-          retwistingUsername: profile.getUsername(),
-          retwistingUserFullname: profile.getField("fullname")
+          refreechingUsername: profile.getUsername(),
+          refreechingUserFullname: profile.getField("fullname")
         });  
       });
       
       post.getUser().doAvatar(function(avatar){
         thisComponent.setStateSafe({
-          retwistingUserAvatar: avatar.getUrl()
+          refreechingUserAvatar: avatar.getUrl()
         });  
       });
       
-      post=post.getRetwistedPost();
+      post=post.getRefreechedPost();
       
     }
       
@@ -126,17 +126,17 @@ module.exports = Post = React.createClass({
         <span/>
       )
     }
-    var retwist = false;
-    var retwistWithComment = false;
+    var refreech = false;
+    var refreechWithComment = false;
     var comment = "";
     
-    if (post.isRetwist()) {
-      retwist = true;
-      if(post.isRetwistWithComment()){
-        retwistWithComment=true;
+    if (post.isRefreech()) {
+      refreech = true;
+      if(post.isRefreechWithComment()){
+        refreechWithComment=true;
         comment =  post.getContent();
       }
-      post=post.getRetwistedPost();
+      post=post.getRefreechedPost();
     }
     
     if (post.isReply()) {
@@ -152,7 +152,7 @@ module.exports = Post = React.createClass({
     }
                                           
                                           
-    if (!post.isRetwist()) {
+    if (!post.isRefreech()) {
       var replyLink = <OverlayTrigger placement='left' overlay={
           <Tooltip id="reply">Reply</Tooltip>
         }>
@@ -165,11 +165,11 @@ module.exports = Post = React.createClass({
     }
                                            
     
-    var retwistLink = <OverlayTrigger placement='left' overlay={
-        <Tooltip id="retwist">Retwist</Tooltip>
+    var refreechLink = <OverlayTrigger placement='left' overlay={
+        <Tooltip id="refreech">Refreech</Tooltip>
       }>
         <small>
-          <RetwistModalButton retwistUsername={post.getUsername()} retwistPostId={post.getId()} activeAccount={this.props.activeAccount} originalMsg={post.getContent()} retwistUserFullname={this.state.fullname}/>
+          <RefreechModalButton refreechUsername={post.getUsername()} refreechPostId={post.getId()} activeAccount={this.props.activeAccount} originalMsg={post.getContent()} refreechUserFullname={this.state.fullname}/>
         </small>
       </OverlayTrigger>
     
@@ -196,8 +196,8 @@ module.exports = Post = React.createClass({
           </Row>
           <Row className="nomargin">
             <Col xs={8} md={8} className="fullytight">
-              {retwist && <small><em>
-                retwisted by <img className="micro-avatar" src={this.state.retwistingUserAvatar} />{this.state.retwistingUserFullname}{retwistWithComment && ":"}
+              {refreech && <small><em>
+                refreeched by <img className="micro-avatar" src={this.state.refreechingUserAvatar} />{this.state.refreechingUserFullname}{refreechWithComment && ":"}
               </em></small>
               }
             </Col>
@@ -208,10 +208,10 @@ module.exports = Post = React.createClass({
               {replyLink}
             </Col>
             <Col xs={1} md={1} className="fullytight text-align-right">
-              {retwistLink}
+              {refreechLink}
             </Col>
           </Row>
-          {retwistWithComment && <Row>
+          {refreechWithComment && <Row>
             <Col xs={12} md={12}>
               <small><PostContent content={comment}/></small>
             </Col>

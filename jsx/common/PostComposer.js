@@ -51,7 +51,7 @@ module.exports = PostComposer = React.createClass({
           </Col>
           <Col xs={2} md={2}>
             <Button disabled={!isValid} onClick={this.handleSubmit}>
-              Twist
+              Freech
             </Button>
           </Col>
         </Row>

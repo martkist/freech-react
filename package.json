@@ -5,17 +5,18 @@
   "main": "index.js",
   "dependencies": {
     "classnames": "*",
-    "react-bootstrap": "*",
+    "inherits": "^2.0.4",
     "react": "*",
+    "react-addons-css-transition-group": "*",
+    "react-bootstrap": "*",
+    "react-dom": "*",
     "react-router": "*",
     "react-router-bootstrap": "*",
-    "react-dom": "*",
-    "react-wysiwyg": "*",
-    "react-addons-css-transition-group": "*"
+    "react-wysiwyg": "*"
   },
   "devDependencies": {
-    "react-tools": "*",
-    "browserify": "*"
+    "browserify": "*",
+    "react-tools": "*"
   },
   "scripts": {
     "test": "jsx jsx build-buffer && node test/PosContentTest.js",
@@ -25,16 +26,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tschaul/freech-react.git"
+    "url": "git+https://github.com/martkist/freech-react.git"
   },
   "keywords": [
     "react",
     "freech"
   ],
-  "author": "Julian Steinwachs",
+  "author": "@martkist",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Tschaul/freech-react/issues"
+    "url": "https://github.com/martkist/freech-react/issues"
   },
-  "homepage": "https://github.com/Tschaul/freech-react#readme"
+  "homepage": "https://github.com/martkist/freech-react#readme"
 }

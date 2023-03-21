@@ -12,7 +12,7 @@ var SafeStateChangeMixin = require('../common/SafeStateChangeMixin.js');
 var SetIntervalMixin = require("../common/SetIntervalMixin.js");
 var PostContent = require("../common/PostContent.js");
 
-module.exports = RetwistModalButton = React.createClass({
+module.exports = RefreechModalButton = React.createClass({
   getInitialState: function () {
     return {
       isModalOpen: false
@@ -23,12 +23,12 @@ module.exports = RetwistModalButton = React.createClass({
       isModalOpen: !this.state.isModalOpen
     });
   },
-  handleRetwist: function (e) {
+  handleRefreech: function (e) {
     e.preventDefault();
         
-    Freech.getAccount(this.props.activeAccount).retwist(
-      this.props.retwistUsername,
-      this.props.retwistPostId,
+    Freech.getAccount(this.props.activeAccount).refreech(
+      this.props.refreechUsername,
+      this.props.refreechPostId,
       function(post){
     
         var event = new CustomEvent('newpostbyuser',{detail: post});
@@ -52,10 +52,10 @@ module.exports = RetwistModalButton = React.createClass({
               <Glyphicon glyph='retweet'/>
             </Modal.Header>
             <Modal.Body>
-              <form onSubmit={this.handleRetwist}>
-                <strong>{this.props.retwistUserFullname} </strong>
+              <form onSubmit={this.handleRefreech}>
+                <strong>{this.props.refreechUserFullname} </strong>
                 <PostContent content={this.props.originalMsg}/>
-                <Input type='submit' value='Retwist' data-dismiss="modal" />
+                <Input type='submit' value='Refreech' data-dismiss="modal" />
               </form>
             </Modal.Body>
           </Modal>

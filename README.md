@@ -5,6 +5,8 @@ It builds upon [freech-lib-js](https://github.com/martkist/freech-lib-js) which 
 
 freech-react is currently in alpha phase. Use at your own risk.
 
+Forked from https://github.com/Tschaul/freecher-react by Julian Steinwachs.
+
 ## Missing Features			
 
 * User Search
@@ -89,7 +91,7 @@ Now we can start it up. When starting for the first time it will pull the freech
 ./run.sh
 ```
 
-freechd now needs a while (10min to 1h depending on your connection) to download the blockchain. You can check `top` to see if freechd is still busy. If it's not busy anymore (cpu at around 10%) it's ready to use. Go to https://example.com/index.html where example.com is your domain and start twisting :-).
+freechd now needs a while (10min to 1h depending on your connection) to download the blockchain. You can check `top` to see if freechd is still busy. If it's not busy anymore (cpu at around 10%) it's ready to use. Go to https://example.com/index.html where example.com is your domain and start freeching :-).
 
 To stop freechd and the proxy, run:
 
