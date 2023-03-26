@@ -1228,6 +1228,7 @@ module.exports = ProfileMixin = {
     if(profile.getUsername()==this.state.username){
       this.setState(function(state){
         state.fullname = profile.getField("fullname");
+        state.martkist = profile.getField("martkist");
         state.bio = profile.getField("bio");
         state.location = profile.getField("location");
         state.url = profile.getField("url");
@@ -1259,6 +1260,7 @@ module.exports = ProfileMixin = {
       username: username,
       avatar: "img/genericPerson.png", 
       fullname: "", 
+      martkist: "",
       bio: "", 
       location: "", 
       url: ""
@@ -1269,8 +1271,9 @@ module.exports = ProfileMixin = {
     if (profile.inCache()) {
     
       state.fullname = profile.getField("fullname");
+      state.martkist = profile.getField("martkist");
       state.bio = profile.getField("bio");
-      state.location = profile.getField("location");
+      state.location = profile.getField("location");      
       state.url = profile.getField("url");
     
     }
@@ -2227,7 +2230,7 @@ module.exports = Featured = React.createClass({ displayName: "Featured",
   mixins: [AppSettingsMixin, SetIntervalMixin, SafeStateChangeMixin],
   getInitialState: function () {
     return {
-      usernames: ["freech", "martkistdevs", "mrdatasec0", "morpheus"]
+      usernames: ["martkistdevs", "mrdatasec0", "morpheus"]
     };
   },
   render: function () {
@@ -2953,6 +2956,7 @@ module.exports = EditProfileModalButton = React.createClass({displayName: "EditP
     return {
       isModalOpen: false,
       fullname: this.props.fullname,
+      martkist: this.props.martkist,
       location: this.props.location,
       bio: this.props.bio,
       url: this.props.url
@@ -2960,6 +2964,9 @@ module.exports = EditProfileModalButton = React.createClass({displayName: "EditP
   },
   handleFullnameChange: function(e) {
     this.setState({fullname: e.target.value});
+  },
+  handleMartkistChange: function(e) {
+    this.setState({martkist: e.target.value});
   },
   handleLocationChange: function(e) {
     this.setState({location: e.target.value});
@@ -2981,6 +2988,7 @@ module.exports = EditProfileModalButton = React.createClass({displayName: "EditP
     
     var newProfileFields = {
       fullname: this.state.fullname,
+      martkist: this.state.martkist,
       location: this.state.location,
       bio: this.state.bio,
       url: this.state.url,
@@ -3023,6 +3031,12 @@ module.exports = EditProfileModalButton = React.createClass({displayName: "EditP
                   label: "Fullname", 
                   value: this.state.fullname, 
                   onChange: this.handleFullnameChange}
+                ), 
+                React.createElement(Input, {
+                  type: "text", 
+                  label: "Martkist Address", 
+                  value: this.state.martkist, 
+                  onChange: this.handleMartkistChange}
                 ), 
                 React.createElement(Input, {
                   type: "text", 
@@ -3245,6 +3259,7 @@ module.exports = Profile = React.createClass({displayName: "Profile",
               ), 
               React.createElement(Col, {xs: 8, md: 8}, 
                 React.createElement("h4", {className: "nomargin-top"}, this.state.fullname, React.createElement("small", null, " ", '@'+this.state.username)), 
+                React.createElement("p", {className: "text-center"}, this.state.martkist), 
                 React.createElement("p", {className: "text-center"}, this.state.location), 
                 React.createElement("p", {className: "text-center"}, this.state.bio), 
                 React.createElement("p", {className: "text-center"}, React.createElement("a", {href: this.state.url}, this.state.url)), 
@@ -3252,6 +3267,7 @@ module.exports = Profile = React.createClass({displayName: "Profile",
                   activeAccount: this.props.activeAccount, 
                   username: this.state.username, 
                   fullname: this.state.fullname, 
+                  martkist: this.state.martkist, 
                   location: this.state.location, 
                   bio: this.state.bio, 
                   url: this.state.url}

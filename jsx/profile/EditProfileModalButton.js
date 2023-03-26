@@ -16,6 +16,7 @@ module.exports = EditProfileModalButton = React.createClass({
     return {
       isModalOpen: false,
       fullname: this.props.fullname,
+      martkist: this.props.martkist,
       location: this.props.location,
       bio: this.props.bio,
       url: this.props.url
@@ -23,6 +24,9 @@ module.exports = EditProfileModalButton = React.createClass({
   },
   handleFullnameChange: function(e) {
     this.setState({fullname: e.target.value});
+  },
+  handleMartkistChange: function(e) {
+    this.setState({martkist: e.target.value});
   },
   handleLocationChange: function(e) {
     this.setState({location: e.target.value});
@@ -44,6 +48,7 @@ module.exports = EditProfileModalButton = React.createClass({
     
     var newProfileFields = {
       fullname: this.state.fullname,
+      martkist: this.state.martkist,
       location: this.state.location,
       bio: this.state.bio,
       url: this.state.url,
@@ -86,6 +91,12 @@ module.exports = EditProfileModalButton = React.createClass({
                   label='Fullname' 
                   value={this.state.fullname}
                   onChange={this.handleFullnameChange} 
+                />
+                <Input 
+                  type='text' 
+                  label='Martkist Address' 
+                  value={this.state.martkist}
+                  onChange={this.handleMartkistChange} 
                 />
                 <Input 
                   type='text' 

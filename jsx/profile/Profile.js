@@ -57,6 +57,7 @@ module.exports = Profile = React.createClass({
               </Col>
               <Col xs={8} md={8}>
                 <h4 className="nomargin-top">{this.state.fullname}<small> {'@'+this.state.username}</small></h4>
+                <p className="text-center">{this.state.martkist}</p>
                 <p className="text-center">{this.state.location}</p>
                 <p className="text-center">{this.state.bio}</p>
                 <p className="text-center"><a href={this.state.url}>{this.state.url}</a></p>
@@ -64,6 +65,7 @@ module.exports = Profile = React.createClass({
                   activeAccount={this.props.activeAccount} 
                   username={this.state.username}
                   fullname={this.state.fullname}
+                  martkist={this.state.martkist}
                   location={this.state.location}
                   bio={this.state.bio}
                   url={this.state.url}

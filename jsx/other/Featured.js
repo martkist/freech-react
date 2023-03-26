@@ -25,7 +25,7 @@ module.exports = Featured = React.createClass({ displayName: "Featured",
   mixins: [AppSettingsMixin, SetIntervalMixin, SafeStateChangeMixin],
   getInitialState: function () {
     return {
-      usernames: ["freech", "martkistdevs", "mrdatasec0", "morpheus"]
+      usernames: ["martkistdevs", "mrdatasec0", "morpheus"]
     };
   },
   render: function () {

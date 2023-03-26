@@ -14,6 +14,7 @@ module.exports = ProfileMixin = {
     if(profile.getUsername()==this.state.username){
       this.setState(function(state){
         state.fullname = profile.getField("fullname");
+        state.martkist = profile.getField("martkist");
         state.bio = profile.getField("bio");
         state.location = profile.getField("location");
         state.url = profile.getField("url");
@@ -45,6 +46,7 @@ module.exports = ProfileMixin = {
       username: username,
       avatar: "img/genericPerson.png", 
       fullname: "", 
+      martkist: "",
       bio: "", 
       location: "", 
       url: ""
@@ -55,8 +57,9 @@ module.exports = ProfileMixin = {
     if (profile.inCache()) {
     
       state.fullname = profile.getField("fullname");
+      state.martkist = profile.getField("martkist");
       state.bio = profile.getField("bio");
-      state.location = profile.getField("location");
+      state.location = profile.getField("location");      
       state.url = profile.getField("url");
     
     }
