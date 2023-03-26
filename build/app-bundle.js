@@ -3231,6 +3231,20 @@ module.exports = Profile = React.createClass({displayName: "Profile",
     SafeStateChangeMixin,
     ProfileMixin
   ],
+  copyMartkistAddress: function(e) {
+    navigator.clipboard.writeText(this.state.martkist)
+    .then(() => {
+      const copyButton = document.querySelector('.copy-martkist-address');
+      copyButton.classList.add('clicked');
+      setTimeout(() => {
+        copyButton.classList.remove('clicked');
+      }, 1000);
+      console.log('Text copied to clipboard');
+    })
+    .catch((error) => {
+      console.error('Error copying text: ', error);
+    });
+  },
   render: function() {
     
     var routeprefix = "#/profile/"+(this.props.params.username ? this.props.params.username+"/" : "")
@@ -3259,7 +3273,7 @@ module.exports = Profile = React.createClass({displayName: "Profile",
               ), 
               React.createElement(Col, {xs: 8, md: 8}, 
                 React.createElement("h4", {className: "nomargin-top"}, this.state.fullname, React.createElement("small", null, " ", '@'+this.state.username)), 
-                React.createElement("p", {className: "text-center"}, this.state.martkist), 
+                React.createElement("p", {className: "text-center"}, this.state.martkist, React.createElement("span", {className: "copy-martkist-address", onClick: this.copyMartkistAddress}, "📋")), 
                 React.createElement("p", {className: "text-center"}, this.state.location), 
                 React.createElement("p", {className: "text-center"}, this.state.bio), 
                 React.createElement("p", {className: "text-center"}, React.createElement("a", {href: this.state.url}, this.state.url)), 

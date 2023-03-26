@@ -29,6 +29,20 @@ module.exports = Profile = React.createClass({
     SafeStateChangeMixin,
     ProfileMixin
   ],
+  copyMartkistAddress: function(e) {
+    navigator.clipboard.writeText(this.state.martkist)
+    .then(() => {
+      const copyButton = document.querySelector('.copy-martkist-address');
+      copyButton.classList.add('clicked');
+      setTimeout(() => {
+        copyButton.classList.remove('clicked');
+      }, 1000);
+      console.log('Text copied to clipboard');
+    })
+    .catch((error) => {
+      console.error('Error copying text: ', error);
+    });
+  },
   render: function() {
     
     var routeprefix = "#/profile/"+(this.props.params.username ? this.props.params.username+"/" : "")
@@ -57,7 +71,7 @@ module.exports = Profile = React.createClass({
               </Col>
               <Col xs={8} md={8}>
                 <h4 className="nomargin-top">{this.state.fullname}<small> {'@'+this.state.username}</small></h4>
-                <p className="text-center">{this.state.martkist}</p>
+                <p className="text-center">{this.state.martkist}<span className="copy-martkist-address" onClick={this.copyMartkistAddress}>📋</span></p>
                 <p className="text-center">{this.state.location}</p>
                 <p className="text-center">{this.state.bio}</p>
                 <p className="text-center"><a href={this.state.url}>{this.state.url}</a></p>
