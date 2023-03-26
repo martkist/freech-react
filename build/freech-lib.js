@@ -26150,8 +26150,8 @@ var assert = utils.assert;
 
 function EdwardsCurve(conf) {
   // NOTE: Important as we are creating point in Base.call()
-  this.freeched = (conf.a | 0) !== 1;
-  this.mOneA = this.freeched && (conf.a | 0) === -1;
+  this.twisted = (conf.a | 0) !== 1;
+  this.mOneA = this.twisted && (conf.a | 0) === -1;
   this.extended = this.mOneA;
 
   Base.call(this, 'edwards', conf);
@@ -26163,7 +26163,7 @@ function EdwardsCurve(conf) {
   this.d = new BN(conf.d, 16).toRed(this.red);
   this.dd = this.d.redAdd(this.d);
 
-  assert(!this.freeched || this.c.fromRed().cmpn(1) === 0);
+  assert(!this.twisted || this.c.fromRed().cmpn(1) === 0);
   this.oneC = (conf.c | 0) === 1;
 }
 inherits(EdwardsCurve, Base);
@@ -26313,7 +26313,7 @@ Point.prototype.isInfinity = function isInfinity() {
 };
 
 Point.prototype._extDbl = function _extDbl() {
-  // hyperelliptic.org/EFD/g1p/auto-freeched-extended-1.html
+  // hyperelliptic.org/EFD/g1p/auto-twisted-extended-1.html
   //     #doubling-dbl-2008-hwcd
   // 4M + 4S
 
@@ -26346,7 +26346,7 @@ Point.prototype._extDbl = function _extDbl() {
 };
 
 Point.prototype._projDbl = function _projDbl() {
-  // hyperelliptic.org/EFD/g1p/auto-freeched-projective.html
+  // hyperelliptic.org/EFD/g1p/auto-twisted-projective.html
   //     #doubling-dbl-2008-bbjlp
   //     #doubling-dbl-2007-bl
   // and others
@@ -26365,7 +26365,7 @@ Point.prototype._projDbl = function _projDbl() {
   var e;
   var h;
   var j;
-  if (this.curve.freeched) {
+  if (this.curve.twisted) {
     // E = a * C
     e = this.curve._mulA(c);
     // F = E + D
@@ -26418,7 +26418,7 @@ Point.prototype.dbl = function dbl() {
 };
 
 Point.prototype._extAdd = function _extAdd(p) {
-  // hyperelliptic.org/EFD/g1p/auto-freeched-extended-1.html
+  // hyperelliptic.org/EFD/g1p/auto-twisted-extended-1.html
   //     #addition-add-2008-hwcd-3
   // 8M
 
@@ -26450,7 +26450,7 @@ Point.prototype._extAdd = function _extAdd(p) {
 };
 
 Point.prototype._projAdd = function _projAdd(p) {
-  // hyperelliptic.org/EFD/g1p/auto-freeched-projective.html
+  // hyperelliptic.org/EFD/g1p/auto-twisted-projective.html
   //     #addition-add-2008-bbjlp
   //     #addition-add-2007-bl
   // 10M + 1S
@@ -26474,7 +26474,7 @@ Point.prototype._projAdd = function _projAdd(p) {
   var nx = a.redMul(f).redMul(tmp);
   var ny;
   var nz;
-  if (this.curve.freeched) {
+  if (this.curve.twisted) {
     // Y3 = A * G * (D - a * C)
     ny = a.redMul(g).redMul(d.redSub(this.curve._mulA(c)));
     // Z3 = F * G

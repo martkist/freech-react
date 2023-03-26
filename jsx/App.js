@@ -46,6 +46,7 @@ var Hashtag = require('./other/Hashtag.js');
 var Settings = require('./other/Settings.js');
 var Accounts = require('./other/Accounts.js');
 var Featured = require('./other/Featured.js');
+var Search = require('./other/Search.js');
 var AppSettingsMixin = require('./common/AppSettingsMixin.js');
 
 App = React.createClass({
@@ -292,6 +293,7 @@ initializeApp = function () {
           <Route path="/settings" component={Settings}/>
           <Route path="/accounts" component={Accounts}/>
           <Route path="/featured" component={Featured}/>
+          <Route path="/search" component={Search}/>
         </Route>
       </Router>
     ), document.getElementById('content'));

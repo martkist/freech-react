@@ -5,18 +5,17 @@
   "main": "index.js",
   "dependencies": {
     "classnames": "*",
-    "inherits": "^2.0.4",
-    "react": "*",
-    "react-addons-css-transition-group": "*",
     "react-bootstrap": "*",
-    "react-dom": "*",
+    "react": "*",
     "react-router": "*",
     "react-router-bootstrap": "*",
-    "react-wysiwyg": "*"
+    "react-dom": "*",
+    "react-wysiwyg": "*",
+    "react-addons-css-transition-group": "*"
   },
   "devDependencies": {
-    "browserify": "*",
-    "react-tools": "*"
+    "react-tools": "*",
+    "browserify": "*"
   },
   "scripts": {
     "test": "jsx jsx build-buffer && node test/PosContentTest.js",
