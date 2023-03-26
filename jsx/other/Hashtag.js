@@ -24,12 +24,9 @@ module.exports = Hashtag = React.createClass({
     SafeStateChangeMixin,
     EventListenerMixin('newpostbyuser')
   ],
-  contextTypes: {
-    router: React.PropTypes.func
-  },
   getInitialState: function() {
     return {
-      hashtag: this.context.router.getCurrentParams().hashtag,
+      hashtag: this.props.params.hashtag,
       data: [], 
       postIdentifiers: {},
       loading: true

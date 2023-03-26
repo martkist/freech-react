@@ -2225,12 +2225,9 @@ var ReactBootstrap = require('react-bootstrap'),
 module.exports = Featured = React.createClass({ displayName: "Featured",
 
   mixins: [AppSettingsMixin, SetIntervalMixin, SafeStateChangeMixin],
-  contextTypes: {
-    router: React.PropTypes.func
-  },
   getInitialState: function () {
     return {
-      usernames: ["freech", "martkistdevs", "mrdatasec0"]
+      usernames: ["freech", "martkistdevs", "mrdatasec0", "morpheus"]
     };
   },
   render: function () {
@@ -2392,12 +2389,9 @@ module.exports = Hashtag = React.createClass({displayName: "Hashtag",
     SafeStateChangeMixin,
     EventListenerMixin('newpostbyuser')
   ],
-  contextTypes: {
-    router: React.PropTypes.func
-  },
   getInitialState: function() {
     return {
-      hashtag: this.context.router.getCurrentParams().hashtag,
+      hashtag: this.props.params.hashtag,
       data: [], 
       postIdentifiers: {},
       loading: true

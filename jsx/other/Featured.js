@@ -23,12 +23,9 @@ var ReactBootstrap = require('react-bootstrap'),
 module.exports = Featured = React.createClass({ displayName: "Featured",
 
   mixins: [AppSettingsMixin, SetIntervalMixin, SafeStateChangeMixin],
-  contextTypes: {
-    router: React.PropTypes.func
-  },
   getInitialState: function () {
     return {
-      usernames: ["freech", "martkistdevs", "mrdatasec0"]
+      usernames: ["freech", "martkistdevs", "mrdatasec0", "morpheus"]
     };
   },
   render: function () {
