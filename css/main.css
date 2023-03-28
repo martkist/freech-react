@@ -109,14 +109,40 @@ body.modal-open {
   height: 0;
 }
 
-.copy-martkist-address {
+.martkist-address-container {
+  position: relative;
+  display: inline-block;
+}
+
+.martkist-address {
   cursor: pointer;
 }
-.copy-martkist-address.clicked {
+.martkist-address.clicked {
   animation: flash 0.5s;
 }
 @keyframes flash {
   0% { opacity: 1; }
   50% { opacity: 0.25; }
   100% { opacity: 1; }
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the parent element */
+  left: 50%;
+  margin-left: -60px; /* Center the tooltip relative to the parent */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }

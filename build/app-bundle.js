@@ -3234,7 +3234,7 @@ module.exports = Profile = React.createClass({displayName: "Profile",
   copyMartkistAddress: function(e) {
     navigator.clipboard.writeText(this.state.martkist)
     .then(() => {
-      const copyButton = document.querySelector('.copy-martkist-address');
+      const copyButton = document.querySelector('.martkist-address');
       copyButton.classList.add('clicked');
       setTimeout(() => {
         copyButton.classList.remove('clicked');
@@ -3273,7 +3273,10 @@ module.exports = Profile = React.createClass({displayName: "Profile",
               ), 
               React.createElement(Col, {xs: 8, md: 8}, 
                 React.createElement("h4", {className: "nomargin-top"}, this.state.fullname, React.createElement("small", null, " ", '@'+this.state.username)), 
-                React.createElement("p", {className: "text-center"}, this.state.martkist, React.createElement("span", {className: "copy-martkist-address", onClick: this.copyMartkistAddress}, "📋")), 
+                React.createElement("div", {className: "martkist-address-container"}, 
+                  React.createElement("img", {className: "martkist-address", src: "img/martkist_logo_horizontal.png", onClick: this.copyMartkistAddress}), 
+                  React.createElement("span", {className: "tooltip-text"}, this.state.martkist)
+                ), 
                 React.createElement("p", {className: "text-center"}, this.state.location), 
                 React.createElement("p", {className: "text-center"}, this.state.bio), 
                 React.createElement("p", {className: "text-center"}, React.createElement("a", {href: this.state.url}, this.state.url)), 

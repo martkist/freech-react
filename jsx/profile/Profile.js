@@ -32,7 +32,7 @@ module.exports = Profile = React.createClass({
   copyMartkistAddress: function(e) {
     navigator.clipboard.writeText(this.state.martkist)
     .then(() => {
-      const copyButton = document.querySelector('.copy-martkist-address');
+      const copyButton = document.querySelector('.martkist-address');
       copyButton.classList.add('clicked');
       setTimeout(() => {
         copyButton.classList.remove('clicked');
@@ -71,7 +71,10 @@ module.exports = Profile = React.createClass({
               </Col>
               <Col xs={8} md={8}>
                 <h4 className="nomargin-top">{this.state.fullname}<small> {'@'+this.state.username}</small></h4>
-                <p className="text-center">{this.state.martkist}<span className="copy-martkist-address" onClick={this.copyMartkistAddress}>📋</span></p>
+                <div className="martkist-address-container">
+                  <img className="martkist-address" src="img/martkist_logo_horizontal.png" onClick={this.copyMartkistAddress} />
+                  <span className="tooltip-text">{this.state.martkist}</span>
+                </div>
                 <p className="text-center">{this.state.location}</p>
                 <p className="text-center">{this.state.bio}</p>
                 <p className="text-center"><a href={this.state.url}>{this.state.url}</a></p>
