@@ -41,9 +41,9 @@ module.exports = Accounts = React.createClass({
               //console.log(acc,index)
               return (
                 <div key={"miniprofile:"+acc.name}>
+                  <Button disabled>{acc.status}</Button>
                   <MiniProfile username={acc.name} pollIntervalProfile={thisComponent.props.pollIntervalProfile}/>
-                  <p>
-                    {acc.status}
+                  <p>                    
                     <ExportAccountModalButton username={acc.name} accountStatus={acc.status}/>
                     <LogoutModalButton username={acc.name} accountStatus={acc.status}/>
                   </p>

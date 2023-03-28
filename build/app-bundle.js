@@ -1869,9 +1869,9 @@ module.exports = Accounts = React.createClass({displayName: "Accounts",
               //console.log(acc,index)
               return (
                 React.createElement("div", {key: "miniprofile:"+acc.name}, 
+                  React.createElement(Button, {disabled: true}, acc.status), 
                   React.createElement(MiniProfile, {username: acc.name, pollIntervalProfile: thisComponent.props.pollIntervalProfile}), 
                   React.createElement("p", null, 
-                    acc.status, 
                     React.createElement(ExportAccountModalButton, {username: acc.name, accountStatus: acc.status}), 
                     React.createElement(LogoutModalButton, {username: acc.name, accountStatus: acc.status})
                   )
