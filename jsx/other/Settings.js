@@ -61,7 +61,7 @@ module.exports = Settings = React.createClass({
               <Input type='text' label='host' 
                 defaultValue={this.state.appSettings.host} labelClassName='col-xs-4' 
                 wrapperClassName='col-xs-8' className="settings-host"/>
-              <Input type='submit' value='Save' wrapperClassName='col-xs-offset-10 col-xs-2'/>
+              <Input type='submit' value='Save' wrapperClassName='col-xs-offset-8 col-xs-4'/>
             </form>
           </ListGroupItem>
         </ListGroup>

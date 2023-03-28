@@ -86,7 +86,7 @@ module.exports = Settings = React.createClass({
               <Input type='text' label='Username' className="search-username" 
                      defaultValue={this.state.username}
                      labelClassName='col-xs-4' wrapperClassName='col-xs-8' />
-              <Input type='submit' value='Search' wrapperClassName='col-xs-offset-10 col-xs-2'/>
+              <Input type='submit' value='Search' wrapperClassName='col-xs-offset-8 col-xs-4'/>
             </form>
           </ListGroupItem>
           {profile}
