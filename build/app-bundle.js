@@ -396,6 +396,18 @@ setInterval(function(){
   
 },1000);
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/service-worker.js', { scope: '/' })
+      .then((registration) => {
+        console.log('Service Worker registered:', registration);
+      })
+      .catch((error) => {
+        console.log('Service Worker registration failed:', error);
+      });
+  });
+}
 },{"./common/AppSettingsMixin.js":2,"./common/SafeStateChangeMixin.js":15,"./common/SetIntervalMixin.js":16,"./home/Home.js":18,"./other/Accounts.js":20,"./other/Conversation.js":21,"./other/Featured.js":23,"./other/Hashtag.js":25,"./other/Search.js":28,"./other/Settings.js":29,"./profile/Followings.js":32,"./profile/Mentions.js":33,"./profile/Profile.js":34,"./profile/Timeline.js":35,"react":507,"react-bootstrap":110,"react-dom":282,"react-router":312}],2:[function(require,module,exports){
 module.exports = AppSettingsMixin = {
   getInitialState: function() {
@@ -3274,7 +3286,7 @@ module.exports = Profile = React.createClass({displayName: "Profile",
               React.createElement(Col, {xs: 8, md: 8}, 
                 React.createElement("h4", {className: "nomargin-top"}, this.state.fullname, React.createElement("small", null, " ", '@'+this.state.username)), 
                 React.createElement("div", {className: "martkist-address-container"}, 
-                  React.createElement("img", {className: "martkist-address", src: "img/martkist_logo_horizontal.png", onClick: this.copyMartkistAddress}), 
+                  React.createElement("img", {className: "martkist-address", src: "img/martkist_address.png", onClick: this.copyMartkistAddress}), 
                   React.createElement("span", {className: "tooltip-text"}, this.state.martkist)
                 ), 
                 React.createElement("p", {className: "text-center"}, this.state.location), 

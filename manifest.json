@@ -3,6 +3,7 @@
     "short_name": "Freech",
     "description": "Join Freech to experience decentralised Freedom of Speech!",
     "start_url": "/",
+    "scope:": "/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",

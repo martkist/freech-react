@@ -9,7 +9,6 @@ Forked from https://github.com/Tschaul/freecher-react by Julian Steinwachs.
 
 ## Missing Features			
 
-* User Search
 * Trending Hashtags
 * Direct Messages
 * Promoted Posts

@@ -72,7 +72,7 @@ module.exports = Profile = React.createClass({
               <Col xs={8} md={8}>
                 <h4 className="nomargin-top">{this.state.fullname}<small> {'@'+this.state.username}</small></h4>
                 <div className="martkist-address-container">
-                  <img className="martkist-address" src="img/martkist_logo_horizontal.png" onClick={this.copyMartkistAddress} />
+                  <img className="martkist-address" src="img/martkist_address.png" onClick={this.copyMartkistAddress} />
                   <span className="tooltip-text">{this.state.martkist}</span>
                 </div>
                 <p className="text-center">{this.state.location}</p>
