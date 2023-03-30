@@ -225,7 +225,7 @@ App = React.createClass({
       }  
       var accountSelector = (
 
-        <DropdownButton title={this.state.activeAccount} id={'dropdown-accounts'}>
+        <DropdownButton title={<Glyphicon glyph="th-large"/>} id={'dropdown-accounts'}>
           {userbuttons}
         </DropdownButton>
 
@@ -241,15 +241,15 @@ App = React.createClass({
                 href='#/' 
                 bsStyle={isOnHome ? 'primary' : 'default'}
                 disabled = {guestMode}
-              ><Glyphicon glyph="home"/></Button>
+              ><Glyphicon glyph="home" /></Button>
               <Button 
                 href={'#/profile/'+this.state.activeAccount}
                 bsStyle={isOnOwnProfile ? 'primary' : 'default'}
                 disabled = {guestMode}
               ><Glyphicon glyph="user"/></Button>
-              <Button href='#/directmessages' disabled><Glyphicon glyph="transfer"/></Button>
+              <Button href='#/directmessages' disabled><Glyphicon glyph="envelope"/></Button>
               {accountSelector}
-              <DropdownButton title={<Glyphicon glyph="menu-hamburger"/>} id={'dropdown-other'}>
+              <DropdownButton title={<Glyphicon glyph="cog"/>} id={'dropdown-other'}>
                 <MenuItem 
                   onClick={this.clearCache}
                 >Clear Cache</MenuItem>

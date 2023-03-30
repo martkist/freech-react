@@ -226,7 +226,7 @@ App = React.createClass({displayName: "App",
       }  
       var accountSelector = (
 
-        React.createElement(DropdownButton, {title: this.state.activeAccount, id: 'dropdown-accounts'}, 
+        React.createElement(DropdownButton, {title: React.createElement(Glyphicon, {glyph: "th-large"}), id: 'dropdown-accounts'}, 
           userbuttons
         )
 
@@ -242,15 +242,15 @@ App = React.createClass({displayName: "App",
                 href: "#/", 
                 bsStyle: isOnHome ? 'primary' : 'default', 
                 disabled: guestMode
-              }, React.createElement(Glyphicon, {glyph: "home"})), 
+              }, React.createElement(Glyphicon, {glyph: "home", style: {color:'blue'}})), 
               React.createElement(Button, {
                 href: '#/profile/'+this.state.activeAccount, 
                 bsStyle: isOnOwnProfile ? 'primary' : 'default', 
                 disabled: guestMode
               }, React.createElement(Glyphicon, {glyph: "user"})), 
-              React.createElement(Button, {href: "#/directmessages", disabled: true}, React.createElement(Glyphicon, {glyph: "transfer"})), 
+              React.createElement(Button, {href: "#/directmessages", disabled: true}, React.createElement(Glyphicon, {glyph: "envelope"})), 
               accountSelector, 
-              React.createElement(DropdownButton, {title: React.createElement(Glyphicon, {glyph: "menu-hamburger"}), id: 'dropdown-other'}, 
+              React.createElement(DropdownButton, {title: React.createElement(Glyphicon, {glyph: "cog"}), id: 'dropdown-other'}, 
                 React.createElement(MenuItem, {
                   onClick: this.clearCache
                 }, "Clear Cache"), 
