@@ -32,7 +32,7 @@ module.exports = Home = React.createClass({
       data: [], 
       postIdentifiers: {}, 
       usernames: [], 
-      postrange: ( Date.now()/1000 - 12*60*60 ),
+      postrange: ( Date.now()/1000 - 336*60*60 ),
       min_posts: 30,
       loading: true
     };
