@@ -9,7 +9,7 @@
   },
   "RPC": {
     "host": "localhost",
-    "port": 28332,
+    "port": 4032,
     "user": "user",
     "password": "pwd"
   },
