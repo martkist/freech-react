@@ -42,14 +42,14 @@ module.exports = PostComposer = React.createClass({
           onChange={this.handleChange}
         />
         <Row>
-          <Col xs={9} md={9}>
+          <Col xs={8} md={9}>
           </Col>
           <Col xs={1} md={1}>
             <Button disabled id="content-length">
               {this.state.maxLength - this.state.totalLength}
             </Button>
           </Col>
-          <Col xs={2} md={2}>
+          <Col xs={3} md={2}>
             <Button disabled={!isValid} onClick={this.handleSubmit}>
               Freech
             </Button>

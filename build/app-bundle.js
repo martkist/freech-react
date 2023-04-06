@@ -242,7 +242,7 @@ App = React.createClass({displayName: "App",
                 href: "#/", 
                 bsStyle: isOnHome ? 'primary' : 'default', 
                 disabled: guestMode
-              }, React.createElement(Glyphicon, {glyph: "home", style: {color:'blue'}})), 
+              }, React.createElement(Glyphicon, {glyph: "home"})), 
               React.createElement(Button, {
                 href: '#/profile/'+this.state.activeAccount, 
                 bsStyle: isOnOwnProfile ? 'primary' : 'default', 
@@ -873,14 +873,14 @@ module.exports = PostComposer = React.createClass({displayName: "PostComposer",
           onChange: this.handleChange}
         ), 
         React.createElement(Row, null, 
-          React.createElement(Col, {xs: 9, md: 9}
+          React.createElement(Col, {xs: 8, md: 9}
           ), 
           React.createElement(Col, {xs: 1, md: 1}, 
             React.createElement(Button, {disabled: true, id: "content-length"}, 
               this.state.maxLength - this.state.totalLength
             )
           ), 
-          React.createElement(Col, {xs: 2, md: 2}, 
+          React.createElement(Col, {xs: 3, md: 2}, 
             React.createElement(Button, {disabled: !isValid, onClick: this.handleSubmit}, 
               "Freech"
             )
