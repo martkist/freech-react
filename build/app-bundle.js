@@ -1744,12 +1744,13 @@ module.exports = Home = React.createClass({displayName: "Home",
   },
   onscrolledtobottom: function () {
 
-    this.setStateSafe(function(previousState, currentProps){
-      previousState.postrange -= 6*60*60;
-      return previousState;
-    },function(){
-      this.updatePosts(2*this.state.appSettings.pollInterval);
-    });
+    // TODO Disable this until we have more traffic
+    // this.setStateSafe(function(previousState, currentProps){
+    //   previousState.postrange -= 6*60*60;
+    //   return previousState;
+    // },function(){
+    //   this.updatePosts(2*this.state.appSettings.pollInterval);
+    // });
 
   },
   onnewpostbyuser: function (event) {
