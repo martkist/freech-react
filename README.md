@@ -16,8 +16,10 @@ Forked from https://github.com/Tschaul/freecher-react by Julian Steinwachs.
 
 ## Publicly hosted instances (use at your own risk)
 
-Url | Admin | Location | Note 
------ | ----- | ----- | ------
+|Url | Admin | Location | Note |
+|----- | ----- | ----- | ------|
+|https://freech.martkist.org|@martkistdevs|Asia|Official Server 1|
+|https://freech2.martkist.org|@martkistdevs|Asia|Official Server 2|
 
 *Your proxy is missing? Drop me a line or make a pull request!*
 
