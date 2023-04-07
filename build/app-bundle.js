@@ -2243,7 +2243,7 @@ module.exports = Featured = React.createClass({ displayName: "Featured",
   mixins: [AppSettingsMixin, SetIntervalMixin, SafeStateChangeMixin],
   getInitialState: function () {
     return {
-      usernames: ["martkistdevs", "mrdatasec0", "morpheus"]
+      usernames: ["freech", "martkistdevs", "frimbuktu", "mrdatasec0", "morpheus"]
     };
   },
   render: function () {
@@ -3208,7 +3208,7 @@ module.exports = Mentions = React.createClass({displayName: "Mentions",
   },
   render: function() {
     return (
-      React.createElement(Postboard, {data: this.state.data, loading: this.state.loading})
+      React.createElement(Postboard, {data: this.state.data, loading: this.state.loading, activeAccount: this.props.activeAccount})
     );
   }
 }); 

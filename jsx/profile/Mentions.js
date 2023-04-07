@@ -46,7 +46,7 @@ module.exports = Mentions = React.createClass({
   },
   render: function() {
     return (
-      <Postboard data={this.state.data} loading={this.state.loading}/>
+      <Postboard data={this.state.data} loading={this.state.loading} activeAccount={this.props.activeAccount}/>
     );
   }
 }); 
