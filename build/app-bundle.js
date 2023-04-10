@@ -1720,7 +1720,7 @@ module.exports = Home = React.createClass({displayName: "Home",
       var username=this.props.activeAccount;
 
       thisComponent.addUser(username);
-      
+            
       Freech.getUser(username).doFollowings(function(followings){
 
         for(var i in followings){
@@ -1769,7 +1769,7 @@ module.exports = Home = React.createClass({displayName: "Home",
             "Home", 
             React.createElement(NewPostModalButton, {activeAccount: this.props.activeAccount})
           ), 
-        loading: this.state.loading, activeAccount: this.props.activeAccount})
+        loading: this.state.data.length == 0, activeAccount: this.props.activeAccount})
       );
   }
 });

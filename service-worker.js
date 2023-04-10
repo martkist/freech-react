@@ -27,13 +27,13 @@ const assetsToCache = [
 ];
 
 // Install event
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(cacheName).then((cache) => {
-      return cache.addAll(assetsToCache);
-    })
-  );
-});
+// self.addEventListener('install', (event) => {
+//   event.waitUntil(
+//     caches.open(cacheName).then((cache) => {
+//       return cache.addAll(assetsToCache);
+//     })
+//   );
+// });
 
 // Fetch event
 // self.addEventListener('fetch', (event) => {
