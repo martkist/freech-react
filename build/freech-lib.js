@@ -72222,9 +72222,9 @@ FreechResource.prototype._handleError = function (error) {
   
 }
 
-FreechResource.prototype._log = function (log) {
+FreechResource.prototype._log = function (log, ...args) {
     
-    console.debug(log + ": %o", this);
+    console.debug(log + "🔹%o", ...args, this);
     
 }
 
