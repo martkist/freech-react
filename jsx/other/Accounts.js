@@ -29,7 +29,7 @@ module.exports = Accounts = React.createClass({
   render: function() {
     
     var thisComponent = this; 
-    
+
     return (
         <ListGroup>
           <ListGroupItem>Accounts</ListGroupItem>
@@ -39,9 +39,13 @@ module.exports = Accounts = React.createClass({
             <hr/>
             {this.props.accounts.map(function(acc,index) {
               //console.log(acc,index)
+              if (acc.status == "unconfirmed") {
+                var spinner = (<img src="img/bouncing_ball.gif"/>);
+              }
+              
               return (
                 <div key={"miniprofile:"+acc.name}>
-                  <Button disabled>{acc.status}</Button>
+                  <Button disabled>{acc.status}{spinner}</Button>
                   <MiniProfile username={acc.name} pollIntervalProfile={thisComponent.props.pollIntervalProfile}/>
                   <p>                    
                     <ExportAccountModalButton username={acc.name} accountStatus={acc.status}/>

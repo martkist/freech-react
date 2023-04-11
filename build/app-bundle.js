@@ -1870,7 +1870,7 @@ module.exports = Accounts = React.createClass({displayName: "Accounts",
   render: function() {
     
     var thisComponent = this; 
-    
+
     return (
         React.createElement(ListGroup, null, 
           React.createElement(ListGroupItem, null, "Accounts"), 
@@ -1880,9 +1880,13 @@ module.exports = Accounts = React.createClass({displayName: "Accounts",
             React.createElement("hr", null), 
             this.props.accounts.map(function(acc,index) {
               //console.log(acc,index)
+              if (acc.status == "unconfirmed") {
+                var spinner = (React.createElement("img", {src: "img/bouncing_ball.gif"}));
+              }
+              
               return (
                 React.createElement("div", {key: "miniprofile:"+acc.name}, 
-                  React.createElement(Button, {disabled: true}, acc.status), 
+                  React.createElement(Button, {disabled: true}, acc.status, spinner), 
                   React.createElement(MiniProfile, {username: acc.name, pollIntervalProfile: thisComponent.props.pollIntervalProfile}), 
                   React.createElement("p", null, 
                     React.createElement(ExportAccountModalButton, {username: acc.name, accountStatus: acc.status}), 
