@@ -257,8 +257,6 @@ App = React.createClass({
                 <MenuItem href="#/settings" >Settings</MenuItem>
                 <MenuItem href="#/accounts" >Accounts</MenuItem>
                 <MenuItem href="#/featured" >Featured</MenuItem>
-                <MenuItem href="#/howtofollow" >How to Follow</MenuItem>
-                <MenuItem href="#/trendinghashtags" >Trending Hashtags</MenuItem>
               </DropdownButton>
             </ButtonGroup>
             <br/>

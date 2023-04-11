@@ -257,9 +257,7 @@ App = React.createClass({displayName: "App",
                 React.createElement(MenuItem, {href: "#/search"}, "Search"), 
                 React.createElement(MenuItem, {href: "#/settings"}, "Settings"), 
                 React.createElement(MenuItem, {href: "#/accounts"}, "Accounts"), 
-                React.createElement(MenuItem, {href: "#/featured"}, "Featured"), 
-                React.createElement(MenuItem, {href: "#/howtofollow"}, "How to Follow"), 
-                React.createElement(MenuItem, {href: "#/trendinghashtags"}, "Trending Hashtags")
+                React.createElement(MenuItem, {href: "#/featured"}, "Featured")
               )
             ), 
             React.createElement("br", null), 
